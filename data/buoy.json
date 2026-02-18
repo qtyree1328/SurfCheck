@@ -1,0 +1,15 @@
+{
+  "fetched": "2026-01-01T00:00:00Z",
+  "stdmet": {
+    "time": "2026-01-01T00:00Z",
+    "waveHeight_m": null,
+    "dominantPeriod_s": null,
+    "avgPeriod_s": null,
+    "meanDirection_deg": null,
+    "waterTemp_C": null,
+    "windSpeed_mps": null,
+    "windDir_deg": null,
+    "pressure_hPa": null
+  },
+  "spectral": []
+}
