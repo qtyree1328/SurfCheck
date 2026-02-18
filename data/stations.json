@@ -1,0 +1,6337 @@
+[
+  {
+    "id": "13001",
+    "name": "NE Extension",
+    "type": "Atlas Buoy",
+    "lat": 12.0,
+    "lon": -23.0
+  },
+  {
+    "id": "13002",
+    "name": "NE Extension",
+    "type": "Atlas Buoy",
+    "lat": 21.0,
+    "lon": -23.0
+  },
+  {
+    "id": "13008",
+    "name": "Reggae",
+    "type": "Atlas Buoy",
+    "lat": 15.0,
+    "lon": -38.0
+  },
+  {
+    "id": "13009",
+    "name": "Lambada",
+    "type": "Atlas Buoy",
+    "lat": 8.0,
+    "lon": -38.0
+  },
+  {
+    "id": "14040",
+    "name": "14040",
+    "type": "Atlas Buoy",
+    "lat": -8.0,
+    "lon": 67.0
+  },
+  {
+    "id": "14041",
+    "name": "14041",
+    "type": "Atlas Buoy",
+    "lat": -8.0,
+    "lon": 55.0
+  },
+  {
+    "id": "14043",
+    "name": "14043",
+    "type": "Atlas Buoy",
+    "lat": -12.0,
+    "lon": 67.0
+  },
+  {
+    "id": "14047",
+    "name": "14047",
+    "type": "Atlas Buoy",
+    "lat": -4.0,
+    "lon": 57.0
+  },
+  {
+    "id": "14048",
+    "name": "14048",
+    "type": "Atlas Buoy",
+    "lat": -8.0,
+    "lon": 65.0
+  },
+  {
+    "id": "14049",
+    "name": "14049",
+    "type": "Atlas Buoy",
+    "lat": -12.0,
+    "lon": 65.0
+  },
+  {
+    "id": "15001",
+    "name": "Gavotte",
+    "type": "Atlas Buoy",
+    "lat": -10.0,
+    "lon": -10.0
+  },
+  {
+    "id": "15002",
+    "name": "Java",
+    "type": "Atlas Buoy",
+    "lat": 0.0,
+    "lon": -10.0
+  },
+  {
+    "id": "15006",
+    "name": "Valse",
+    "type": "Atlas Buoy",
+    "lat": -6.0,
+    "lon": -10.0
+  },
+  {
+    "id": "15007",
+    "name": "SE Extension",
+    "type": "Atlas Buoy",
+    "lat": -6.0,
+    "lon": 8.0
+  },
+  {
+    "id": "21178",
+    "name": "South of Shikoku",
+    "type": "Buoy",
+    "lat": 33.12,
+    "lon": 133.62
+  },
+  {
+    "id": "21346",
+    "name": "21346  380km East of Iwate, Japan",
+    "type": "STB - SAIC Tsunami Buoy",
+    "lat": 40.302,
+    "lon": 146.192
+  },
+  {
+    "id": "21347",
+    "name": "21347  320km East of Iwate, Japan",
+    "type": "STB - SAIC Tsunami Buoy",
+    "lat": 39.601,
+    "lon": 145.799
+  },
+  {
+    "id": "21348",
+    "name": "21348   350km East of Miyagi, Japan",
+    "type": "STB - SAIC Tsunami Buoy",
+    "lat": 38.816,
+    "lon": 145.595
+  },
+  {
+    "id": "21401",
+    "name": "250NM Southeast of Iturup Island",
+    "type": "STB - SAIC Tsunami Buoy",
+    "lat": 42.617,
+    "lon": 152.583
+  },
+  {
+    "id": "21413",
+    "name": "SOUTHEAST TOKYO - 700NM ESE of Tokyo, JP",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.487,
+    "lon": 152.124
+  },
+  {
+    "id": "21414",
+    "name": "AMCHITKA - 170 NM South of Amchitka, AK",
+    "type": "2.6-meter discus buoy",
+    "lat": 48.97,
+    "lon": 178.165
+  },
+  {
+    "id": "21415",
+    "name": "ATTU - 175 NM South of Attu, AK",
+    "type": "2.6-meter discus buoy",
+    "lat": 50.12,
+    "lon": 171.867
+  },
+  {
+    "id": "21416",
+    "name": "KAMCHATKA PENINSULA - 240NM SE of Kamchatka Peninsula, RU",
+    "type": "2.6-meter discus buoy",
+    "lat": 48.126,
+    "lon": 163.355
+  },
+  {
+    "id": "21417",
+    "name": "290NM SE of the Kuril Islands",
+    "type": "2.6-meter discus buoy",
+    "lat": 43.192,
+    "lon": 157.142
+  },
+  {
+    "id": "21418",
+    "name": "NORTHEAST TOKYO - 450 NM NE of Tokyo, JP",
+    "type": "2.6-meter discus buoy",
+    "lat": 38.73,
+    "lon": 148.8
+  },
+  {
+    "id": "21419",
+    "name": "KURIL ISLANDS - 209NM SE of Kuril Is.",
+    "type": "2.6-meter discus buoy",
+    "lat": 44.401,
+    "lon": 155.653
+  },
+  {
+    "id": "21420",
+    "name": "SOUTHEAST MIYAZAKI - 260NM Southeast of Miyazaki",
+    "type": "2.6-meter discus buoy",
+    "lat": 28.98,
+    "lon": 134.973
+  },
+  {
+    "id": "21595",
+    "name": "Drifter",
+    "type": "Drifting Buoy",
+    "lat": 36.7,
+    "lon": -132.167
+  },
+  {
+    "id": "21597",
+    "name": "Drifter",
+    "type": "Drifting Buoy",
+    "lat": 32.8,
+    "lon": 155.2
+  },
+  {
+    "id": "21598",
+    "name": "Drifter",
+    "type": "Drifting Buoy",
+    "lat": 31.3,
+    "lon": 152.7
+  },
+  {
+    "id": "21600",
+    "name": "Drifter",
+    "type": "Drifting Buoy",
+    "lat": 40.7,
+    "lon": 154.5
+  },
+  {
+    "id": "21636",
+    "name": "Drifter",
+    "type": "Drifting Buoy",
+    "lat": 31.5,
+    "lon": 127.4
+  },
+  {
+    "id": "21637",
+    "name": "Drifter",
+    "type": "Drifting Buoy",
+    "lat": 29.3,
+    "lon": 141.25
+  },
+  {
+    "id": "21640",
+    "name": "Drifter",
+    "type": "Drifting Buoy",
+    "lat": 28.3,
+    "lon": 135.5
+  },
+  {
+    "id": "21707",
+    "name": "21707",
+    "type": "Drifting Buoy",
+    "lat": 25.0,
+    "lon": 136.0
+  },
+  {
+    "id": "21d13",
+    "name": "SOUTHEAST TOKYO - 700NM ESE of Tokyo, JP",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.514,
+    "lon": 152.123
+  },
+  {
+    "id": "21d20",
+    "name": "Adrift buoy from 21420",
+    "type": "2.6 meter DART buoy",
+    "lat": 28.91,
+    "lon": 134.999
+  },
+  {
+    "id": "22101",
+    "name": "22101",
+    "type": "Buoy",
+    "lat": 37.23,
+    "lon": 126.02
+  },
+  {
+    "id": "22102",
+    "name": "22102",
+    "type": "Buoy",
+    "lat": 34.8,
+    "lon": 125.77
+  },
+  {
+    "id": "22103",
+    "name": "22103",
+    "type": "Buoy",
+    "lat": 34.0,
+    "lon": 127.5
+  },
+  {
+    "id": "22104",
+    "name": "22104",
+    "type": "Buoy",
+    "lat": 34.77,
+    "lon": 128.9
+  },
+  {
+    "id": "22105",
+    "name": "22105",
+    "type": "Buoy",
+    "lat": 37.53,
+    "lon": 130.0
+  },
+  {
+    "id": "22106",
+    "name": "22106",
+    "type": "Buoy",
+    "lat": 36.35,
+    "lon": 129.78
+  },
+  {
+    "id": "22107",
+    "name": "22107",
+    "type": "Buoy",
+    "lat": 33.08,
+    "lon": 126.03
+  },
+  {
+    "id": "22108",
+    "name": "22108",
+    "type": "Buoy",
+    "lat": 36.25,
+    "lon": 125.75
+  },
+  {
+    "id": "23001",
+    "name": "23001",
+    "type": "Atlas Buoy",
+    "lat": 0.0,
+    "lon": 81.0
+  },
+  {
+    "id": "23003",
+    "name": "23003",
+    "type": "Atlas Buoy",
+    "lat": -2.0,
+    "lon": 81.0
+  },
+  {
+    "id": "23004",
+    "name": "23004",
+    "type": "Atlas Buoy",
+    "lat": 0.0,
+    "lon": 90.0
+  },
+  {
+    "id": "23006",
+    "name": "23006",
+    "type": "Atlas Buoy",
+    "lat": 4.0,
+    "lon": 90.0
+  },
+  {
+    "id": "23007",
+    "name": "23007",
+    "type": "Atlas Buoy",
+    "lat": 8.0,
+    "lon": 90.0
+  },
+  {
+    "id": "23008",
+    "name": "23008",
+    "type": "Atlas Buoy",
+    "lat": 12.0,
+    "lon": 90.0
+  },
+  {
+    "id": "23009",
+    "name": "23009",
+    "type": "Atlas Buoy",
+    "lat": 15.0,
+    "lon": 90.0
+  },
+  {
+    "id": "23010",
+    "name": "23010",
+    "type": "Atlas Buoy",
+    "lat": -4.0,
+    "lon": 81.0
+  },
+  {
+    "id": "23011",
+    "name": "23011",
+    "type": "Atlas Buoy",
+    "lat": 15.0,
+    "lon": 65.0
+  },
+  {
+    "id": "23012",
+    "name": "23012",
+    "type": "Atlas Buoy",
+    "lat": 8.0,
+    "lon": 67.0
+  },
+  {
+    "id": "23013",
+    "name": "23013",
+    "type": "Atlas Buoy",
+    "lat": 4.0,
+    "lon": 67.0
+  },
+  {
+    "id": "23014",
+    "name": "23014",
+    "type": "Atlas Buoy",
+    "lat": 2.0,
+    "lon": 67.0
+  },
+  {
+    "id": "23015",
+    "name": "23015",
+    "type": "Atlas Buoy",
+    "lat": 0.0,
+    "lon": 67.0
+  },
+  {
+    "id": "23016",
+    "name": "23016",
+    "type": "Atlas Buoy",
+    "lat": -2.0,
+    "lon": 67.0
+  },
+  {
+    "id": "23017",
+    "name": "23017",
+    "type": "Atlas Buoy",
+    "lat": -4.0,
+    "lon": 67.0
+  },
+  {
+    "id": "23019",
+    "name": "23019",
+    "type": "Atlas Buoy",
+    "lat": -4.0,
+    "lon": 65.0
+  },
+  {
+    "id": "23020",
+    "name": "Red Sea",
+    "type": "Buoy",
+    "lat": 22.162,
+    "lon": 38.5
+  },
+  {
+    "id": "23217",
+    "name": "Bay of Bengal IN3",
+    "type": "STB - SAIC Tsunami Buoy",
+    "lat": 3.798,
+    "lon": 91.701
+  },
+  {
+    "id": "23218",
+    "name": "Bay of Bengal IN4",
+    "type": "Indian Tsunami Buoy",
+    "lat": 10.165,
+    "lon": 88.5
+  },
+  {
+    "id": "23219",
+    "name": "Bay of Bengal",
+    "type": "STB - SAIC Tsunami Buoy",
+    "lat": 13.472,
+    "lon": 88.998
+  },
+  {
+    "id": "23220",
+    "name": "Bay of Bengal",
+    "type": "Indian Tsunami Buoy",
+    "lat": 14.433,
+    "lon": 89.333
+  },
+  {
+    "id": "23223",
+    "name": "Bay of Bengal",
+    "type": "Indian Tsunami Buoy",
+    "lat": 17.333,
+    "lon": 89.483
+  },
+  {
+    "id": "23225",
+    "name": "23225",
+    "type": "STB - SAIC Tsunami Buoy",
+    "lat": 18.63,
+    "lon": 67.18
+  },
+  {
+    "id": "23226",
+    "name": "Arabian Sea",
+    "type": "Indian Tsunami Buoy",
+    "lat": 20.2,
+    "lon": 67.333
+  },
+  {
+    "id": "23227",
+    "name": "Bay of Bengal",
+    "type": "STB - SAIC Tsunami Buoy",
+    "lat": 6.265,
+    "lon": 88.653
+  },
+  {
+    "id": "23228",
+    "name": "Arabian Sea",
+    "type": "STB - SAIC Tsunami Buoy",
+    "lat": 20.764,
+    "lon": 65.284
+  },
+  {
+    "id": "23401",
+    "name": "BAY OF BENGAL - 600 NM WNW of Phuket, Thailand",
+    "type": "STB - SAIC Tsunami Buoy",
+    "lat": 8.86,
+    "lon": 88.55
+  },
+  {
+    "id": "28401",
+    "name": "Kuroshio Extension Observatory (KEO)",
+    "type": "Buoy",
+    "lat": 32.384,
+    "lon": 144.54
+  },
+  {
+    "id": "31001",
+    "name": "Samba",
+    "type": "Atlas Buoy",
+    "lat": 0.0,
+    "lon": -35.0
+  },
+  {
+    "id": "31002",
+    "name": "Frevo",
+    "type": "Atlas Buoy",
+    "lat": 4.0,
+    "lon": -38.0
+  },
+  {
+    "id": "31003",
+    "name": "Para?ba",
+    "type": "Atlas Buoy",
+    "lat": -8.0,
+    "lon": -30.0
+  },
+  {
+    "id": "31004",
+    "name": "Salvador",
+    "type": "Atlas Buoy",
+    "lat": -14.0,
+    "lon": -32.0
+  },
+  {
+    "id": "31005",
+    "name": "Espirito Santo",
+    "type": "Atlas Buoy",
+    "lat": -19.0,
+    "lon": -34.0
+  },
+  {
+    "id": "31006",
+    "name": "NE Extension",
+    "type": "Atlas Buoy",
+    "lat": 4.0,
+    "lon": -23.0
+  },
+  {
+    "id": "31007",
+    "name": "Jazz",
+    "type": "Atlas Buoy",
+    "lat": 0.0,
+    "lon": -23.0
+  },
+  {
+    "id": "31051",
+    "name": "Santos",
+    "type": "Buoy",
+    "lat": -25.283,
+    "lon": -44.933
+  },
+  {
+    "id": "31052",
+    "name": "RECIFE",
+    "type": "Buoy",
+    "lat": -8.15,
+    "lon": -34.567
+  },
+  {
+    "id": "31053",
+    "name": "RIO GRANDE DO SUL",
+    "type": "Buoy",
+    "lat": -32.595,
+    "lon": -51.353
+  },
+  {
+    "id": "31201",
+    "name": "Floripa, Brazil (109)",
+    "type": "Waverider Buoy",
+    "lat": -27.705,
+    "lon": -48.134
+  },
+  {
+    "id": "31260",
+    "name": "31260",
+    "type": "Buoy",
+    "lat": -23.031,
+    "lon": -43.088
+  },
+  {
+    "id": "31261",
+    "name": "31261",
+    "type": "Buoy",
+    "lat": -31.538,
+    "lon": -49.862
+  },
+  {
+    "id": "31478",
+    "name": "31478",
+    "type": "Buoy",
+    "lat": -22.882,
+    "lon": -43.132
+  },
+  {
+    "id": "32012",
+    "name": "Woods Hole Stratus Wave Station",
+    "type": "2.4-meter discus buoy",
+    "lat": -19.425,
+    "lon": -85.078
+  },
+  {
+    "id": "3202520",
+    "name": "San Cristobal - Galapagos (B1-S)",
+    "type": "2.4-meter foam hull buoy",
+    "lat": -4.148,
+    "lon": -89.008
+  },
+  {
+    "id": "3202521",
+    "name": "Isabela - Galapagos (B2-W)",
+    "type": "2.4-meter foam hull buoy",
+    "lat": -0.525,
+    "lon": -81.386
+  },
+  {
+    "id": "32066",
+    "name": "Ecuador INOCAR",
+    "type": "2.6-meter discus buoy",
+    "lat": -1.136,
+    "lon": -81.765
+  },
+  {
+    "id": "32067",
+    "name": "ECUADOR INOCAR",
+    "type": "2.6-meter discus buoy",
+    "lat": 0.641,
+    "lon": -81.262
+  },
+  {
+    "id": "32068",
+    "name": "Manta - 58 NM West of Manta, Ecuador",
+    "type": "2.4-meter foam hull buoy",
+    "lat": -0.891,
+    "lon": -81.637
+  },
+  {
+    "id": "32069",
+    "name": "Esmeraldas - 71 NM West of Pedernales, Ecuador",
+    "type": "2.4-meter foam hull buoy",
+    "lat": 0.278,
+    "lon": -81.185
+  },
+  {
+    "id": "32301",
+    "name": "32301",
+    "type": "3-meter discus buoy",
+    "lat": -9.9,
+    "lon": -105.2
+  },
+  {
+    "id": "32302",
+    "name": "32302",
+    "type": "3-meter discus buoy",
+    "lat": -18.0,
+    "lon": -85.1
+  },
+  {
+    "id": "32401",
+    "name": "180 NM West of Iquique, Chile",
+    "type": "2.6-meter discus buoy",
+    "lat": -20.603,
+    "lon": -73.39
+  },
+  {
+    "id": "32402",
+    "name": "180 NM  West of Caldera, Chile",
+    "type": "2.6-meter discus buoy",
+    "lat": -26.743,
+    "lon": -73.983
+  },
+  {
+    "id": "32403",
+    "name": "91NM West of Antofagasta, Chile",
+    "type": "Buoy",
+    "lat": -23.163,
+    "lon": -72.037
+  },
+  {
+    "id": "32404",
+    "name": "120 NM NW of Valparaiso",
+    "type": "Buoy",
+    "lat": -32.13,
+    "lon": -73.797
+  },
+  {
+    "id": "32411",
+    "name": "WEST PANAMA - 710 NM WSW of Panama City, Panama",
+    "type": "2.6-meter discus buoy",
+    "lat": 4.979,
+    "lon": -90.793
+  },
+  {
+    "id": "32412",
+    "name": "SOUTHWEST LIMA - 645 NM SW of Lima, Peru",
+    "type": "2.6-meter discus buoy",
+    "lat": -17.984,
+    "lon": -86.374
+  },
+  {
+    "id": "32413",
+    "name": "NORTHWEST LIMA - 1000 NM WNW of Lima, Peru",
+    "type": "2.6-meter discus buoy",
+    "lat": -7.432,
+    "lon": -93.464
+  },
+  {
+    "id": "32487",
+    "name": "Buenaventura, Colombia",
+    "type": "Offshore Buoy",
+    "lat": 3.517,
+    "lon": -77.737
+  },
+  {
+    "id": "32488",
+    "name": "Bahia Solano, Colombia",
+    "type": "Offshore Buoy",
+    "lat": 6.258,
+    "lon": -77.511
+  },
+  {
+    "id": "32489",
+    "name": "Colombia   121NM SW of Buenaventura, Colombia",
+    "type": "2.6-meter discus buoy",
+    "lat": 2.998,
+    "lon": -79.101
+  },
+  {
+    "id": "34002",
+    "name": "OOI Southern Ocean Buoy",
+    "type": "Moored Buoy",
+    "lat": -55.0,
+    "lon": -90.0
+  },
+  {
+    "id": "34420",
+    "name": "119NM NW of Concepcion, Chile",
+    "type": "Buoy",
+    "lat": -35.758,
+    "lon": -75.243
+  },
+  {
+    "id": "41001",
+    "name": "EAST HATTERAS - 150 NM East of Cape Hatteras",
+    "type": "3-meter foam buoy",
+    "lat": 34.791,
+    "lon": -72.42
+  },
+  {
+    "id": "41002",
+    "name": "SOUTH HATTERAS - 225 NM South of Cape Hatteras",
+    "type": "3-meter foam buoy",
+    "lat": 31.743,
+    "lon": -74.955
+  },
+  {
+    "id": "41003",
+    "name": "41003",
+    "type": "6-meter NOMAD buoy",
+    "lat": 30.4,
+    "lon": -80.1
+  },
+  {
+    "id": "41004",
+    "name": "EDISTO - 41 NM Southeast of Charleston, SC",
+    "type": "3-meter foam buoy",
+    "lat": 32.502,
+    "lon": -79.099
+  },
+  {
+    "id": "41005",
+    "name": "41005",
+    "type": "6-meter NOMAD buoy",
+    "lat": 31.7,
+    "lon": -79.7
+  },
+  {
+    "id": "41006",
+    "name": "41006",
+    "type": "6-meter NOMAD buoy",
+    "lat": 29.3,
+    "lon": -77.4
+  },
+  {
+    "id": "41007",
+    "name": "41007",
+    "type": "3-meter discus buoy",
+    "lat": 34.2,
+    "lon": -76.5
+  },
+  {
+    "id": "41008",
+    "name": "GRAYS REEF - 40 NM Southeast of Savannah, GA",
+    "type": "3-meter discus buoy",
+    "lat": 31.4,
+    "lon": -80.866
+  },
+  {
+    "id": "41009",
+    "name": "CANAVERAL 20 NM East of Cape Canaveral, FL",
+    "type": "3-meter discus buoy",
+    "lat": 28.508,
+    "lon": -80.185
+  },
+  {
+    "id": "41010",
+    "name": "CANAVERAL EAST - 120NM East of Cape Canaveral",
+    "type": "3-meter discus buoy",
+    "lat": 28.878,
+    "lon": -78.467
+  },
+  {
+    "id": "41011",
+    "name": "41011",
+    "type": "6-meter NOMAD buoy",
+    "lat": 28.2,
+    "lon": -80.1
+  },
+  {
+    "id": "41012",
+    "name": "St. Augustine, FL 40NM ENE of St Augustine, FL",
+    "type": "3-meter discus buoy",
+    "lat": 30.042,
+    "lon": -80.534
+  },
+  {
+    "id": "41013",
+    "name": "Frying Pan Shoals, NC",
+    "type": "3-meter discus buoy",
+    "lat": 33.441,
+    "lon": -77.764
+  },
+  {
+    "id": "41015",
+    "name": "41015",
+    "type": "3-meter discus buoy",
+    "lat": 35.4,
+    "lon": -75.3
+  },
+  {
+    "id": "41016",
+    "name": "41016",
+    "type": "12-meter discus buoy",
+    "lat": 24.6,
+    "lon": -76.5
+  },
+  {
+    "id": "41017",
+    "name": "41017",
+    "type": "3-meter discus buoy",
+    "lat": 35.4,
+    "lon": -75.1
+  },
+  {
+    "id": "41018",
+    "name": "41018",
+    "type": "3-meter discus buoy",
+    "lat": 15.0,
+    "lon": -75.0
+  },
+  {
+    "id": "41021",
+    "name": "Olympic Northeast",
+    "type": "3-meter discus buoy",
+    "lat": 31.92,
+    "lon": -80.85
+  },
+  {
+    "id": "41022",
+    "name": "Olympic Southwest",
+    "type": "3-meter discus buoy",
+    "lat": 31.89,
+    "lon": -80.86
+  },
+  {
+    "id": "41023",
+    "name": "Olympic Southwest",
+    "type": "3-meter discus buoy",
+    "lat": 31.92,
+    "lon": -80.93
+  },
+  {
+    "id": "41024",
+    "name": "Sunset Nearshore, NC (SUN2)",
+    "type": "Moored Buoy",
+    "lat": 33.837,
+    "lon": -78.477
+  },
+  {
+    "id": "41025",
+    "name": "Diamond Shoals, NC",
+    "type": "3-meter foam buoy",
+    "lat": 35.026,
+    "lon": -75.38
+  },
+  {
+    "id": "41026",
+    "name": "Forro",
+    "type": "Atlas Buoy",
+    "lat": 12.0,
+    "lon": -38.0
+  },
+  {
+    "id": "41027",
+    "name": "Sunset Mid-Shelf (SUN 3)",
+    "type": "Offshore Buoy",
+    "lat": 33.302,
+    "lon": -78.137
+  },
+  {
+    "id": "41029",
+    "name": "Capers Nearshore, SC (CAP2)",
+    "type": "Moored Buoy",
+    "lat": 32.803,
+    "lon": -79.624
+  },
+  {
+    "id": "41030",
+    "name": "Capers Mid-Shelf (CAP 3)",
+    "type": "Offshore Buoy",
+    "lat": 32.52,
+    "lon": -79.34
+  },
+  {
+    "id": "41033",
+    "name": "Fripp Nearshore, SC (FRP2)",
+    "type": "Moored Buoy",
+    "lat": 32.279,
+    "lon": -80.406
+  },
+  {
+    "id": "41035",
+    "name": "Onslow Bay Inner, NC",
+    "type": "3-meter discus buoy",
+    "lat": 34.476,
+    "lon": -77.28
+  },
+  {
+    "id": "41036",
+    "name": "Onslow Bay Outer, NC",
+    "type": "3-meter discus buoy",
+    "lat": 34.207,
+    "lon": -76.949
+  },
+  {
+    "id": "41037",
+    "name": "Wrightsville Beach Offshore, NC (ILM3)",
+    "type": "Moored Buoy",
+    "lat": 33.988,
+    "lon": -77.362
+  },
+  {
+    "id": "41038",
+    "name": "Wrightsville Beach Nearshore, NC (ILM2)",
+    "type": "Moored Buoy",
+    "lat": 34.141,
+    "lon": -77.715
+  },
+  {
+    "id": "41040",
+    "name": "NORTH EQUATORIAL ONE- 470 NM East of Martinique",
+    "type": "3-meter discus buoy",
+    "lat": 14.536,
+    "lon": -53.136
+  },
+  {
+    "id": "41041",
+    "name": "NORTH EQUATORIAL TWO - 890 NM East of Martinique",
+    "type": "3-meter discus buoy",
+    "lat": 14.453,
+    "lon": -46.327
+  },
+  {
+    "id": "41043",
+    "name": "NE PUERTO RICO - 170 NM NNE of San Juan, PR",
+    "type": "3-meter foam buoy",
+    "lat": 21.09,
+    "lon": -64.864
+  },
+  {
+    "id": "41044",
+    "name": "NE ST MARTIN - 330 NM NE St Martin Is",
+    "type": "3-meter discus buoy",
+    "lat": 21.582,
+    "lon": -58.63
+  },
+  {
+    "id": "41046",
+    "name": "EAST BAHAMAS - 335 NM East of San Salvador Is,  Bahamas",
+    "type": "3-meter foam buoy",
+    "lat": 23.84,
+    "lon": -68.34
+  },
+  {
+    "id": "41047",
+    "name": "NE BAHAMAS - 350 NM ENE of Nassau, Bahamas",
+    "type": "3-meter foam buoy",
+    "lat": 27.557,
+    "lon": -71.48
+  },
+  {
+    "id": "41048",
+    "name": "WEST BERMUDA - 240 NM West of Bermuda - Jen's Station",
+    "type": "3-meter foam buoy",
+    "lat": 31.831,
+    "lon": -69.573
+  },
+  {
+    "id": "41049",
+    "name": "SOUTH BERMUDA - 300 NM SSE of Bermuda",
+    "type": "3-meter foam buoy",
+    "lat": 27.505,
+    "lon": -62.271
+  },
+  {
+    "id": "41051",
+    "name": "South of St. Thomas, VI",
+    "type": "Moored Buoy",
+    "lat": 18.257,
+    "lon": -65.004
+  },
+  {
+    "id": "41052",
+    "name": "South of St. John, VI",
+    "type": "Moored Buoy",
+    "lat": 18.249,
+    "lon": -64.763
+  },
+  {
+    "id": "41053",
+    "name": "San Juan, PR",
+    "type": "Moored Buoy",
+    "lat": 18.474,
+    "lon": -66.099
+  },
+  {
+    "id": "41056",
+    "name": "Vieques Island, PR",
+    "type": "Moored Buoy",
+    "lat": 18.261,
+    "lon": -65.464
+  },
+  {
+    "id": "41057",
+    "name": "Puerto Plata, DO",
+    "type": "Moored Buoy",
+    "lat": 19.833,
+    "lon": -70.731
+  },
+  {
+    "id": "41058",
+    "name": "North of St. Thomas, VI",
+    "type": "Moored Buoy",
+    "lat": 18.476,
+    "lon": -65.157
+  },
+  {
+    "id": "41060",
+    "name": "Woods Hole Northwest Tropical Atlantic Wave Station",
+    "type": "2.4-meter discus buoy",
+    "lat": 14.824,
+    "lon": -51.017
+  },
+  {
+    "id": "41061",
+    "name": "Woods Hole SPURS Wave Station",
+    "type": "2.4-meter discus buoy",
+    "lat": 24.581,
+    "lon": -38.0
+  },
+  {
+    "id": "41062",
+    "name": "Hatteras Bay (B1)",
+    "type": "Buoy",
+    "lat": 35.778,
+    "lon": -75.095
+  },
+  {
+    "id": "41063",
+    "name": "Raleigh Bay (B2)",
+    "type": "Buoy",
+    "lat": 34.782,
+    "lon": -75.941
+  },
+  {
+    "id": "41064",
+    "name": "Onslow Bay Outer, NC (LEJ3)",
+    "type": "Moored Buoy",
+    "lat": 34.207,
+    "lon": -76.949
+  },
+  {
+    "id": "41065",
+    "name": "Capers Nearshore Waves (CAP2WAVE)",
+    "type": "Moored Buoy",
+    "lat": 32.802,
+    "lon": -79.619
+  },
+  {
+    "id": "41066",
+    "name": "CHR60",
+    "type": "Moored Buoy",
+    "lat": 32.536,
+    "lon": -79.656
+  },
+  {
+    "id": "41067",
+    "name": "FRP2WAVE",
+    "type": "Moored Buoy",
+    "lat": 32.276,
+    "lon": -80.406
+  },
+  {
+    "id": "41068",
+    "name": "Fort Pierce, FL (FTP)",
+    "type": "Moored Buoy",
+    "lat": 27.593,
+    "lon": -80.189
+  },
+  {
+    "id": "41069",
+    "name": "Ponce de Leon Inlet, FL (PNC)",
+    "type": "Moored Buoy",
+    "lat": 29.289,
+    "lon": -80.803
+  },
+  {
+    "id": "41070",
+    "name": "Ponce de Leon Inlet Waves (PNCWAVE)",
+    "type": "Moored Buoy",
+    "lat": 29.289,
+    "lon": -80.803
+  },
+  {
+    "id": "41076",
+    "name": "CHR60WAVE",
+    "type": "Moored Buoy",
+    "lat": 32.536,
+    "lon": -79.659
+  },
+  {
+    "id": "41082",
+    "name": "OOI Pioneer - Mid-Atlantic Bight Central Surface Mooring",
+    "type": "Moored Buoy",
+    "lat": 35.95,
+    "lon": -75.125
+  },
+  {
+    "id": "41083",
+    "name": "OOI Pioneer - Mid-Atlantic Bight Southern Surface Mooring",
+    "type": "Moored Buoy",
+    "lat": 35.725,
+    "lon": -74.853
+  },
+  {
+    "id": "41096",
+    "name": "North of Guadeloupe",
+    "type": "Buoy",
+    "lat": 16.533,
+    "lon": -61.404
+  },
+  {
+    "id": "41097",
+    "name": "Fort-de-France, Martinique",
+    "type": "Buoy",
+    "lat": 14.48,
+    "lon": -61.096
+  },
+  {
+    "id": "41098",
+    "name": "North of Martinique",
+    "type": "Buoy",
+    "lat": 14.894,
+    "lon": -61.113
+  },
+  {
+    "id": "41100",
+    "name": "East of Guadeloupe",
+    "type": "Buoy",
+    "lat": 15.9,
+    "lon": -57.883
+  },
+  {
+    "id": "41101",
+    "name": "East of Martinique",
+    "type": "Buoy",
+    "lat": 14.6,
+    "lon": -56.201
+  },
+  {
+    "id": "41108",
+    "name": "Wilmington Harbor, NC - (200)",
+    "type": "Waverider Buoy",
+    "lat": 33.721,
+    "lon": -78.016
+  },
+  {
+    "id": "41109",
+    "name": "New River Inlet, NC - (190)",
+    "type": "Waverider Buoy",
+    "lat": 34.484,
+    "lon": -77.3
+  },
+  {
+    "id": "41110",
+    "name": "Masonboro Inlet, ILM2, NC (150)",
+    "type": "Waverider Buoy",
+    "lat": 34.142,
+    "lon": -77.715
+  },
+  {
+    "id": "41112",
+    "name": "Offshore Fernandina Beach, FL (132)",
+    "type": "Waverider Buoy",
+    "lat": 30.709,
+    "lon": -81.292
+  },
+  {
+    "id": "41113",
+    "name": "Cape Canaveral Nearshore, FL (143)",
+    "type": "Waverider Buoy",
+    "lat": 28.4,
+    "lon": -80.533
+  },
+  {
+    "id": "41114",
+    "name": "Fort Pierce, FL (134)",
+    "type": "Waverider Buoy",
+    "lat": 27.552,
+    "lon": -80.216
+  },
+  {
+    "id": "41115",
+    "name": "Rincon, Puerto Rico (181)",
+    "type": "Waverider Buoy",
+    "lat": 18.376,
+    "lon": -67.28
+  },
+  {
+    "id": "41116",
+    "name": "Oculina Bank North, FL (227)",
+    "type": "Waverider Buoy",
+    "lat": 28.523,
+    "lon": -80.188
+  },
+  {
+    "id": "41117",
+    "name": "St. Augustine, FL (194)",
+    "type": "Waverider Buoy",
+    "lat": 29.999,
+    "lon": -81.079
+  },
+  {
+    "id": "41118",
+    "name": "Chester Shoal, FL (228)",
+    "type": "Waverider Buoy",
+    "lat": 28.609,
+    "lon": -80.59
+  },
+  {
+    "id": "41119",
+    "name": "Sunset Beach, NC - (245)",
+    "type": "Waverider Buoy",
+    "lat": 33.842,
+    "lon": -78.483
+  },
+  {
+    "id": "41120",
+    "name": "Cape Hatteras East, NC (250)",
+    "type": "Waverider Buoy",
+    "lat": 35.258,
+    "lon": -75.285
+  },
+  {
+    "id": "41121",
+    "name": "Arecibo, Puerto Rico (249)",
+    "type": "Waverider Buoy",
+    "lat": 18.49,
+    "lon": -66.701
+  },
+  {
+    "id": "41122",
+    "name": "Hollywood Beach, FL (265)",
+    "type": "Waverider Buoy",
+    "lat": 26.001,
+    "lon": -80.096
+  },
+  {
+    "id": "41139",
+    "name": "41139",
+    "type": "Atlas Buoy",
+    "lat": 20.0,
+    "lon": -38.0
+  },
+  {
+    "id": "41140",
+    "name": "Christiansted, St. Croix, Virgin Islands",
+    "type": "Waverider Buoy",
+    "lat": 17.769,
+    "lon": -64.723
+  },
+  {
+    "id": "41141",
+    "name": "Fareham, St. Croix, Virgin Islands",
+    "type": "Waverider Buoy",
+    "lat": 17.684,
+    "lon": -64.635
+  },
+  {
+    "id": "41159",
+    "name": "Onslow Bay Outer, NC (217)",
+    "type": "Waverider Buoy",
+    "lat": 34.211,
+    "lon": -76.944
+  },
+  {
+    "id": "41193",
+    "name": "Puerto Bolivar, Colombia",
+    "type": "Offshore Buoy",
+    "lat": 12.351,
+    "lon": -72.218
+  },
+  {
+    "id": "41194",
+    "name": "Barranquilla, Colombia",
+    "type": "Offshore Buoy",
+    "lat": 11.161,
+    "lon": -74.681
+  },
+  {
+    "id": "41420",
+    "name": "NORTH SANTO DOMINGO - 328NM NNE of Santo Domingo, DO",
+    "type": "2.6-meter discus buoy",
+    "lat": 23.433,
+    "lon": -67.386
+  },
+  {
+    "id": "41421",
+    "name": "NORTH ST THOMAS - 300 NM North of St Thomas, Virgin Is",
+    "type": "2.6-meter discus buoy",
+    "lat": 23.407,
+    "lon": -63.888
+  },
+  {
+    "id": "41424",
+    "name": "EAST CHARLESTON - 370 NM East of Charleston, SC",
+    "type": "2.6-meter discus buoy",
+    "lat": 33.0,
+    "lon": -72.66
+  },
+  {
+    "id": "41425",
+    "name": "SOUTHWEST BERMUDA - 200 NM SSW of Hamilton, Bermuda",
+    "type": "2.6 meter DART buoy",
+    "lat": 28.639,
+    "lon": -65.774
+  },
+  {
+    "id": "41554",
+    "name": "41554",
+    "type": "Drifting Buoy",
+    "lat": 18.078,
+    "lon": -64.743
+  },
+  {
+    "id": "41670",
+    "name": "41670",
+    "type": "Drifting Buoy",
+    "lat": 24.71,
+    "lon": -28.42
+  },
+  {
+    "id": "41852",
+    "name": "41852",
+    "type": "Drifting Buoy",
+    "lat": 23.24,
+    "lon": -24.02
+  },
+  {
+    "id": "41904",
+    "name": "41904",
+    "type": "Drifting Buoy",
+    "lat": 3.017,
+    "lon": 90.9
+  },
+  {
+    "id": "41933",
+    "name": "41933",
+    "type": "Drifting Buoy",
+    "lat": 44.95,
+    "lon": -12.8
+  },
+  {
+    "id": "41a46",
+    "name": "EAST BAHAMAS - 335 NM East of San Salvador Is, Bahamas backup",
+    "type": "6-meter NOMAD buoy",
+    "lat": 23.838,
+    "lon": -68.333
+  },
+  {
+    "id": "41b41",
+    "name": "NORTH EQUATORIAL TWO - 890 NM East of Martinique",
+    "type": "6-meter NOMAD buoy",
+    "lat": 14.329,
+    "lon": -46.082
+  },
+  {
+    "id": "41d20",
+    "name": "Adrift from 41420",
+    "type": "2.6 meter DART buoy",
+    "lat": 23.375,
+    "lon": -67.345
+  },
+  {
+    "id": "41s43",
+    "name": "170 NM NNE of San Juan, PR (SCP12)",
+    "type": "2.3-meter foam discus buoy",
+    "lat": 21.132,
+    "lon": -64.856
+  },
+  {
+    "id": "41s46",
+    "name": "335 NM East of San Salvador Is, Bahamas (SCP10)",
+    "type": "2.3-meter foam discus buoy",
+    "lat": 23.866,
+    "lon": -68.481
+  },
+  {
+    "id": "41x01",
+    "name": "Adrift from 41001, 150nm E of Cape Hatteras",
+    "type": "3-meter foam buoy",
+    "lat": 34.502,
+    "lon": -72.522
+  },
+  {
+    "id": "41x24",
+    "name": "370 NM East of Charleston, SC",
+    "type": "2.6-meter discus buoy",
+    "lat": 32.93,
+    "lon": -72.497
+  },
+  {
+    "id": "41x46",
+    "name": "Adrift buoy from 41046",
+    "type": "3-meter discus buoy",
+    "lat": 23.822,
+    "lon": -68.384
+  },
+  {
+    "id": "42001",
+    "name": "MID GULF - 180 nm South of Southwest Pass, LA",
+    "type": "3-meter foam buoy",
+    "lat": 25.926,
+    "lon": -89.662
+  },
+  {
+    "id": "42002",
+    "name": "WEST GULF - 207 NM East of Brownsville, TX",
+    "type": "3-meter foam buoy",
+    "lat": 25.95,
+    "lon": -93.78
+  },
+  {
+    "id": "42003",
+    "name": "East GULF - 208 NM West of Naples, FL",
+    "type": "2.1-meter ionomer foam buoy",
+    "lat": 25.925,
+    "lon": -85.616
+  },
+  {
+    "id": "42004",
+    "name": "42004",
+    "type": "12-meter discus buoy",
+    "lat": 27.5,
+    "lon": -85.5
+  },
+  {
+    "id": "42005",
+    "name": "42005",
+    "type": "12-meter discus buoy",
+    "lat": 30.0,
+    "lon": -85.9
+  },
+  {
+    "id": "42006",
+    "name": "42006",
+    "type": "6-meter NOMAD buoy",
+    "lat": 26.5,
+    "lon": -96.0
+  },
+  {
+    "id": "42007",
+    "name": "BILOXI - 22 NM SSE of Biloxi, MS",
+    "type": "3-meter discus buoy",
+    "lat": 30.09,
+    "lon": -88.769
+  },
+  {
+    "id": "42009",
+    "name": "42009",
+    "type": "10-meter discus buoy",
+    "lat": 29.3,
+    "lon": -87.5
+  },
+  {
+    "id": "42012",
+    "name": "ORANGE BEACH - 44 NM SE of Mobile, AL",
+    "type": "3-meter discus buoy",
+    "lat": 30.06,
+    "lon": -87.548
+  },
+  {
+    "id": "42013",
+    "name": "C10 - WFS Central Buoy, 25m Isobath",
+    "type": "Offshore Buoy",
+    "lat": 27.173,
+    "lon": -82.924
+  },
+  {
+    "id": "42014",
+    "name": "C17 - W. FL Sea-Coos",
+    "type": "Offshore Buoy",
+    "lat": 25.254,
+    "lon": -82.22
+  },
+  {
+    "id": "42015",
+    "name": "42015",
+    "type": "3-meter discus buoy",
+    "lat": 30.1,
+    "lon": -88.2
+  },
+  {
+    "id": "42016",
+    "name": "42016",
+    "type": "3-meter discus buoy",
+    "lat": 30.2,
+    "lon": -88.1
+  },
+  {
+    "id": "42017",
+    "name": "42017",
+    "type": "3-meter discus buoy",
+    "lat": 27.9,
+    "lon": -90.9
+  },
+  {
+    "id": "42018",
+    "name": "42018",
+    "type": "3-meter discus buoy",
+    "lat": 30.0,
+    "lon": -88.2
+  },
+  {
+    "id": "42019",
+    "name": "FREEPORT, TX - 60 NM South of Freeport, TX",
+    "type": "2.1-meter ionomer foam buoy",
+    "lat": 27.908,
+    "lon": -95.343
+  },
+  {
+    "id": "42020",
+    "name": "CORPUS CHRISTI, TX - 60NM SSE of Corpus Christi, TX",
+    "type": "3-meter discus buoy",
+    "lat": 26.97,
+    "lon": -96.679
+  },
+  {
+    "id": "42021",
+    "name": "C14 - Pasco County Buoy, FL",
+    "type": "Offshore Buoy",
+    "lat": 28.311,
+    "lon": -83.306
+  },
+  {
+    "id": "42022",
+    "name": "C12 - WFS Central Buoy, 50m Isobath",
+    "type": "Offshore Buoy",
+    "lat": 27.505,
+    "lon": -83.741
+  },
+  {
+    "id": "42023",
+    "name": "C13 - WFS South Buoy, 50m Isobath",
+    "type": "Offshore Buoy",
+    "lat": 26.01,
+    "lon": -83.086
+  },
+  {
+    "id": "42024",
+    "name": "C16 - W. FL MERHAB",
+    "type": "Offshore Buoy",
+    "lat": 27.464,
+    "lon": -84.219
+  },
+  {
+    "id": "42025",
+    "name": "42025",
+    "type": "1.8-meter discus buoy",
+    "lat": 24.9,
+    "lon": -80.4
+  },
+  {
+    "id": "42026",
+    "name": "C22 - Loop Current Pressure Point Buoy, 70m Isobath",
+    "type": "Offshore Buoy",
+    "lat": 25.171,
+    "lon": -83.475
+  },
+  {
+    "id": "42027",
+    "name": "C23 - FLRACEP nWFS Buoy, 45m isobath",
+    "type": "Moored Buoy",
+    "lat": 29.045,
+    "lon": -85.305
+  },
+  {
+    "id": "42028",
+    "name": "C24 - FLRACEP nWFS Buoy, 58m isobath",
+    "type": "Moored Buoy",
+    "lat": 29.745,
+    "lon": -86.227
+  },
+  {
+    "id": "42031",
+    "name": "West End CP, AL",
+    "type": "Moored Buoy",
+    "lat": 30.09,
+    "lon": -88.212
+  },
+  {
+    "id": "42035",
+    "name": "GALVESTON,TX -  22 NM East of Galveston, TX",
+    "type": "3-meter foam buoy",
+    "lat": 29.235,
+    "lon": -94.41
+  },
+  {
+    "id": "42036",
+    "name": "WEST TAMPA  - 112 NM WNW of Tampa, FL",
+    "type": "3-meter discus buoy",
+    "lat": 28.5,
+    "lon": -84.505
+  },
+  {
+    "id": "42037",
+    "name": "42037",
+    "type": "2.4-meter discus buoy",
+    "lat": 24.5,
+    "lon": -81.4
+  },
+  {
+    "id": "42038",
+    "name": "North Mid Gulf of America",
+    "type": "3-meter discus buoy",
+    "lat": 27.421,
+    "lon": -92.555
+  },
+  {
+    "id": "42039",
+    "name": "PENSACOLA - 115NM SSE of Pensacola, FL",
+    "type": "3-meter foam buoy",
+    "lat": 28.787,
+    "lon": -86.007
+  },
+  {
+    "id": "42040",
+    "name": "LUKE OFFSHORE TEST PLATFORM - 63 NM South of Dauphin Island, AL",
+    "type": "3-meter foam buoy",
+    "lat": 29.207,
+    "lon": -88.237
+  },
+  {
+    "id": "42041",
+    "name": "North Mid Gulf 110NM South of Grand Isle, LA",
+    "type": "3-meter discus buoy",
+    "lat": 27.504,
+    "lon": -90.462
+  },
+  {
+    "id": "42042",
+    "name": "Pascagoula",
+    "type": "3-meter discus buoy",
+    "lat": 29.88,
+    "lon": -88.32
+  },
+  {
+    "id": "42053",
+    "name": "Pascagoula South",
+    "type": "12-meter discus buoy",
+    "lat": 29.55,
+    "lon": -88.5
+  },
+  {
+    "id": "42054",
+    "name": "East Gulf",
+    "type": "12-meter discus buoy",
+    "lat": 26.0,
+    "lon": -87.73
+  },
+  {
+    "id": "42055",
+    "name": "BAY OF CAMPECHE - 214 NM NE of Veracruz, MX",
+    "type": "3-meter foam buoy",
+    "lat": 22.14,
+    "lon": -94.112
+  },
+  {
+    "id": "42056",
+    "name": "Yucatan Basin - 120 NM ESE of Cozumel, MX",
+    "type": "3-meter foam buoy",
+    "lat": 19.82,
+    "lon": -84.98
+  },
+  {
+    "id": "42057",
+    "name": "Western Caribbean - 195 NM WSW of Negril, Jamaica",
+    "type": "3-meter discus buoy",
+    "lat": 16.975,
+    "lon": -81.578
+  },
+  {
+    "id": "42058",
+    "name": "Central Caribbean - 210 NM SSE of Kingston, Jamaica",
+    "type": "3-meter foam buoy",
+    "lat": 14.512,
+    "lon": -75.153
+  },
+  {
+    "id": "42059",
+    "name": "Eastern Caribbean Sea - 180 NM SSW of Ponce, PR",
+    "type": "3-meter foam buoy",
+    "lat": 15.285,
+    "lon": -67.567
+  },
+  {
+    "id": "42060",
+    "name": "Caribbean Valley - 63 NM WSW of Montserrat",
+    "type": "3-meter foam buoy",
+    "lat": 16.434,
+    "lon": -63.329
+  },
+  {
+    "id": "42065",
+    "name": "Near 42058 Central Caribbean",
+    "type": "2.3-meter NOOSS buoy",
+    "lat": 14.926,
+    "lon": -75.046
+  },
+  {
+    "id": "42066",
+    "name": "USM-R2",
+    "type": "Buoy",
+    "lat": 30.216,
+    "lon": -89.183
+  },
+  {
+    "id": "42067",
+    "name": "USM-R1",
+    "type": "2.2-meter buoy",
+    "lat": 30.05,
+    "lon": -88.583
+  },
+  {
+    "id": "42078",
+    "name": "Big Pine Key, FL (237)",
+    "type": "Waverider Buoy",
+    "lat": 24.5,
+    "lon": -81.251
+  },
+  {
+    "id": "42079",
+    "name": "Bahia Honda Key, FL (242)",
+    "type": "Waverider Buoy",
+    "lat": 24.535,
+    "lon": -81.242
+  },
+  {
+    "id": "42080",
+    "name": "Offshore Sand Key, FL",
+    "type": "1.8-meter discus buoy",
+    "lat": 24.396,
+    "lon": -81.934
+  },
+  {
+    "id": "42084",
+    "name": "Southwest Pass Entrance W, LA (256)",
+    "type": "Waverider Buoy",
+    "lat": 28.988,
+    "lon": -89.649
+  },
+  {
+    "id": "42085",
+    "name": "Southeast of Ponce, PR",
+    "type": "Moored Buoy",
+    "lat": 17.87,
+    "lon": -66.537
+  },
+  {
+    "id": "42087",
+    "name": "Buccoo Reef, Buccoo Marine Park, TT",
+    "type": "Moored Buoy",
+    "lat": 11.185,
+    "lon": -60.848
+  },
+  {
+    "id": "42088",
+    "name": "Angel Reef, TT",
+    "type": "2.5-meter ODAS buoy",
+    "lat": 11.301,
+    "lon": -60.521
+  },
+  {
+    "id": "42089",
+    "name": "Little Cayman Research Center, CYM",
+    "type": "Moored Buoy",
+    "lat": 19.699,
+    "lon": -80.061
+  },
+  {
+    "id": "42090",
+    "name": "Catuan Wreck, Boca Chica, DR",
+    "type": "Moored Buoy",
+    "lat": 18.432,
+    "lon": -69.58
+  },
+  {
+    "id": "42091",
+    "name": "Trinity Shoal, LA (255)",
+    "type": "Waverider Buoy",
+    "lat": 29.088,
+    "lon": -92.505
+  },
+  {
+    "id": "42092",
+    "name": "Aransas Pass Channel Entrance S, TX (252)",
+    "type": "Waverider Buoy",
+    "lat": 27.64,
+    "lon": -97.011
+  },
+  {
+    "id": "42093",
+    "name": "Grand Isle Outer, LA (247)",
+    "type": "Waverider Buoy",
+    "lat": 29.017,
+    "lon": -89.832
+  },
+  {
+    "id": "42094",
+    "name": "Grand Isle, LA (246)",
+    "type": "Waverider Buoy",
+    "lat": 29.085,
+    "lon": -89.907
+  },
+  {
+    "id": "42095",
+    "name": "Satan Shoal, FL (244)",
+    "type": "Waverider Buoy",
+    "lat": 24.407,
+    "lon": -81.968
+  },
+  {
+    "id": "42097",
+    "name": "Pulley Ridge, FL (226)",
+    "type": "Waverider Buoy",
+    "lat": 25.704,
+    "lon": -83.654
+  },
+  {
+    "id": "42098",
+    "name": "Egmont Channel Entrance, FL (214)",
+    "type": "Waverider Buoy",
+    "lat": 27.59,
+    "lon": -82.931
+  },
+  {
+    "id": "42099",
+    "name": "Offshore St. Petersburg, FL (144)",
+    "type": "Waverider Buoy",
+    "lat": 27.352,
+    "lon": -84.275
+  },
+  {
+    "id": "42354",
+    "name": "Chandeleur Island SE, LA (279)",
+    "type": "Waverider Buoy",
+    "lat": 29.579,
+    "lon": -88.643
+  },
+  {
+    "id": "42357",
+    "name": "DISL Sofar Spotter",
+    "type": "Spotter Buoy",
+    "lat": 30.092,
+    "lon": -88.212
+  },
+  {
+    "id": "42358",
+    "name": "FGBNMS Sofar Spotter",
+    "type": "Spotter Buoy",
+    "lat": 27.874,
+    "lon": -93.815
+  },
+  {
+    "id": "42407",
+    "name": "SOUTH PUERTO RICO - 230 NM Southwest of San Juan, PR",
+    "type": "2.6-meter discus buoy",
+    "lat": 15.276,
+    "lon": -68.191
+  },
+  {
+    "id": "42408",
+    "name": "EAST GULF of AMERICA - 225NM WNW of Loggerhead Key, FL",
+    "type": "2.6-meter discus buoy",
+    "lat": 25.2,
+    "lon": -87.0
+  },
+  {
+    "id": "42409",
+    "name": "GULF OF AMERICA - 247 NM South of New Orleans, LA",
+    "type": "2.6-meter discus buoy",
+    "lat": 25.799,
+    "lon": -89.291
+  },
+  {
+    "id": "42534",
+    "name": "Moored Drifter",
+    "type": "Drifting Buoy",
+    "lat": 29.643,
+    "lon": -93.839
+  },
+  {
+    "id": "42d09",
+    "name": "Adrift buoy from 42409",
+    "type": "2.6 meter DART buoy",
+    "lat": 25.911,
+    "lon": -89.264
+  },
+  {
+    "id": "42x60",
+    "name": "Caribbean Valley - 63 NM WSW of Montserrat",
+    "type": "3-meter foam buoy",
+    "lat": 16.406,
+    "lon": -63.188
+  },
+  {
+    "id": "43010",
+    "name": "Woods Hole Spurs Wave Station",
+    "type": "2.4-meter discus buoy",
+    "lat": 10.051,
+    "lon": -125.032
+  },
+  {
+    "id": "43412",
+    "name": "SOUTHWEST MANZANILLO - 240 NM SW of Manzanillo, MX",
+    "type": "2.6-meter discus buoy",
+    "lat": 16.02,
+    "lon": -107.0
+  },
+  {
+    "id": "43413",
+    "name": "SOUTH ACAPULCO - 360NM South of Acapulco, MX",
+    "type": "2.6-meter discus buoy",
+    "lat": 10.927,
+    "lon": -100.012
+  },
+  {
+    "id": "44001",
+    "name": "44001",
+    "type": "6-meter NOMAD buoy",
+    "lat": 38.7,
+    "lon": -73.6
+  },
+  {
+    "id": "44003",
+    "name": "44003",
+    "type": "6-meter NOMAD buoy",
+    "lat": 40.8,
+    "lon": -68.5
+  },
+  {
+    "id": "44004",
+    "name": "HOTEL 200NM East of Cape May,NJ",
+    "type": "6-meter NOMAD buoy",
+    "lat": 38.484,
+    "lon": -70.433
+  },
+  {
+    "id": "44005",
+    "name": "GULF OF MAINE - 78 NM East of Portsmouth, NH",
+    "type": "3-meter discus buoy",
+    "lat": 43.201,
+    "lon": -69.127
+  },
+  {
+    "id": "44006",
+    "name": "44006",
+    "type": "3-meter discus buoy",
+    "lat": 36.3,
+    "lon": -75.4
+  },
+  {
+    "id": "44007",
+    "name": "PORTLAND - 12 NM Southeast of Portland,ME",
+    "type": "3-meter discus buoy",
+    "lat": 43.525,
+    "lon": -70.14
+  },
+  {
+    "id": "44008",
+    "name": "NANTUCKET 54 NM Southeast of Nantucket",
+    "type": "3-meter discus buoy",
+    "lat": 40.5,
+    "lon": -69.254
+  },
+  {
+    "id": "44009",
+    "name": "DELAWARE BAY 26 NM Southeast of Cape May, NJ",
+    "type": "3-meter discus buoy",
+    "lat": 38.46,
+    "lon": -74.692
+  },
+  {
+    "id": "44010",
+    "name": "44010",
+    "type": "3-meter discus buoy",
+    "lat": 36.9,
+    "lon": -75.7
+  },
+  {
+    "id": "44011",
+    "name": "GEORGES BANK 170 NM East of Hyannis, MA",
+    "type": "3-meter foam buoy",
+    "lat": 41.088,
+    "lon": -66.546
+  },
+  {
+    "id": "44012",
+    "name": "44012",
+    "type": "USCG Large Navigational Buoy",
+    "lat": 38.8,
+    "lon": -74.6
+  },
+  {
+    "id": "44013",
+    "name": "BOSTON 16 NM East of Boston, MA",
+    "type": "2.1-meter ionomer foam buoy",
+    "lat": 42.346,
+    "lon": -70.651
+  },
+  {
+    "id": "44014",
+    "name": "VIRGINIA BEACH 64 NM East of Virginia Beach, VA",
+    "type": "2.1-meter ionomer foam buoy",
+    "lat": 36.603,
+    "lon": -74.837
+  },
+  {
+    "id": "44015",
+    "name": "44015",
+    "type": "3-meter discus buoy",
+    "lat": 37.5,
+    "lon": -73.4
+  },
+  {
+    "id": "44017",
+    "name": "MONTAUK POINT - 23 NM SSW of Montauk Point, NY",
+    "type": "3-meter foam buoy",
+    "lat": 40.693,
+    "lon": -72.049
+  },
+  {
+    "id": "44018",
+    "name": "CAPE COD - 9 NM North of Provincetown, MA",
+    "type": "3-meter foam buoy",
+    "lat": 42.203,
+    "lon": -70.154
+  },
+  {
+    "id": "44019",
+    "name": "44019",
+    "type": "3-meter discus buoy",
+    "lat": 36.4,
+    "lon": -75.2
+  },
+  {
+    "id": "44020",
+    "name": "NANTUCKET SOUND",
+    "type": "3-meter foam buoy",
+    "lat": 41.497,
+    "lon": -70.283
+  },
+  {
+    "id": "44021",
+    "name": "Buoy D - New Meadows River",
+    "type": "Moored Buoy",
+    "lat": 43.762,
+    "lon": -69.988
+  },
+  {
+    "id": "44022",
+    "name": "Execution Rocks",
+    "type": "Moored Buoy",
+    "lat": 40.883,
+    "lon": -73.728
+  },
+  {
+    "id": "44023",
+    "name": "44023",
+    "type": "3-meter discus buoy",
+    "lat": 37.5,
+    "lon": -74.4
+  },
+  {
+    "id": "44024",
+    "name": "Buoy N01 - Northeast Channel",
+    "type": "Moored Buoy",
+    "lat": 42.325,
+    "lon": -65.909
+  },
+  {
+    "id": "44025",
+    "name": "LONG ISLAND - 30 NM South of Islip, NY",
+    "type": "3-meter foam buoy",
+    "lat": 40.258,
+    "lon": -73.175
+  },
+  {
+    "id": "44026",
+    "name": "44026",
+    "type": "3-meter discus buoy",
+    "lat": 36.0,
+    "lon": -73.5
+  },
+  {
+    "id": "44027",
+    "name": "Jonesport, ME - 20 NM SE of Jonesport, ME",
+    "type": "3-meter foam buoy",
+    "lat": 44.284,
+    "lon": -67.301
+  },
+  {
+    "id": "44028",
+    "name": "Buzzard's Bay",
+    "type": "USCG Large Navigational Buoy",
+    "lat": 41.4,
+    "lon": -71.08
+  },
+  {
+    "id": "44029",
+    "name": "Buoy A01 - Massachusetts Bay",
+    "type": "Moored Buoy",
+    "lat": 42.523,
+    "lon": -70.566
+  },
+  {
+    "id": "44030",
+    "name": "Buoy B01 - Western Maine Shelf",
+    "type": "Moored Buoy",
+    "lat": 43.179,
+    "lon": -70.426
+  },
+  {
+    "id": "44031",
+    "name": "Buoy C0201 - Casco Bay",
+    "type": "2-meter discus buoy",
+    "lat": 43.57,
+    "lon": -70.06
+  },
+  {
+    "id": "44032",
+    "name": "Buoy E01 - Central Maine Shelf",
+    "type": "Moored Buoy",
+    "lat": 43.715,
+    "lon": -69.355
+  },
+  {
+    "id": "44033",
+    "name": "Buoy F01 - Penobscot Bay",
+    "type": "Moored Buoy",
+    "lat": 44.055,
+    "lon": -68.996
+  },
+  {
+    "id": "44034",
+    "name": "Buoy I01 - Eastern Maine Shelf",
+    "type": "Moored Buoy",
+    "lat": 44.103,
+    "lon": -68.112
+  },
+  {
+    "id": "44035",
+    "name": "Buoy J0201 - Cobscook Bay",
+    "type": "2-meter discus buoy",
+    "lat": 44.89,
+    "lon": -67.02
+  },
+  {
+    "id": "44036",
+    "name": "Buoy K0102 - Saint John",
+    "type": "2-meter discus buoy",
+    "lat": 45.2,
+    "lon": -66.02
+  },
+  {
+    "id": "44037",
+    "name": "Buoy M01 - Jordan Basin",
+    "type": "Moored Buoy",
+    "lat": 43.497,
+    "lon": -67.876
+  },
+  {
+    "id": "44038",
+    "name": "Buoy L0102 - Scotian Shelf",
+    "type": "2-meter discus buoy",
+    "lat": 43.633,
+    "lon": -66.55
+  },
+  {
+    "id": "44039",
+    "name": "Central Long Island Sound",
+    "type": "Moored Buoy",
+    "lat": 41.138,
+    "lon": -72.655
+  },
+  {
+    "id": "44040",
+    "name": "Western Long Island Sound",
+    "type": "Moored Buoy",
+    "lat": 40.956,
+    "lon": -73.58
+  },
+  {
+    "id": "44041",
+    "name": "Jamestown, VA",
+    "type": "Moored Buoy",
+    "lat": 37.211,
+    "lon": -76.787
+  },
+  {
+    "id": "44042",
+    "name": "Potomac, MD",
+    "type": "Moored Buoy",
+    "lat": 38.033,
+    "lon": -76.335
+  },
+  {
+    "id": "44043",
+    "name": "Patapsco, MD",
+    "type": "Moored Buoy",
+    "lat": 39.152,
+    "lon": -76.391
+  },
+  {
+    "id": "44044",
+    "name": "Patuxent River Buoy",
+    "type": "Moored Buoy",
+    "lat": 38.389,
+    "lon": -76.526
+  },
+  {
+    "id": "44052",
+    "name": "Goodwin Islands",
+    "type": "Marine Observation Buoy",
+    "lat": 37.236,
+    "lon": -76.399
+  },
+  {
+    "id": "44053",
+    "name": "Gloucester Point",
+    "type": "Marine Observation Buoy",
+    "lat": 37.244,
+    "lon": -76.5
+  },
+  {
+    "id": "44054",
+    "name": "Lower Delaware Bay Buoy",
+    "type": "Moored Buoy",
+    "lat": 38.883,
+    "lon": -75.183
+  },
+  {
+    "id": "44055",
+    "name": "Central Delaware Bay",
+    "type": "Moored Buoy",
+    "lat": 39.122,
+    "lon": -75.256
+  },
+  {
+    "id": "44056",
+    "name": "Duck FRF, NC",
+    "type": "Waverider Buoy",
+    "lat": 36.2,
+    "lon": -75.714
+  },
+  {
+    "id": "44057",
+    "name": "Susquehanna, MD",
+    "type": "Moored Buoy",
+    "lat": 39.54,
+    "lon": -76.074
+  },
+  {
+    "id": "44058",
+    "name": "Stingray Point, VA",
+    "type": "Moored Buoy",
+    "lat": 37.567,
+    "lon": -76.257
+  },
+  {
+    "id": "44059",
+    "name": "Norfolk, VA",
+    "type": "Moored Buoy",
+    "lat": 36.846,
+    "lon": -76.298
+  },
+  {
+    "id": "44060",
+    "name": "Eastern Long Island Sound",
+    "type": "2.4-meter foam hull buoy",
+    "lat": 41.263,
+    "lon": -72.067
+  },
+  {
+    "id": "44061",
+    "name": "Upper Potomac, MD",
+    "type": "Moored Buoy",
+    "lat": 38.788,
+    "lon": -77.036
+  },
+  {
+    "id": "44062",
+    "name": "Gooses Reef, MD",
+    "type": "Moored Buoy",
+    "lat": 38.556,
+    "lon": -76.415
+  },
+  {
+    "id": "44063",
+    "name": "Annapolis, MD",
+    "type": "Moored Buoy",
+    "lat": 38.963,
+    "lon": -76.448
+  },
+  {
+    "id": "44064",
+    "name": "First Landing, VA",
+    "type": "Moored Buoy",
+    "lat": 36.998,
+    "lon": -76.087
+  },
+  {
+    "id": "44065",
+    "name": "New York Harbor Entrance - 15 NM SE of Breezy Point , NY",
+    "type": "3-meter foam buoy",
+    "lat": 40.368,
+    "lon": -73.701
+  },
+  {
+    "id": "44066",
+    "name": "Texas Tower #4 - 75 NM East of Long Beach, NJ",
+    "type": "3-meter foam buoy",
+    "lat": 39.618,
+    "lon": -72.644
+  },
+  {
+    "id": "44067",
+    "name": "Potomac River, Near HWY 301",
+    "type": "Buoy",
+    "lat": 38.368,
+    "lon": -76.996
+  },
+  {
+    "id": "44068",
+    "name": "VCU Rice Rivers Center",
+    "type": "Moored Buoy",
+    "lat": 37.314,
+    "lon": -77.191
+  },
+  {
+    "id": "44069",
+    "name": "Great South Bay",
+    "type": "Buoy",
+    "lat": 40.699,
+    "lon": -73.087
+  },
+  {
+    "id": "44070",
+    "name": "Buzzards Bay MA. Offshore",
+    "type": "1.8-meter discus buoy",
+    "lat": 41.392,
+    "lon": -71.004
+  },
+  {
+    "id": "44071",
+    "name": "Chesapeake Light Va.",
+    "type": "1.8-meter discus buoy",
+    "lat": 36.906,
+    "lon": -75.691
+  },
+  {
+    "id": "44072",
+    "name": "York Spit, VA",
+    "type": "Moored Buoy",
+    "lat": 37.201,
+    "lon": -76.266
+  },
+  {
+    "id": "44073",
+    "name": "CO2 Gulf of Maine Buoy",
+    "type": "Moored Buoy",
+    "lat": 43.02,
+    "lon": -70.54
+  },
+  {
+    "id": "44074",
+    "name": "Great Bay Buoy",
+    "type": "Moored Buoy",
+    "lat": 43.07,
+    "lon": -70.86
+  },
+  {
+    "id": "44075",
+    "name": "OOI Pioneer Inshore Surface Mooring",
+    "type": "Buoy",
+    "lat": 40.363,
+    "lon": -70.883
+  },
+  {
+    "id": "44076",
+    "name": "OOI Pioneer Central Surface Mooring",
+    "type": "Buoy",
+    "lat": 40.137,
+    "lon": -70.775
+  },
+  {
+    "id": "44077",
+    "name": "OOI Pioneer Offshore Surface Mooring",
+    "type": "Buoy",
+    "lat": 39.94,
+    "lon": -70.883
+  },
+  {
+    "id": "44078",
+    "name": "OOI Irminger Sea Surface Mooring",
+    "type": "Buoy",
+    "lat": 59.94,
+    "lon": -39.52
+  },
+  {
+    "id": "44079",
+    "name": "OOI Pioneer - Mid-Atlantic Bight Northern Surface Mooring",
+    "type": "Moored Buoy",
+    "lat": 36.175,
+    "lon": -74.827
+  },
+  {
+    "id": "44080",
+    "name": "Baltimore",
+    "type": "Moored Buoy",
+    "lat": 39.223,
+    "lon": -76.528
+  },
+  {
+    "id": "44084",
+    "name": "Bethany Beach, DE (263)",
+    "type": "Waverider Buoy",
+    "lat": 38.537,
+    "lon": -75.044
+  },
+  {
+    "id": "44085",
+    "name": "Buzzards Bay, MA (260)",
+    "type": "Waverider Buoy",
+    "lat": 41.387,
+    "lon": -71.032
+  },
+  {
+    "id": "44086",
+    "name": "Nags Head, NC (243)",
+    "type": "Waverider Buoy",
+    "lat": 36.001,
+    "lon": -75.421
+  },
+  {
+    "id": "44087",
+    "name": "Thimble Shoal, VA (240)",
+    "type": "Waverider Buoy",
+    "lat": 37.044,
+    "lon": -76.13
+  },
+  {
+    "id": "44088",
+    "name": "Virginia Beach Offshore, VA (171)",
+    "type": "Waverider Buoy",
+    "lat": 36.612,
+    "lon": -74.839
+  },
+  {
+    "id": "44089",
+    "name": "Wallops Island, VA (224)",
+    "type": "Waverider Buoy",
+    "lat": 37.756,
+    "lon": -75.325
+  },
+  {
+    "id": "44090",
+    "name": "Cape Cod Bay, MA (221)",
+    "type": "Waverider Buoy",
+    "lat": 41.84,
+    "lon": -70.329
+  },
+  {
+    "id": "44091",
+    "name": "Barnegat, NJ (209)",
+    "type": "Waverider Buoy",
+    "lat": 39.772,
+    "lon": -73.769
+  },
+  {
+    "id": "44092",
+    "name": "Isle of Shoals, NH (211)",
+    "type": "Waverider Buoy",
+    "lat": 42.942,
+    "lon": -70.632
+  },
+  {
+    "id": "44093",
+    "name": "Offshore Wind Energy Area, VA (210)",
+    "type": "Waverider Buoy",
+    "lat": 36.872,
+    "lon": -75.492
+  },
+  {
+    "id": "44094",
+    "name": "Fire Island Nearshore, NY (207)",
+    "type": "Waverider Buoy",
+    "lat": 40.585,
+    "lon": -73.106
+  },
+  {
+    "id": "44095",
+    "name": "Oregon Inlet, NC (192)",
+    "type": "Waverider Buoy",
+    "lat": 35.75,
+    "lon": -75.33
+  },
+  {
+    "id": "44096",
+    "name": "Cape Charles, VA (186)",
+    "type": "Waverider Buoy",
+    "lat": 37.023,
+    "lon": -75.809
+  },
+  {
+    "id": "44097",
+    "name": "Block Island, RI  (154)",
+    "type": "Waverider Buoy",
+    "lat": 40.967,
+    "lon": -71.124
+  },
+  {
+    "id": "44098",
+    "name": "Jeffrey's Ledge, NH (160)",
+    "type": "Waverider Buoy",
+    "lat": 42.8,
+    "lon": -70.169
+  },
+  {
+    "id": "44099",
+    "name": "Cape Henry, VA (147)",
+    "type": "Waverider Buoy",
+    "lat": 36.915,
+    "lon": -75.722
+  },
+  {
+    "id": "44100",
+    "name": "Duck FRF 26m, NC (430)",
+    "type": "Waverider Buoy",
+    "lat": 36.258,
+    "lon": -75.593
+  },
+  {
+    "id": "44137",
+    "name": "East Scotia Slope",
+    "type": "6-meter NOMAD buoy",
+    "lat": 42.26,
+    "lon": -62.03
+  },
+  {
+    "id": "44138",
+    "name": "SW Grand Banks",
+    "type": "6-meter NOMAD buoy",
+    "lat": 44.25,
+    "lon": -53.63
+  },
+  {
+    "id": "44139",
+    "name": "Banqureau Banks",
+    "type": "6-meter NOMAD buoy",
+    "lat": 44.24,
+    "lon": -57.1
+  },
+  {
+    "id": "44140",
+    "name": "Tail of the Bank",
+    "type": "6-meter NOMAD buoy",
+    "lat": 42.87,
+    "lon": -51.47
+  },
+  {
+    "id": "44141",
+    "name": "Laurentian Fan",
+    "type": "6-meter NOMAD buoy",
+    "lat": 42.99,
+    "lon": -57.96
+  },
+  {
+    "id": "44142",
+    "name": "La Have Bank",
+    "type": "Canadian NOMAD buoy",
+    "lat": 42.5,
+    "lon": -64.033
+  },
+  {
+    "id": "44150",
+    "name": "La Have Bank",
+    "type": "6-meter NOMAD buoy",
+    "lat": 42.5,
+    "lon": -64.02
+  },
+  {
+    "id": "44172",
+    "name": "Halifax Harbor, NS, Canada - 176",
+    "type": "Waverider Buoy",
+    "lat": 44.5,
+    "lon": -63.408
+  },
+  {
+    "id": "44174",
+    "name": "Anticosti",
+    "type": "Buoy",
+    "lat": 49.075,
+    "lon": -60.822
+  },
+  {
+    "id": "44175",
+    "name": "iles de la Madeleine",
+    "type": "Buoy",
+    "lat": 46.877,
+    "lon": -62.0
+  },
+  {
+    "id": "44176",
+    "name": "Point Escuminac",
+    "type": "Buoy",
+    "lat": 47.535,
+    "lon": -64.527
+  },
+  {
+    "id": "44235",
+    "name": "South Ramea Island, Newfoundland (170)",
+    "type": "Waverider Buoy",
+    "lat": 47.263,
+    "lon": -57.341
+  },
+  {
+    "id": "44251",
+    "name": "Nickerson Bank",
+    "type": "6-meter NOMAD buoy",
+    "lat": 46.44,
+    "lon": -53.39
+  },
+  {
+    "id": "44255",
+    "name": "NE Burgeo Bank",
+    "type": "6-meter NOMAD buoy",
+    "lat": 47.27,
+    "lon": -57.34
+  },
+  {
+    "id": "44258",
+    "name": "Halifax Harbour",
+    "type": "3-meter discus buoy",
+    "lat": 44.5,
+    "lon": -63.4
+  },
+  {
+    "id": "44401",
+    "name": "NORTHEAST CASTLE ROCK SEAMOUNT - 620NM South of St John's Newfoundland, CN",
+    "type": "2.6-meter discus buoy",
+    "lat": 37.592,
+    "lon": -50.03
+  },
+  {
+    "id": "44402",
+    "name": "SOUTHEAST BLOCK CANYON - 130 NM SE of Fire Island, NY",
+    "type": "2.6-meter discus buoy",
+    "lat": 39.314,
+    "lon": -70.717
+  },
+  {
+    "id": "44403",
+    "name": "SABLE ISLAND BANK - 437 NM E of Boston, MA",
+    "type": "2.6 meter DART buoy",
+    "lat": 41.928,
+    "lon": -61.664
+  },
+  {
+    "id": "44488",
+    "name": "East of Chedabucto Bay",
+    "type": "3-meter discus buoy",
+    "lat": 45.44,
+    "lon": -60.95
+  },
+  {
+    "id": "44489",
+    "name": "West Chedabucto Bay",
+    "type": "3-meter discus buoy",
+    "lat": 45.49,
+    "lon": -61.14
+  },
+  {
+    "id": "44490",
+    "name": "West Bay of Fundy",
+    "type": "3-meter discus buoy",
+    "lat": 44.66,
+    "lon": -66.37
+  },
+  {
+    "id": "44585",
+    "name": "Drifting Buoy",
+    "type": "Drifting Buoy",
+    "lat": 43.354,
+    "lon": -67.635
+  },
+  {
+    "id": "44t14",
+    "name": "VIRGINIA BEACH 64 NM East of Virginia Beach, VA",
+    "type": "2.1-meter ionomer foam buoy",
+    "lat": 36.611,
+    "lon": -74.847
+  },
+  {
+    "id": "45001",
+    "name": "MID SUPERIOR- 60 NM North Northeast Hancock, MI",
+    "type": "2.1-meter ionomer foam buoy",
+    "lat": 48.061,
+    "lon": -87.793
+  },
+  {
+    "id": "45002",
+    "name": "NORTH MICHIGAN- Halfway between North Manitou and Washington Islands.",
+    "type": "2.1-meter ionomer foam buoy",
+    "lat": 45.344,
+    "lon": -86.411
+  },
+  {
+    "id": "45003",
+    "name": "NORTH HURON - 32NM Northeast of Alpena, MI",
+    "type": "2.3-meter foam discus buoy",
+    "lat": 45.351,
+    "lon": -82.84
+  },
+  {
+    "id": "45004",
+    "name": "EAST SUPERIOR -70 NM NE Marquette, MI",
+    "type": "2.3-meter foam discus buoy",
+    "lat": 47.585,
+    "lon": -86.585
+  },
+  {
+    "id": "45005",
+    "name": "WEST ERIE - 16 NM NW of Lorain, OH",
+    "type": "2.3-meter foam discus buoy",
+    "lat": 41.677,
+    "lon": -82.398
+  },
+  {
+    "id": "45006",
+    "name": "WEST SUPERIOR - 30NM NE of Outer Island, WI",
+    "type": "2.3-meter foam discus buoy",
+    "lat": 47.335,
+    "lon": -89.793
+  },
+  {
+    "id": "45007",
+    "name": "SOUTH MICHIGAN - 43NM East Southeast of Milwaukee, WI",
+    "type": "2.3-meter foam discus buoy",
+    "lat": 42.674,
+    "lon": -87.026
+  },
+  {
+    "id": "45008",
+    "name": "SOUTH HURON - 43NM East of Oscoda, MI",
+    "type": "2.3-meter foam discus buoy",
+    "lat": 44.283,
+    "lon": -82.416
+  },
+  {
+    "id": "45009",
+    "name": "45009",
+    "type": "3-meter discus buoy",
+    "lat": 41.6,
+    "lon": -82.0
+  },
+  {
+    "id": "45010",
+    "name": "45010",
+    "type": "2.4-meter discus buoy",
+    "lat": 43.0,
+    "lon": -87.8
+  },
+  {
+    "id": "45011",
+    "name": "Grand Haven Michigan",
+    "type": "3-meter discus buoy",
+    "lat": 43.02,
+    "lon": -86.27
+  },
+  {
+    "id": "45012",
+    "name": "EAST Lake Ontario  - 20NM North Northeast of Rochester, NY",
+    "type": "2.3-meter foam discus buoy",
+    "lat": 43.621,
+    "lon": -77.401
+  },
+  {
+    "id": "45013",
+    "name": "ATW20 - Atwater Park, WI",
+    "type": "Buoy",
+    "lat": 43.1,
+    "lon": -87.85
+  },
+  {
+    "id": "45014",
+    "name": "GB17 - South Green Bay, WI",
+    "type": "Buoy",
+    "lat": 44.794,
+    "lon": -87.758
+  },
+  {
+    "id": "45015",
+    "name": "Calumet Beach, Chicago, IL",
+    "type": "Buoy",
+    "lat": 41.714,
+    "lon": -87.527
+  },
+  {
+    "id": "45016",
+    "name": "Sixth-third St. Beach, Chicago, IL",
+    "type": "Buoy",
+    "lat": 41.783,
+    "lon": -87.573
+  },
+  {
+    "id": "45017",
+    "name": "Oak St. Beach, Chicago, IL",
+    "type": "Buoy",
+    "lat": 41.903,
+    "lon": -87.622
+  },
+  {
+    "id": "45018",
+    "name": "Montrose Ave. Beach, Chicago, IL",
+    "type": "Buoy",
+    "lat": 41.968,
+    "lon": -87.637
+  },
+  {
+    "id": "45019",
+    "name": "Foster Ave. Beach, Chicago, IL",
+    "type": "Buoy",
+    "lat": 41.979,
+    "lon": -87.649
+  },
+  {
+    "id": "45020",
+    "name": "Grand Traverse Bay South Buoy, MI",
+    "type": "Moored Buoy",
+    "lat": 44.789,
+    "lon": -85.604
+  },
+  {
+    "id": "45021",
+    "name": "Traverse Bay #3, MI",
+    "type": "Moored Buoy",
+    "lat": 45.048,
+    "lon": -85.493
+  },
+  {
+    "id": "45022",
+    "name": "Little Traverse Bay Buoy, MI",
+    "type": "Moored Buoy",
+    "lat": 45.404,
+    "lon": -85.088
+  },
+  {
+    "id": "45023",
+    "name": "North Entry Buoy, North Keweenaw Peninsula, MI",
+    "type": "Moored Buoy",
+    "lat": 47.27,
+    "lon": -88.607
+  },
+  {
+    "id": "45024",
+    "name": "Ludington Buoy, MI",
+    "type": "Moored Buoy",
+    "lat": 43.977,
+    "lon": -86.56
+  },
+  {
+    "id": "45025",
+    "name": "South Entry Buoy, South Keweenaw Peninsula, MI",
+    "type": "Buoy",
+    "lat": 46.969,
+    "lon": -88.398
+  },
+  {
+    "id": "45026",
+    "name": "Cook Nuclear Plant Buoy, Stevensville, MI",
+    "type": "Buoy",
+    "lat": 41.982,
+    "lon": -86.619
+  },
+  {
+    "id": "45027",
+    "name": "McQuade Harbor Nearshore, MN",
+    "type": "Buoy",
+    "lat": 46.86,
+    "lon": -91.93
+  },
+  {
+    "id": "45028",
+    "name": "Western Lake Superior",
+    "type": "Buoy",
+    "lat": 46.814,
+    "lon": -91.829
+  },
+  {
+    "id": "45029",
+    "name": "Holland Buoy, MI",
+    "type": "Buoy",
+    "lat": 42.9,
+    "lon": -86.272
+  },
+  {
+    "id": "45132",
+    "name": "Port Stanley",
+    "type": "3-meter discus buoy",
+    "lat": 42.46,
+    "lon": -81.22
+  },
+  {
+    "id": "45135",
+    "name": "Prince Edward Pt",
+    "type": "3-meter discus buoy",
+    "lat": 43.78,
+    "lon": -76.87
+  },
+  {
+    "id": "45136",
+    "name": "Slate Island",
+    "type": "Buoy",
+    "lat": 48.54,
+    "lon": -86.95
+  },
+  {
+    "id": "45137",
+    "name": "Georgian Bay",
+    "type": "Buoy",
+    "lat": 45.54,
+    "lon": -81.02
+  },
+  {
+    "id": "45138",
+    "name": "Mont Louis",
+    "type": "3-meter discus buoy",
+    "lat": 49.54,
+    "lon": -65.71
+  },
+  {
+    "id": "45139",
+    "name": "West Lake Ontario - Grimsby",
+    "type": "3-meter discus buoy",
+    "lat": 43.25,
+    "lon": -79.53
+  },
+  {
+    "id": "45140",
+    "name": "Lake Winnipeg S. Basin",
+    "type": "Buoy",
+    "lat": 50.8,
+    "lon": -96.73
+  },
+  {
+    "id": "45141",
+    "name": "Great Slave Lake",
+    "type": "3-meter discus buoy",
+    "lat": 61.18,
+    "lon": -115.31
+  },
+  {
+    "id": "45142",
+    "name": "Port Colborne",
+    "type": "3-meter discus buoy",
+    "lat": 42.74,
+    "lon": -79.29
+  },
+  {
+    "id": "45143",
+    "name": "South Georgian Bay",
+    "type": "3-meter discus buoy",
+    "lat": 44.94,
+    "lon": -80.627
+  },
+  {
+    "id": "45144",
+    "name": "Lake Winnipeg North",
+    "type": "Buoy",
+    "lat": 53.23,
+    "lon": -98.29
+  },
+  {
+    "id": "45145",
+    "name": "Lake Winnipeg Narrows",
+    "type": "Buoy",
+    "lat": 51.87,
+    "lon": -96.97
+  },
+  {
+    "id": "45147",
+    "name": "Lake St Clair",
+    "type": "Buoy",
+    "lat": 42.43,
+    "lon": -82.68
+  },
+  {
+    "id": "45148",
+    "name": "Lake of the Woods",
+    "type": "Buoy",
+    "lat": 49.65,
+    "lon": -94.5
+  },
+  {
+    "id": "45149",
+    "name": "Southern Lake Huron",
+    "type": "Buoy",
+    "lat": 43.54,
+    "lon": -82.08
+  },
+  {
+    "id": "45150",
+    "name": "Great Slave Lake, North Arm",
+    "type": "Buoy",
+    "lat": 61.98,
+    "lon": -114.13
+  },
+  {
+    "id": "45151",
+    "name": "Lake Simcoe",
+    "type": "Buoy",
+    "lat": 44.5,
+    "lon": -79.37
+  },
+  {
+    "id": "45152",
+    "name": "Lake Nipissing",
+    "type": "Buoy",
+    "lat": 46.23,
+    "lon": -79.72
+  },
+  {
+    "id": "45154",
+    "name": "North Channel East",
+    "type": "Buoy",
+    "lat": 46.05,
+    "lon": -82.64
+  },
+  {
+    "id": "45155",
+    "name": "Pan Am Games",
+    "type": "3-meter discus buoy",
+    "lat": 43.59,
+    "lon": -79.39
+  },
+  {
+    "id": "45158",
+    "name": "Hudson Bay",
+    "type": "Buoy",
+    "lat": 59.0,
+    "lon": -94.0
+  },
+  {
+    "id": "45159",
+    "name": "NW Lake Ontario Ajax",
+    "type": "3-meter discus buoy",
+    "lat": 43.77,
+    "lon": -78.98
+  },
+  {
+    "id": "45160",
+    "name": "16-Mile Creek",
+    "type": "Canadian NOMAD buoy",
+    "lat": 43.417,
+    "lon": -79.633
+  },
+  {
+    "id": "45161",
+    "name": "Muskegon Buoy, MI",
+    "type": "Buoy",
+    "lat": 43.185,
+    "lon": -86.352
+  },
+  {
+    "id": "45162",
+    "name": "Thunder Bay Buoy, Alpena, MI",
+    "type": "Buoy",
+    "lat": 44.988,
+    "lon": -83.269
+  },
+  {
+    "id": "45163",
+    "name": "Saginaw Bay Buoy, MI",
+    "type": "Buoy",
+    "lat": 43.983,
+    "lon": -83.599
+  },
+  {
+    "id": "45164",
+    "name": "Cleveland Buoy, OH",
+    "type": "Buoy",
+    "lat": 41.748,
+    "lon": -81.698
+  },
+  {
+    "id": "45165",
+    "name": "Toledo Water Intake Buoy, Oregon, OH",
+    "type": "Buoy",
+    "lat": 41.702,
+    "lon": -83.261
+  },
+  {
+    "id": "45166",
+    "name": "Lake Champlain - Inland Sea",
+    "type": "Buoy",
+    "lat": 44.785,
+    "lon": -73.258
+  },
+  {
+    "id": "45167",
+    "name": "Erie Nearshore Buoy, Erie, PA",
+    "type": "Buoy",
+    "lat": 42.185,
+    "lon": -80.135
+  },
+  {
+    "id": "45168",
+    "name": "South Haven Buoy, MI",
+    "type": "Buoy",
+    "lat": 42.397,
+    "lon": -86.331
+  },
+  {
+    "id": "45169",
+    "name": "Lakewood Buoy, OH",
+    "type": "Buoy",
+    "lat": 41.615,
+    "lon": -81.821
+  },
+  {
+    "id": "45170",
+    "name": "Michigan City Buoy, IN",
+    "type": "Buoy",
+    "lat": 41.755,
+    "lon": -86.968
+  },
+  {
+    "id": "45171",
+    "name": "Granite Island Buoy, Granite Island, MI",
+    "type": "Buoy",
+    "lat": 46.724,
+    "lon": -87.411
+  },
+  {
+    "id": "45172",
+    "name": "Grand Marais Buoy, Grand Marais, MI",
+    "type": "Buoy",
+    "lat": 46.74,
+    "lon": -85.98
+  },
+  {
+    "id": "45173",
+    "name": "Munising Buoy, Munising, MI",
+    "type": "Buoy",
+    "lat": 46.573,
+    "lon": -86.572
+  },
+  {
+    "id": "45174",
+    "name": "Wilmette Buoy, IL",
+    "type": "Buoy",
+    "lat": 42.135,
+    "lon": -87.655
+  },
+  {
+    "id": "45175",
+    "name": "Mackinac Straits West, Mackinaw City, MI",
+    "type": "Buoy",
+    "lat": 45.825,
+    "lon": -84.772
+  },
+  {
+    "id": "45176",
+    "name": "Cleveland Intake Crib Buoy, OH",
+    "type": "Buoy",
+    "lat": 41.55,
+    "lon": -81.765
+  },
+  {
+    "id": "45177",
+    "name": "Ohio St. Beach, Chicago, IL",
+    "type": "Buoy",
+    "lat": 41.894,
+    "lon": -87.613
+  },
+  {
+    "id": "45178",
+    "name": "1 NM SE of Valcour Island, NY",
+    "type": "Buoy",
+    "lat": 44.603,
+    "lon": -73.394
+  },
+  {
+    "id": "45179",
+    "name": "Stannard Rock Buoy",
+    "type": "Buoy",
+    "lat": 47.195,
+    "lon": -87.224
+  },
+  {
+    "id": "45180",
+    "name": "Isle of Royale East, MI (230)",
+    "type": "Waverider Buoy",
+    "lat": 48.034,
+    "lon": -87.73
+  },
+  {
+    "id": "45183",
+    "name": "Sleeping Bear Dunes",
+    "type": "Moored Buoy",
+    "lat": 44.982,
+    "lon": -85.831
+  },
+  {
+    "id": "45184",
+    "name": "Green Bay East Buoy",
+    "type": "Moored Buoy",
+    "lat": 44.55,
+    "lon": -87.959
+  },
+  {
+    "id": "45185",
+    "name": "Green Bay West Buoy",
+    "type": "Moored Buoy",
+    "lat": 44.577,
+    "lon": -87.987
+  },
+  {
+    "id": "45186",
+    "name": "Waukegan Buoy, IL",
+    "type": "Moored Buoy",
+    "lat": 42.368,
+    "lon": -87.795
+  },
+  {
+    "id": "45187",
+    "name": "Winthrop Harbor Buoy, IL",
+    "type": "Moored Buoy",
+    "lat": 42.491,
+    "lon": -87.779
+  },
+  {
+    "id": "45188",
+    "name": "Champlain Bridge Buoy",
+    "type": "Buoy",
+    "lat": 44.094,
+    "lon": -73.423
+  },
+  {
+    "id": "45194",
+    "name": "McGulpin Point North, MI (253)",
+    "type": "Waverider Buoy",
+    "lat": 45.804,
+    "lon": -84.792
+  },
+  {
+    "id": "45195",
+    "name": "Schuyler Reef, NY (251)",
+    "type": "Waverider Buoy",
+    "lat": 44.488,
+    "lon": -73.339
+  },
+  {
+    "id": "45196",
+    "name": "Rocky River, OH",
+    "type": "Buoy",
+    "lat": 41.521,
+    "lon": -81.88
+  },
+  {
+    "id": "45197",
+    "name": "Euclid, OH",
+    "type": "Buoy",
+    "lat": 41.619,
+    "lon": -81.617
+  },
+  {
+    "id": "45198",
+    "name": "Chicago Buoy",
+    "type": "Buoy",
+    "lat": 41.892,
+    "lon": -87.563
+  },
+  {
+    "id": "45199",
+    "name": "Salmon Unlimited Wisconsin",
+    "type": "Buoy",
+    "lat": 42.702,
+    "lon": -87.647
+  },
+  {
+    "id": "45200",
+    "name": "Maumee Bay Buoy",
+    "type": "Moored Buoy",
+    "lat": 41.724,
+    "lon": -83.37
+  },
+  {
+    "id": "45201",
+    "name": "Erie Islands Buoy",
+    "type": "Moored Buoy",
+    "lat": 41.601,
+    "lon": -82.781
+  },
+  {
+    "id": "45202",
+    "name": "Port Clinton Buoy",
+    "type": "Moored Buoy",
+    "lat": 41.532,
+    "lon": -82.941
+  },
+  {
+    "id": "45203",
+    "name": "Huron Buoy",
+    "type": "Moored Buoy",
+    "lat": 41.393,
+    "lon": -82.512
+  },
+  {
+    "id": "45204",
+    "name": "Sheffield Buoy",
+    "type": "Moored Buoy",
+    "lat": 41.508,
+    "lon": -82.115
+  },
+  {
+    "id": "45205",
+    "name": "Edgewater Beach Buoy",
+    "type": "Moored Buoy",
+    "lat": 41.501,
+    "lon": -81.748
+  },
+  {
+    "id": "45206",
+    "name": "Euclid Beach Buoy",
+    "type": "Moored Buoy",
+    "lat": 41.585,
+    "lon": -81.583
+  },
+  {
+    "id": "45207",
+    "name": "Fairport Harbor Buoy",
+    "type": "Moored Buoy",
+    "lat": 41.725,
+    "lon": -81.37
+  },
+  {
+    "id": "45208",
+    "name": "Ashtabula Buoy",
+    "type": "Moored Buoy",
+    "lat": 41.908,
+    "lon": -80.813
+  },
+  {
+    "id": "45209",
+    "name": "Lakeport Buoy, MI",
+    "type": "Moored Buoy",
+    "lat": 43.129,
+    "lon": -82.391
+  },
+  {
+    "id": "45210",
+    "name": "Rawley Point East, WI (269)",
+    "type": "Waverider Buoy",
+    "lat": 44.055,
+    "lon": -87.05
+  },
+  {
+    "id": "45211",
+    "name": "Grand Island North, MI (268)",
+    "type": "Waverider Buoy",
+    "lat": 46.973,
+    "lon": -86.568
+  },
+  {
+    "id": "45212",
+    "name": "North Huron Spotter",
+    "type": "Spotter Buoy",
+    "lat": 45.351,
+    "lon": -82.84
+  },
+  {
+    "id": "45213",
+    "name": "East Superior Spotter",
+    "type": "Spotter Buoy",
+    "lat": 47.585,
+    "lon": -86.585
+  },
+  {
+    "id": "45214",
+    "name": "South Michigan Spotter",
+    "type": "Spotter Buoy",
+    "lat": 42.674,
+    "lon": -87.026
+  },
+  {
+    "id": "45215",
+    "name": "Oswego, NY (274)",
+    "type": "Waverider Buoy",
+    "lat": 43.501,
+    "lon": -76.539
+  },
+  {
+    "id": "45216",
+    "name": "Ontonagon, MI",
+    "type": "Moored Buoy",
+    "lat": 46.907,
+    "lon": -89.354
+  },
+  {
+    "id": "45218",
+    "name": "Wisconsin Shipwreck Coast NMS / Sheboygan, WI",
+    "type": "Buoy",
+    "lat": 43.731,
+    "lon": -87.624
+  },
+  {
+    "id": "45219",
+    "name": "Two Harbors Nearshore Buoy",
+    "type": "Moored Buoy",
+    "lat": 47.021,
+    "lon": -91.625
+  },
+  {
+    "id": "45221",
+    "name": "North Lake Champlain",
+    "type": "Moored Buoy",
+    "lat": 44.756,
+    "lon": -73.355
+  },
+  {
+    "id": "45t01",
+    "name": "MID SUPERIOR- 60NM North Northeast Hancock, MI",
+    "type": "2.1-meter ionomer foam buoy",
+    "lat": 48.008,
+    "lon": -87.666
+  },
+  {
+    "id": "46001",
+    "name": "WESTERN GULF OF ALASKA  - 175NM SE of Kodiak, AK",
+    "type": "3-meter foam buoy w/ seal cage",
+    "lat": 56.296,
+    "lon": -148.027
+  },
+  {
+    "id": "46002",
+    "name": "WEST OREGON - 275NM West of Coos Bay, OR",
+    "type": "3-meter foam buoy w/ seal cage",
+    "lat": 42.56,
+    "lon": -130.523
+  },
+  {
+    "id": "46003",
+    "name": "S ALEUTIANS",
+    "type": "6-meter NOMAD buoy",
+    "lat": 51.831,
+    "lon": -155.85
+  },
+  {
+    "id": "46004",
+    "name": "Middle Nomad",
+    "type": "6-meter NOMAD buoy",
+    "lat": 50.93,
+    "lon": -136.1
+  },
+  {
+    "id": "46005",
+    "name": "WEST WASHINGTON - 300NM West of Aberdeen, WA",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 46.143,
+    "lon": -131.09
+  },
+  {
+    "id": "46006",
+    "name": "SOUTHEAST PAPA - 600NM West of Eureka, CA",
+    "type": "3-meter foam buoy",
+    "lat": 40.73,
+    "lon": -137.42
+  },
+  {
+    "id": "46007",
+    "name": "46007",
+    "type": "6-meter NOMAD buoy",
+    "lat": 59.2,
+    "lon": -152.7
+  },
+  {
+    "id": "46008",
+    "name": "46008",
+    "type": "12-meter discus buoy",
+    "lat": 57.1,
+    "lon": -151.7
+  },
+  {
+    "id": "46009",
+    "name": "46009",
+    "type": "6-meter NOMAD buoy",
+    "lat": 60.2,
+    "lon": -146.8
+  },
+  {
+    "id": "46010",
+    "name": "46010",
+    "type": "USCG Large Navigational Buoy",
+    "lat": 46.2,
+    "lon": -124.2
+  },
+  {
+    "id": "46011",
+    "name": "SANTA MARIA - 21NM NW of Point Arguello, CA",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 34.937,
+    "lon": -120.999
+  },
+  {
+    "id": "46013",
+    "name": "BODEGA BAY - 48NM NW of San Francisco, CA",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 38.235,
+    "lon": -123.317
+  },
+  {
+    "id": "46014",
+    "name": "PT ARENA - 19NM North of Point Arena, CA",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 39.225,
+    "lon": -123.98
+  },
+  {
+    "id": "46015",
+    "name": "PORT ORFORD - 15 NM West of Port Orford, OR",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 42.754,
+    "lon": -124.839
+  },
+  {
+    "id": "46022",
+    "name": "EEL RIVER - 17NM WSW of Eureka, CA",
+    "type": "3-meter foam buoy w/ seal cage",
+    "lat": 40.716,
+    "lon": -124.54
+  },
+  {
+    "id": "46023",
+    "name": "PT ARGUELLO - 17NM WNW of Point Arguello, CA",
+    "type": "10-meter discus buoy",
+    "lat": 34.714,
+    "lon": -120.967
+  },
+  {
+    "id": "46024",
+    "name": "46024",
+    "type": "10-meter discus buoy",
+    "lat": 33.0,
+    "lon": -119.2
+  },
+  {
+    "id": "46025",
+    "name": "Santa Monica Basin - 33NM WSW of Santa Monica, CA",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 33.755,
+    "lon": -119.045
+  },
+  {
+    "id": "46026",
+    "name": "SAN FRANCISCO - 18NM West of San Francisco, CA",
+    "type": "3-meter foam buoy",
+    "lat": 37.75,
+    "lon": -122.838
+  },
+  {
+    "id": "46027",
+    "name": "ST GEORGES - 8 NM NW of Crescent City, CA",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 41.84,
+    "lon": -124.382
+  },
+  {
+    "id": "46028",
+    "name": "CAPE SAN MARTIN - 55NM West NW of Morro Bay, CA",
+    "type": "3-meter foam buoy w/ seal cage",
+    "lat": 35.77,
+    "lon": -121.903
+  },
+  {
+    "id": "46029",
+    "name": "COLUMBIA RIVER BAR - 20NM West of Columbia River Mouth",
+    "type": "2.1-meter ionomer foam buoy w/ seal cage",
+    "lat": 46.148,
+    "lon": -124.508
+  },
+  {
+    "id": "46030",
+    "name": "BLUNTS REEF",
+    "type": "3-meter discus buoy",
+    "lat": 40.423,
+    "lon": -124.525
+  },
+  {
+    "id": "46035",
+    "name": "CENTRAL BERING SEA - 310 NM North of Adak, AK",
+    "type": "3-meter foam buoy",
+    "lat": 57.034,
+    "lon": -177.468
+  },
+  {
+    "id": "46036",
+    "name": "South Nomad",
+    "type": "6-meter NOMAD buoy",
+    "lat": 48.36,
+    "lon": -133.94
+  },
+  {
+    "id": "46037",
+    "name": "46037",
+    "type": "3-meter discus buoy",
+    "lat": 48.3,
+    "lon": -133.8
+  },
+  {
+    "id": "46040",
+    "name": "46040",
+    "type": "3-meter discus buoy",
+    "lat": 44.8,
+    "lon": -124.3
+  },
+  {
+    "id": "46041",
+    "name": "CAPE ELIZABETH - 45NM NW of Aberdeen, WA",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 47.352,
+    "lon": -124.739
+  },
+  {
+    "id": "46042",
+    "name": "MONTEREY - 27NM WNW of Monterey, CA",
+    "type": "3-meter foam buoy w/ seal cage",
+    "lat": 36.785,
+    "lon": -122.396
+  },
+  {
+    "id": "46044",
+    "name": "46044",
+    "type": "2.3-meter NOOSS buoy",
+    "lat": 36.7,
+    "lon": -122.378
+  },
+  {
+    "id": "46045",
+    "name": "REDONDO BEACH",
+    "type": "3-meter discus buoy",
+    "lat": 33.84,
+    "lon": -118.45
+  },
+  {
+    "id": "46047",
+    "name": "TANNER BANK - 121 NM West of San Diego, CA",
+    "type": "3-meter foam buoy",
+    "lat": 32.418,
+    "lon": -119.535
+  },
+  {
+    "id": "46048",
+    "name": "46048",
+    "type": "10-meter discus buoy",
+    "lat": 32.9,
+    "lon": -117.9
+  },
+  {
+    "id": "46050",
+    "name": "STONEWALL BANK - 20NM West of Newport, OR",
+    "type": "3-meter foam buoy",
+    "lat": 44.679,
+    "lon": -124.535
+  },
+  {
+    "id": "46051",
+    "name": "Harvest Experiment Platform",
+    "type": "3-meter discus buoy",
+    "lat": 34.48,
+    "lon": -120.69
+  },
+  {
+    "id": "46053",
+    "name": "EAST SANTA BARBARA  - 12NM Southwest of Santa Barbara, CA",
+    "type": "2.1-meter ionomer foam buoy w/ seal cage",
+    "lat": 34.241,
+    "lon": -119.839
+  },
+  {
+    "id": "46054",
+    "name": "WEST SANTA BARBARA  38 NM West of Santa Barbara, CA",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 34.274,
+    "lon": -120.468
+  },
+  {
+    "id": "46059",
+    "name": "WEST CALIFORNIA - 357NM West of San Francisco, CA",
+    "type": "3-meter discus buoy",
+    "lat": 38.067,
+    "lon": -129.895
+  },
+  {
+    "id": "46060",
+    "name": "WEST ORCA BAY - 8NM NW of Hinchinbrook Is., AK",
+    "type": "3-meter foam buoy w/ seal cage",
+    "lat": 60.571,
+    "lon": -146.795
+  },
+  {
+    "id": "46061",
+    "name": "Seal Rocks - Between Montague and Hinchinbrook Islands, AK",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 60.23,
+    "lon": -146.837
+  },
+  {
+    "id": "46062",
+    "name": "Pt. San Luis, CA - 18 NM South Southwest of Morro Bay, CA",
+    "type": "3-meter discus buoy",
+    "lat": 35.101,
+    "lon": -121.01
+  },
+  {
+    "id": "46063",
+    "name": "Pt.Conception, CA - 50NM West of Santa Barbara, CA",
+    "type": "3-meter discus buoy",
+    "lat": 34.273,
+    "lon": -120.699
+  },
+  {
+    "id": "46066",
+    "name": "SOUTH KODIAK - 310NM SSW of Kodiak, AK",
+    "type": "3-meter discus buoy",
+    "lat": 52.776,
+    "lon": -154.992
+  },
+  {
+    "id": "46069",
+    "name": "SOUTH SANTA ROSA - 14 NM SW of Santa Rosa Island, CA",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 33.677,
+    "lon": -120.213
+  },
+  {
+    "id": "46070",
+    "name": "SOUTHWEST BERING SEA - 142NM NNE OF ATTU IS, AK",
+    "type": "3-meter foam buoy",
+    "lat": 55.048,
+    "lon": 175.246
+  },
+  {
+    "id": "46071",
+    "name": "WESTERN ALEUTIANS - 14NM SOUTH OF AMCHITKA IS, AK",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 51.04,
+    "lon": 179.764
+  },
+  {
+    "id": "46072",
+    "name": "CENTRAL ALEUTIANS 230 NM SW Dutch Harbor",
+    "type": "3-meter discus buoy",
+    "lat": 51.645,
+    "lon": -172.145
+  },
+  {
+    "id": "46073",
+    "name": "SOUTHEAST BERING SEA - 205 NM WNW of Dutch Harbor, AK",
+    "type": "3-meter discus buoy",
+    "lat": 55.008,
+    "lon": -172.012
+  },
+  {
+    "id": "46075",
+    "name": "SHUMAGIN ISLANDS - 85NM South of Sand Point, AK",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 53.969,
+    "lon": -160.794
+  },
+  {
+    "id": "46076",
+    "name": "CAPE CLEARE - 17 NM South of Montague Is,  AK",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 59.508,
+    "lon": -148.005
+  },
+  {
+    "id": "46077",
+    "name": "SHELIKOF STRAIT, AK",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 57.869,
+    "lon": -154.211
+  },
+  {
+    "id": "46078",
+    "name": "ALBATROSS BANK - 104NM South of Kodiak Is., AK",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 55.561,
+    "lon": -152.599
+  },
+  {
+    "id": "46079",
+    "name": "Barren Island",
+    "type": "6-meter NOMAD buoy",
+    "lat": 59.05,
+    "lon": -152.23
+  },
+  {
+    "id": "46080",
+    "name": "PORTLOCK BANK - 76 NM ENE of Kodiak, AK",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 57.91,
+    "lon": -150.129
+  },
+  {
+    "id": "46081",
+    "name": "Western Prince William Sound",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 60.802,
+    "lon": -148.283
+  },
+  {
+    "id": "46082",
+    "name": "Cape Suckling - 35 NM SE of Kayak Is, AK",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 59.67,
+    "lon": -143.353
+  },
+  {
+    "id": "46083",
+    "name": "FAIRWEATHER GROUND - 105 NM West  of Juneau, AK",
+    "type": "3-meter discus buoy",
+    "lat": 58.276,
+    "lon": -138.024
+  },
+  {
+    "id": "46084",
+    "name": "CAPE EDGECUMBE - 25NM SSW of Cape Edgecumbe, AK",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 56.614,
+    "lon": -136.04
+  },
+  {
+    "id": "46085",
+    "name": "CENTRAL GULF OF ALASKA -  265NM West of Cape Ommaney, AK",
+    "type": "3-meter foam buoy",
+    "lat": 55.84,
+    "lon": -142.895
+  },
+  {
+    "id": "46086",
+    "name": "SAN CLEMENTE BASIN - 27NM SE Of San Clemente Is, CA",
+    "type": "2.1-meter ionomer foam buoy",
+    "lat": 32.504,
+    "lon": -118.029
+  },
+  {
+    "id": "46087",
+    "name": "Neah Bay - 6 NM North of Cape Flattery, WA (Traffic Separation Lighted Buoy)",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 48.493,
+    "lon": -124.727
+  },
+  {
+    "id": "46088",
+    "name": "NEW DUNGENESS - 17 NM NE of Port Angeles, WA",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 48.332,
+    "lon": -123.179
+  },
+  {
+    "id": "46089",
+    "name": "TILLAMOOK, OR - 85 NM WNW of Tillamook, OR",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 45.928,
+    "lon": -125.815
+  },
+  {
+    "id": "46090",
+    "name": "SOCAL WEST NOOS WX BUOY",
+    "type": "Moored Buoy",
+    "lat": 32.876,
+    "lon": -120.718
+  },
+  {
+    "id": "46091",
+    "name": "MBM0",
+    "type": "Buoy",
+    "lat": 36.835,
+    "lon": -121.899
+  },
+  {
+    "id": "46092",
+    "name": "MBM1",
+    "type": "Buoy",
+    "lat": 36.751,
+    "lon": -122.029
+  },
+  {
+    "id": "46093",
+    "name": "MBM2",
+    "type": "Buoy",
+    "lat": 36.69,
+    "lon": -122.41
+  },
+  {
+    "id": "46094",
+    "name": "Buoy NH-10 - West of Newport, OR",
+    "type": "Moored Buoy",
+    "lat": 44.642,
+    "lon": -124.3
+  },
+  {
+    "id": "46096",
+    "name": "Columbia River Entrance - SATURN Station #02 Offshore",
+    "type": "Buoy",
+    "lat": 46.173,
+    "lon": -124.127
+  },
+  {
+    "id": "46097",
+    "name": "OOI Newport Shelf",
+    "type": "Buoy",
+    "lat": 44.639,
+    "lon": -124.304
+  },
+  {
+    "id": "46098",
+    "name": "OOI Waldport Offshore",
+    "type": "Buoy",
+    "lat": 44.378,
+    "lon": -124.947
+  },
+  {
+    "id": "46099",
+    "name": "OOI Westport Shelf",
+    "type": "Buoy",
+    "lat": 46.988,
+    "lon": -124.567
+  },
+  {
+    "id": "46100",
+    "name": "OOI Westport Offshore",
+    "type": "Buoy",
+    "lat": 46.851,
+    "lon": -124.964
+  },
+  {
+    "id": "46105",
+    "name": "South Cook Inlet - 10NM NW of East Amatuli Light, AK",
+    "type": "1.8-meter discus buoy",
+    "lat": 59.049,
+    "lon": -152.233
+  },
+  {
+    "id": "46106",
+    "name": "Central Cook Inlet AK",
+    "type": "1.8-meter discus buoy",
+    "lat": 59.76,
+    "lon": -152.09
+  },
+  {
+    "id": "46107",
+    "name": "Montague Strait",
+    "type": "1.8-meter discus buoy",
+    "lat": 59.925,
+    "lon": -147.992
+  },
+  {
+    "id": "46108",
+    "name": "Lower Cook Inlet (204)",
+    "type": "Waverider Buoy",
+    "lat": 59.598,
+    "lon": -151.828
+  },
+  {
+    "id": "46109",
+    "name": "Port Angeles Buoy",
+    "type": "Buoy",
+    "lat": 48.123,
+    "lon": -123.395
+  },
+  {
+    "id": "46110",
+    "name": "Sequim Buoy",
+    "type": "Buoy",
+    "lat": 48.115,
+    "lon": -123.032
+  },
+  {
+    "id": "46111",
+    "name": "Fort Worden Buoy",
+    "type": "Buoy",
+    "lat": 48.131,
+    "lon": -122.748
+  },
+  {
+    "id": "46112",
+    "name": "Marrowstone Buoy",
+    "type": "Buoy",
+    "lat": 48.1,
+    "lon": -122.73
+  },
+  {
+    "id": "46113",
+    "name": "Poulsbo Buoy",
+    "type": "Buoy",
+    "lat": 47.73,
+    "lon": -122.646
+  },
+  {
+    "id": "46114",
+    "name": "West Monterey Bay, CA (185)",
+    "type": "Waverider Buoy",
+    "lat": 36.7,
+    "lon": -122.343
+  },
+  {
+    "id": "46115",
+    "name": "Bering Sea",
+    "type": "12-meter discus buoy",
+    "lat": 57.069,
+    "lon": -177.75
+  },
+  {
+    "id": "46116",
+    "name": "SATURN Estuary Station #07, Baker Bay, WA",
+    "type": "Buoy",
+    "lat": 46.287,
+    "lon": -124.016
+  },
+  {
+    "id": "46117",
+    "name": "SATURN Estuary Station #09, Youngs Bay, OR",
+    "type": "Buoy",
+    "lat": 46.176,
+    "lon": -123.869
+  },
+  {
+    "id": "46118",
+    "name": "Se'lhaem Bellingham Bay",
+    "type": "Buoy",
+    "lat": 48.724,
+    "lon": -122.576
+  },
+  {
+    "id": "46119",
+    "name": "Cha'Ba La Push",
+    "type": "Buoy",
+    "lat": 47.967,
+    "lon": -124.95
+  },
+  {
+    "id": "46120",
+    "name": "Pt Wells, WA (U of Wash)",
+    "type": "Buoy",
+    "lat": 47.761,
+    "lon": -122.397
+  },
+  {
+    "id": "46121",
+    "name": "Carr Inlet, WA (U of Wash)",
+    "type": "Buoy",
+    "lat": 47.28,
+    "lon": -122.73
+  },
+  {
+    "id": "46122",
+    "name": "Dabob Bay, WA (U of Wash)",
+    "type": "Buoy",
+    "lat": 47.803,
+    "lon": -122.803
+  },
+  {
+    "id": "46123",
+    "name": "Twanoh - Hood Canal, WA (U of Wash)",
+    "type": "Buoy",
+    "lat": 47.375,
+    "lon": -123.008
+  },
+  {
+    "id": "46124",
+    "name": "Hoodsport - Hood Canal, WA (U of Wash)",
+    "type": "Buoy",
+    "lat": 47.422,
+    "lon": -123.113
+  },
+  {
+    "id": "46125",
+    "name": "Hansville - Hood Canal, WA",
+    "type": "Buoy",
+    "lat": 47.907,
+    "lon": -122.627
+  },
+  {
+    "id": "46126",
+    "name": "Wide Bay (Shell)",
+    "type": "Buoy",
+    "lat": 53.951,
+    "lon": -166.602
+  },
+  {
+    "id": "46127",
+    "name": "SATURN Offshore Station #10, Columbia River, South Jetty, OR",
+    "type": "Buoy",
+    "lat": 46.215,
+    "lon": -124.063
+  },
+  {
+    "id": "46128",
+    "name": "Buoy CB-06 - West of Coos Bay, OR",
+    "type": "Buoy",
+    "lat": 43.292,
+    "lon": -124.538
+  },
+  {
+    "id": "46131",
+    "name": "Sentry Shoal",
+    "type": "3-meter discus buoy",
+    "lat": 49.91,
+    "lon": -124.98
+  },
+  {
+    "id": "46132",
+    "name": "South Brooks",
+    "type": "3-meter discus buoy",
+    "lat": 49.78,
+    "lon": -127.89
+  },
+  {
+    "id": "46134",
+    "name": "Pat Bay",
+    "type": "3-meter discus buoy",
+    "lat": 48.65,
+    "lon": -123.5
+  },
+  {
+    "id": "46138",
+    "name": "South Hecate Strait, Canada (174)",
+    "type": "Waverider Buoy",
+    "lat": 52.437,
+    "lon": -129.795
+  },
+  {
+    "id": "46139",
+    "name": "La Perouse Bank DWR, Canada  (195)",
+    "type": "Waverider Buoy",
+    "lat": 48.844,
+    "lon": -126.01
+  },
+  {
+    "id": "46145",
+    "name": "Central Dixon Entrance Buoy",
+    "type": "3-meter discus buoy",
+    "lat": 54.37,
+    "lon": -132.42
+  },
+  {
+    "id": "46146",
+    "name": "Halibut Bank",
+    "type": "3-meter discus buoy",
+    "lat": 49.34,
+    "lon": -123.73
+  },
+  {
+    "id": "46147",
+    "name": "South Moresby",
+    "type": "3-meter discus buoy",
+    "lat": 51.83,
+    "lon": -131.22
+  },
+  {
+    "id": "46181",
+    "name": "Nanakwa Shoal",
+    "type": "3-meter discus buoy",
+    "lat": 53.83,
+    "lon": -128.83
+  },
+  {
+    "id": "46183",
+    "name": "North Hecate Strait",
+    "type": "3-meter discus buoy",
+    "lat": 53.62,
+    "lon": -131.1
+  },
+  {
+    "id": "46184",
+    "name": "North Nomad",
+    "type": "6-meter NOMAD buoy",
+    "lat": 53.92,
+    "lon": -138.85
+  },
+  {
+    "id": "46185",
+    "name": "South Hecate Strait",
+    "type": "3-meter discus buoy",
+    "lat": 52.42,
+    "lon": -129.79
+  },
+  {
+    "id": "46204",
+    "name": "West Sea Otter",
+    "type": "3-meter discus buoy",
+    "lat": 51.38,
+    "lon": -128.77
+  },
+  {
+    "id": "46205",
+    "name": "West Dixon Entrance",
+    "type": "3-meter discus buoy",
+    "lat": 54.18,
+    "lon": -134.32
+  },
+  {
+    "id": "46206",
+    "name": "La Perouse Bank",
+    "type": "3-meter discus buoy",
+    "lat": 48.84,
+    "lon": -126.0
+  },
+  {
+    "id": "46207",
+    "name": "East Dellwood",
+    "type": "3-meter discus buoy",
+    "lat": 50.87,
+    "lon": -129.92
+  },
+  {
+    "id": "46208",
+    "name": "West Moresby",
+    "type": "3-meter discus buoy",
+    "lat": 52.52,
+    "lon": -132.69
+  },
+  {
+    "id": "46211",
+    "name": "Grays Harbor, WA (036)",
+    "type": "Waverider Buoy",
+    "lat": 46.857,
+    "lon": -124.243
+  },
+  {
+    "id": "46212",
+    "name": "Humboldt Bay South Spit, CA (128)",
+    "type": "Waverider Buoy",
+    "lat": 40.753,
+    "lon": -124.313
+  },
+  {
+    "id": "46213",
+    "name": "Cape Mendocino, CA (094)",
+    "type": "Waverider Buoy",
+    "lat": 40.292,
+    "lon": -124.748
+  },
+  {
+    "id": "46214",
+    "name": "Point Reyes, CA (029)",
+    "type": "Waverider Buoy",
+    "lat": 37.944,
+    "lon": -123.466
+  },
+  {
+    "id": "46215",
+    "name": "Diablo Canyon, CA (076)",
+    "type": "Waverider Buoy",
+    "lat": 35.204,
+    "lon": -120.859
+  },
+  {
+    "id": "46216",
+    "name": "Goleta Point, CA (107)",
+    "type": "Waverider Buoy",
+    "lat": 34.333,
+    "lon": -119.803
+  },
+  {
+    "id": "46217",
+    "name": "Anacapa Passage, CA (111)",
+    "type": "Waverider Buoy",
+    "lat": 34.167,
+    "lon": -119.435
+  },
+  {
+    "id": "46218",
+    "name": "Harvest, CA (071)",
+    "type": "Waverider Buoy",
+    "lat": 34.452,
+    "lon": -120.78
+  },
+  {
+    "id": "46219",
+    "name": "San Nicolas Island, CA (067)",
+    "type": "Waverider Buoy",
+    "lat": 33.226,
+    "lon": -119.891
+  },
+  {
+    "id": "46220",
+    "name": "El Porto, CA (125)",
+    "type": "Waverider Buoy",
+    "lat": 33.897,
+    "lon": -118.446
+  },
+  {
+    "id": "46221",
+    "name": "Santa Monica Bay, CA (028)",
+    "type": "Waverider Buoy",
+    "lat": 33.86,
+    "lon": -118.641
+  },
+  {
+    "id": "46222",
+    "name": "San Pedro, CA (092)",
+    "type": "Waverider Buoy",
+    "lat": 33.614,
+    "lon": -118.314
+  },
+  {
+    "id": "46223",
+    "name": "Dana Point, CA (096)",
+    "type": "Waverider Buoy",
+    "lat": 33.458,
+    "lon": -117.767
+  },
+  {
+    "id": "46224",
+    "name": "Oceanside Offshore, CA (045)",
+    "type": "Waverider Buoy",
+    "lat": 33.178,
+    "lon": -117.472
+  },
+  {
+    "id": "46225",
+    "name": "Torrey Pines Outer, CA (100)",
+    "type": "Waverider Buoy",
+    "lat": 32.933,
+    "lon": -117.391
+  },
+  {
+    "id": "46226",
+    "name": "Point La Jolla, CA (095)",
+    "type": "Waverider Buoy",
+    "lat": 32.848,
+    "lon": -117.353
+  },
+  {
+    "id": "46227",
+    "name": "Point Loma, CA (091)",
+    "type": "Waverider Buoy",
+    "lat": 32.632,
+    "lon": -117.444
+  },
+  {
+    "id": "46228",
+    "name": "Pitas Point, CA (130)",
+    "type": "Waverider Buoy",
+    "lat": 34.317,
+    "lon": -119.417
+  },
+  {
+    "id": "46229",
+    "name": "UMPQUA OFFSHORE, OR (139)",
+    "type": "Waverider Buoy",
+    "lat": 43.772,
+    "lon": -124.549
+  },
+  {
+    "id": "46230",
+    "name": "Huntington Beach Nearshore, CA (172)",
+    "type": "Waverider Buoy",
+    "lat": 33.623,
+    "lon": -118.012
+  },
+  {
+    "id": "46231",
+    "name": "Mission Bay, CA (093)",
+    "type": "Waverider Buoy",
+    "lat": 32.747,
+    "lon": -117.37
+  },
+  {
+    "id": "46232",
+    "name": "Point Loma South, CA  (191)",
+    "type": "Waverider Buoy",
+    "lat": 32.517,
+    "lon": -117.425
+  },
+  {
+    "id": "46233",
+    "name": "SCCOOS San Diego Mooring",
+    "type": "Offshore Buoy",
+    "lat": 32.936,
+    "lon": -117.32
+  },
+  {
+    "id": "46234",
+    "name": "Port Hueneme Nearshore, CA (141)",
+    "type": "Waverider Buoy",
+    "lat": 34.1,
+    "lon": -119.168
+  },
+  {
+    "id": "46235",
+    "name": "Imperial Beach Nearshore, CA (155)",
+    "type": "Waverider Buoy",
+    "lat": 32.57,
+    "lon": -117.169
+  },
+  {
+    "id": "46236",
+    "name": "Monterey Canyon Outer, CA  (156)",
+    "type": "Waverider Buoy",
+    "lat": 36.759,
+    "lon": -121.95
+  },
+  {
+    "id": "46237",
+    "name": "San Francisco Bar, CA  (142)",
+    "type": "Waverider Buoy",
+    "lat": 37.788,
+    "lon": -122.634
+  },
+  {
+    "id": "46238",
+    "name": "Santa Cruz Basin, CA (167)",
+    "type": "Waverider Buoy",
+    "lat": 33.76,
+    "lon": -119.55
+  },
+  {
+    "id": "46239",
+    "name": "Point Sur, CA (157)",
+    "type": "Waverider Buoy",
+    "lat": 36.342,
+    "lon": -122.11
+  },
+  {
+    "id": "46240",
+    "name": "Cabrillo Point, Monterey Bay, CA  (158)",
+    "type": "Waverider Buoy",
+    "lat": 36.626,
+    "lon": -121.907
+  },
+  {
+    "id": "46241",
+    "name": "San Elijo Nearshore, CA (161)",
+    "type": "Waverider Buoy",
+    "lat": 33.003,
+    "lon": -117.292
+  },
+  {
+    "id": "46242",
+    "name": "Camp Pendleton Nearshore, CA  (043)",
+    "type": "Waverider Buoy",
+    "lat": 33.22,
+    "lon": -117.439
+  },
+  {
+    "id": "46243",
+    "name": "Clatsop Spit, OR (162)",
+    "type": "Waverider Buoy",
+    "lat": 46.215,
+    "lon": -124.129
+  },
+  {
+    "id": "46244",
+    "name": "Humboldt Bay, North Spit, CA (168)",
+    "type": "Waverider Buoy",
+    "lat": 40.896,
+    "lon": -124.358
+  },
+  {
+    "id": "46245",
+    "name": "Ventura Nearshore, CA - 169",
+    "type": "Waverider Buoy",
+    "lat": 34.251,
+    "lon": -119.308
+  },
+  {
+    "id": "46246",
+    "name": "Ocean Station PAPA  (166)",
+    "type": "Waverider Buoy",
+    "lat": 49.903,
+    "lon": -145.246
+  },
+  {
+    "id": "46247",
+    "name": "San Francisco Offshore, CA  (180)",
+    "type": "Waverider Buoy",
+    "lat": 37.753,
+    "lon": -122.833
+  },
+  {
+    "id": "46248",
+    "name": "Astoria Canyon, OR  (179)",
+    "type": "Waverider Buoy",
+    "lat": 46.133,
+    "lon": -124.64
+  },
+  {
+    "id": "46249",
+    "name": "Santa Cruz Island South, CA (182)",
+    "type": "Waverider Buoy",
+    "lat": 33.821,
+    "lon": -119.708
+  },
+  {
+    "id": "46250",
+    "name": "Point Mugu Offshore, CA - 184",
+    "type": "Waverider Buoy",
+    "lat": 34.034,
+    "lon": -119.09
+  },
+  {
+    "id": "46251",
+    "name": "Santa Cruz Basin, CA (203)",
+    "type": "Waverider Buoy",
+    "lat": 33.769,
+    "lon": -119.565
+  },
+  {
+    "id": "46252",
+    "name": "Anacapa Passage South, CA (212)",
+    "type": "Waverider Buoy",
+    "lat": 33.953,
+    "lon": -119.257
+  },
+  {
+    "id": "46253",
+    "name": "San Pedro South, CA (213)",
+    "type": "Waverider Buoy",
+    "lat": 33.576,
+    "lon": -118.181
+  },
+  {
+    "id": "46254",
+    "name": "SCRIPPS Nearshore, CA (201)",
+    "type": "Waverider Buoy",
+    "lat": 32.868,
+    "lon": -117.267
+  },
+  {
+    "id": "46255",
+    "name": "Begg Rock, CA  (138)",
+    "type": "Waverider Buoy",
+    "lat": 33.4,
+    "lon": -119.651
+  },
+  {
+    "id": "46256",
+    "name": "Long Beach Channel, CA (215)",
+    "type": "Waverider Buoy",
+    "lat": 33.7,
+    "lon": -118.201
+  },
+  {
+    "id": "46257",
+    "name": "Harvest Southeast, CA (216)",
+    "type": "Waverider Buoy",
+    "lat": 34.439,
+    "lon": -120.766
+  },
+  {
+    "id": "46258",
+    "name": "Mission Bay West, CA (220)",
+    "type": "Waverider Buoy",
+    "lat": 32.749,
+    "lon": -117.502
+  },
+  {
+    "id": "46259",
+    "name": "Santa Lucia Escarpment, CA (222)",
+    "type": "Waverider Buoy",
+    "lat": 34.774,
+    "lon": -121.491
+  },
+  {
+    "id": "46260",
+    "name": "Lakeside, OR (231)",
+    "type": "Waverider Buoy",
+    "lat": 43.586,
+    "lon": -124.29
+  },
+  {
+    "id": "46261",
+    "name": "Reedsport, OR (232)",
+    "type": "Waverider Buoy",
+    "lat": 43.76,
+    "lon": -124.225
+  },
+  {
+    "id": "46262",
+    "name": "Santa Barbara Island North, CA (234)",
+    "type": "Waverider Buoy",
+    "lat": 33.704,
+    "lon": -119.004
+  },
+  {
+    "id": "46263",
+    "name": "Fort Bragg South, CA (235)",
+    "type": "Waverider Buoy",
+    "lat": 39.37,
+    "lon": -123.912
+  },
+  {
+    "id": "46264",
+    "name": "Kodiak, AK (236)",
+    "type": "Waverider Buoy",
+    "lat": 57.479,
+    "lon": -151.695
+  },
+  {
+    "id": "46265",
+    "name": "Nome, AK (241)",
+    "type": "Waverider Buoy",
+    "lat": 64.474,
+    "lon": -165.479
+  },
+  {
+    "id": "46266",
+    "name": "Del Mar Nearshore, CA (153)",
+    "type": "Waverider Buoy",
+    "lat": 32.957,
+    "lon": -117.279
+  },
+  {
+    "id": "46267",
+    "name": "Angeles Point, WA (248)",
+    "type": "Waverider Buoy",
+    "lat": 48.173,
+    "lon": -123.607
+  },
+  {
+    "id": "46268",
+    "name": "Topanga Nearshore, CA (103)",
+    "type": "Waverider Buoy",
+    "lat": 34.022,
+    "lon": -118.578
+  },
+  {
+    "id": "46269",
+    "name": "Point Santa Cruz, CA (254)",
+    "type": "Waverider Buoy",
+    "lat": 36.934,
+    "lon": -122.034
+  },
+  {
+    "id": "46270",
+    "name": "S.W. Bering Sea",
+    "type": "6-meter NOMAD buoy",
+    "lat": 55.003,
+    "lon": 175.284
+  },
+  {
+    "id": "46273",
+    "name": "Torrey Pines Inner, CA (101)",
+    "type": "Waverider Buoy",
+    "lat": 32.93,
+    "lon": -117.274
+  },
+  {
+    "id": "46274",
+    "name": "Leucadia Nearshore, CA (262)",
+    "type": "Waverider Buoy",
+    "lat": 33.062,
+    "lon": -117.314
+  },
+  {
+    "id": "46275",
+    "name": "Red Beach Nearshore, CA (264)",
+    "type": "Waverider Buoy",
+    "lat": 33.291,
+    "lon": -117.501
+  },
+  {
+    "id": "46276",
+    "name": "Pajaro Beach, CA (266)",
+    "type": "Waverider Buoy",
+    "lat": 36.845,
+    "lon": -121.825
+  },
+  {
+    "id": "46277",
+    "name": "Green Beach Offshore, CA (271)",
+    "type": "Waverider Buoy",
+    "lat": 33.336,
+    "lon": -117.659
+  },
+  {
+    "id": "46278",
+    "name": "Tillamook Bay South Jetty, OR (270)",
+    "type": "Waverider Buoy",
+    "lat": 45.561,
+    "lon": -123.991
+  },
+  {
+    "id": "46279",
+    "name": "Pajaro Beach South, CA (267)",
+    "type": "Waverider Buoy",
+    "lat": 36.838,
+    "lon": -121.82
+  },
+  {
+    "id": "46280",
+    "name": "Newport PWS North (277)",
+    "type": "Waverider Buoy",
+    "lat": 44.575,
+    "lon": -124.234
+  },
+  {
+    "id": "46281",
+    "name": "Newport PWS South, OR (278)",
+    "type": "Waverider Buoy",
+    "lat": 44.559,
+    "lon": -124.233
+  },
+  {
+    "id": "46282",
+    "name": "Aptos Creek Nearshore, CA 275",
+    "type": "Waverider Buoy",
+    "lat": 36.951,
+    "lon": -121.921
+  },
+  {
+    "id": "46283",
+    "name": "Yaquina Channel SW, OR (280)",
+    "type": "Waverider Buoy",
+    "lat": 44.567,
+    "lon": -124.237
+  },
+  {
+    "id": "46284",
+    "name": "Soquel Cove South, CA (281)",
+    "type": "Waverider Buoy",
+    "lat": 36.93,
+    "lon": -121.934
+  },
+  {
+    "id": "46285",
+    "name": "Capistrano Beach Nearshore, CA (284)",
+    "type": "Waverider Buoy",
+    "lat": 33.445,
+    "lon": -117.68
+  },
+  {
+    "id": "46290",
+    "name": "NOOSS Optimization Buoy",
+    "type": "2.3-meter NOOSS buoy",
+    "lat": 32.659,
+    "lon": -120.63
+  },
+  {
+    "id": "46303",
+    "name": "Southern Georgia Strait",
+    "type": "3-meter discus buoy",
+    "lat": 49.02,
+    "lon": -123.43
+  },
+  {
+    "id": "46304",
+    "name": "Entrance To English Bay",
+    "type": "3-meter discus buoy",
+    "lat": 49.3,
+    "lon": -123.36
+  },
+  {
+    "id": "46401",
+    "name": "SOUTHEAST ADAK - 377NM SE of Adak, AK",
+    "type": "2.6-meter discus buoy",
+    "lat": 46.638,
+    "lon": -170.79
+  },
+  {
+    "id": "46402",
+    "name": "South Dutch Harbor - 220 NM SSE of Dutch Harbor, AK",
+    "type": "2.6-meter discus buoy",
+    "lat": 50.913,
+    "lon": -164.147
+  },
+  {
+    "id": "46403",
+    "name": "SOUTHEAST SHUMAGIN ISLAND - 186 NM SE of Shumagin Is, AK",
+    "type": "2.6-meter discus buoy",
+    "lat": 52.654,
+    "lon": -156.813
+  },
+  {
+    "id": "46404",
+    "name": "WEST ASTORIA - 230 NM West of Astoria, OR",
+    "type": "2.6-meter discus buoy",
+    "lat": 45.852,
+    "lon": -128.745
+  },
+  {
+    "id": "46405",
+    "name": "325 NM West-Southwest of Newport, OR",
+    "type": "2.6-meter discus buoy",
+    "lat": 42.903,
+    "lon": -130.909
+  },
+  {
+    "id": "46406",
+    "name": "2,900 NM Southeast of Hawaii",
+    "type": "2.6-meter discus buoy",
+    "lat": -8.491,
+    "lon": -125.022
+  },
+  {
+    "id": "46407",
+    "name": "NEWPORT - 210NM West of Coos Bay, OR",
+    "type": "2.6-meter discus buoy",
+    "lat": 42.704,
+    "lon": -128.895
+  },
+  {
+    "id": "46408",
+    "name": "NIKOLSKI - 212 NM South of Umnak Is, AK",
+    "type": "2.6-meter discus buoy",
+    "lat": 49.677,
+    "lon": -169.825
+  },
+  {
+    "id": "46409",
+    "name": "SOUTHEAST KODIAK - 210 NM SE of Kodiak, AK",
+    "type": "2.6-meter discus buoy",
+    "lat": 55.338,
+    "lon": -148.575
+  },
+  {
+    "id": "46410",
+    "name": "SOUTH CORDOVA - 188 NM SSE of Cordova, AK",
+    "type": "2.6-meter discus buoy",
+    "lat": 57.649,
+    "lon": -143.769
+  },
+  {
+    "id": "46411",
+    "name": "Mendocino - 150 NM West of  Mendocino Bay, CA",
+    "type": "2.6-meter discus buoy",
+    "lat": 39.337,
+    "lon": -127.04
+  },
+  {
+    "id": "46412",
+    "name": "San Diego - 175 NM West of San Diego, CA",
+    "type": "2.6-meter discus buoy",
+    "lat": 32.4,
+    "lon": -120.582
+  },
+  {
+    "id": "46413",
+    "name": "SOUTH-SOUTHEAST ADAK - 243 NM SSE of Adak Island, AK",
+    "type": "2.6-meter discus buoy",
+    "lat": 48.045,
+    "lon": -173.897
+  },
+  {
+    "id": "46414",
+    "name": "SOUTHEAST CHIRIKOF - 165 NM SE of Chirikof Island, AK",
+    "type": "2.6 meter DART buoy",
+    "lat": 53.756,
+    "lon": -152.456
+  },
+  {
+    "id": "46415",
+    "name": "SOUTHWEST JUNEAU - 370 NM SW of Juneau, AK",
+    "type": "2.6-meter discus buoy",
+    "lat": 53.035,
+    "lon": -139.884
+  },
+  {
+    "id": "46416",
+    "name": "WEST VANCOUVER - 442NM West of Vancouver, BC, Canada",
+    "type": "2.6 meter DART buoy",
+    "lat": 49.939,
+    "lon": -134.427
+  },
+  {
+    "id": "46419",
+    "name": "NORTHWEST SEATTLE - 300 NM WNW of Seattle, WA",
+    "type": "2.6 meter DART buoy",
+    "lat": 48.815,
+    "lon": -129.623
+  },
+  {
+    "id": "46451",
+    "name": "PMEL 4G Test 1 - 83NM W of Newport, OR",
+    "type": "Buoy",
+    "lat": 44.815,
+    "lon": -125.699
+  },
+  {
+    "id": "46452",
+    "name": "PMEL 4G Test 2 - 74NM West of Newport, OR",
+    "type": "Buoy",
+    "lat": 44.807,
+    "lon": -125.759
+  },
+  {
+    "id": "46453",
+    "name": "Backyard Buoys - Quinault North",
+    "type": "Spotter Buoy",
+    "lat": 47.45,
+    "lon": -124.43
+  },
+  {
+    "id": "46490",
+    "name": "NOOSS Optimization Buoy",
+    "type": "Moored Buoy",
+    "lat": 32.455,
+    "lon": -120.557
+  },
+  {
+    "id": "46518",
+    "name": "Drifting Buoy",
+    "type": "Drifting Buoy",
+    "lat": 44.5,
+    "lon": -170.0
+  },
+  {
+    "id": "46531",
+    "name": "Drifting Buoy",
+    "type": "Drifting Buoy",
+    "lat": 41.0,
+    "lon": -165.0
+  },
+  {
+    "id": "46534",
+    "name": "Drifting Buoy",
+    "type": "Drifting Buoy",
+    "lat": 48.0,
+    "lon": -165.0
+  },
+  {
+    "id": "46538",
+    "name": "Drifting Buoy",
+    "type": "Drifting Buoy",
+    "lat": 24.14,
+    "lon": -127.9
+  },
+  {
+    "id": "46551",
+    "name": "Drifting Buoy",
+    "type": "Drifting Buoy",
+    "lat": 53.033,
+    "lon": -161.81
+  },
+  {
+    "id": "46553",
+    "name": "Drifting Buoy",
+    "type": "Drifting Buoy",
+    "lat": 54.54,
+    "lon": -165.44
+  },
+  {
+    "id": "46565",
+    "name": "Drifting Buoy",
+    "type": "Drifting Buoy",
+    "lat": 44.5,
+    "lon": -170.0
+  },
+  {
+    "id": "46779",
+    "name": "Drifting Buoy",
+    "type": "Drifting Buoy",
+    "lat": 57.0,
+    "lon": -149.0
+  },
+  {
+    "id": "46780",
+    "name": "Drifting Buoy",
+    "type": "Drifting Buoy",
+    "lat": 56.04,
+    "lon": -167.14
+  },
+  {
+    "id": "46781",
+    "name": "Drifting Buoy",
+    "type": "Drifting Buoy",
+    "lat": 54.634,
+    "lon": -177.948
+  },
+  {
+    "id": "46782",
+    "name": "Drifting Buoy",
+    "type": "Drifting Buoy",
+    "lat": 56.04,
+    "lon": -167.14
+  },
+  {
+    "id": "46785",
+    "name": "Drifting Buoy",
+    "type": "Drifting Buoy",
+    "lat": 55.0,
+    "lon": -173.0
+  },
+  {
+    "id": "46b35",
+    "name": "CENTRAL BERING SEA - 310 NM North of Adak, AK",
+    "type": "12-meter discus buoy",
+    "lat": 57.069,
+    "lon": -177.75
+  },
+  {
+    "id": "46d02",
+    "name": "Adrift buoy from 46402",
+    "type": "2.6-meter discus buoy",
+    "lat": 50.983,
+    "lon": -163.943
+  },
+  {
+    "id": "46d04",
+    "name": "Adrift Buoy from 46404",
+    "type": "2.6 meter DART buoy",
+    "lat": 42.87,
+    "lon": -128.752
+  },
+  {
+    "id": "46d16",
+    "name": "Adrift buoy from 46416",
+    "type": "2.6 meter DART buoy",
+    "lat": 49.901,
+    "lon": -134.395
+  },
+  {
+    "id": "46flo",
+    "name": "Monterey Bay (FLOSSIE)",
+    "type": "6-meter NOMAD buoy",
+    "lat": 36.668,
+    "lon": -122.562
+  },
+  {
+    "id": "46t29",
+    "name": "COLUMBIA RIVER BAR - 20NM West of Columbia River Mouth",
+    "type": "2.1-meter ionomer foam buoy w/ seal cage",
+    "lat": 46.141,
+    "lon": -124.574
+  },
+  {
+    "id": "46x61",
+    "name": "Adrift buoy from 46061",
+    "type": "3-meter discus buoy w/ seal cage",
+    "lat": 60.238,
+    "lon": -146.833
+  },
+  {
+    "id": "48011",
+    "name": "Red Dog Mine",
+    "type": "3-meter discus buoy",
+    "lat": 67.582,
+    "lon": -164.185
+  },
+  {
+    "id": "48012",
+    "name": "Point Lay (UAF)",
+    "type": "Buoy",
+    "lat": 70.025,
+    "lon": -166.071
+  },
+  {
+    "id": "48021",
+    "name": "Tuktoyaktuk",
+    "type": "Buoy",
+    "lat": 70.35,
+    "lon": -133.0
+  },
+  {
+    "id": "48114",
+    "name": "30 NM West of King Island",
+    "type": "Buoy",
+    "lat": 65.011,
+    "lon": -169.454
+  },
+  {
+    "id": "48211",
+    "name": "Camden Bay (Shell Arctic)",
+    "type": "Buoy",
+    "lat": 70.37,
+    "lon": -146.04
+  },
+  {
+    "id": "48212",
+    "name": "Harrison Bay (Shell Arctic)",
+    "type": "Buoy",
+    "lat": 70.874,
+    "lon": -150.279
+  },
+  {
+    "id": "48213",
+    "name": "Burger",
+    "type": "Buoy",
+    "lat": 71.502,
+    "lon": -164.133
+  },
+  {
+    "id": "48214",
+    "name": "Klondike (MOB1)",
+    "type": "Buoy",
+    "lat": 70.872,
+    "lon": -165.248
+  },
+  {
+    "id": "48215",
+    "name": "Hanna Shoal (MOB3)",
+    "type": "Buoy",
+    "lat": 71.502,
+    "lon": -164.133
+  },
+  {
+    "id": "48216",
+    "name": "Crackerjack (Shell Arctic)",
+    "type": "Buoy",
+    "lat": 71.758,
+    "lon": -167.952
+  },
+  {
+    "id": "48400",
+    "name": "Ocean Climate Station Papa",
+    "type": "Buoy",
+    "lat": 50.055,
+    "lon": -144.873
+  },
+  {
+    "id": "48677",
+    "name": "48677",
+    "type": "Drifting Buoy",
+    "lat": 72.568,
+    "lon": -177.61
+  },
+  {
+    "id": "48678",
+    "name": "48678",
+    "type": "Drifting Buoy",
+    "lat": 74.076,
+    "lon": -172.987
+  },
+  {
+    "id": "48679",
+    "name": "48679",
+    "type": "Drifting Buoy",
+    "lat": 75.778,
+    "lon": -159.89
+  },
+  {
+    "id": "48680",
+    "name": "48680",
+    "type": "Drifting Buoy",
+    "lat": 74.776,
+    "lon": -157.236
+  },
+  {
+    "id": "51000",
+    "name": "NORTHERN HAWAII ONE - 245NM NE of Honolulu HI",
+    "type": "3-meter foam buoy",
+    "lat": 23.534,
+    "lon": -153.752
+  },
+  {
+    "id": "51001",
+    "name": "NORTHWESTERN HAWAII ONE - 188 NM NW of Kauai Island, HI",
+    "type": "2.1-meter ionomer foam buoy",
+    "lat": 24.475,
+    "lon": -162.03
+  },
+  {
+    "id": "51002",
+    "name": "SOUTHWEST HAWAII - 215NM SSW of Hilo, HI",
+    "type": "3-meter foam buoy",
+    "lat": 17.07,
+    "lon": -157.755
+  },
+  {
+    "id": "51003",
+    "name": "WESTERN  HAWAII - 205 NM SW of Honolulu, HI",
+    "type": "3-meter foam buoy",
+    "lat": 19.143,
+    "lon": -160.645
+  },
+  {
+    "id": "51004",
+    "name": "SOUTHEAST HAWAII - 205 NM Southeast of Hilo, HI",
+    "type": "3-meter discus buoy",
+    "lat": 17.504,
+    "lon": -152.197
+  },
+  {
+    "id": "51005",
+    "name": "51005",
+    "type": "3-meter discus buoy",
+    "lat": 20.4,
+    "lon": -156.1
+  },
+  {
+    "id": "51026",
+    "name": "Northern Molokai",
+    "type": "3-meter discus buoy",
+    "lat": 21.35,
+    "lon": -156.93
+  },
+  {
+    "id": "51027",
+    "name": "51027",
+    "type": "3-meter discus buoy",
+    "lat": 20.4,
+    "lon": -157.1
+  },
+  {
+    "id": "51028",
+    "name": "Christmas Island",
+    "type": "3-meter discus buoy",
+    "lat": 0.0,
+    "lon": -153.913
+  },
+  {
+    "id": "51045",
+    "name": "Hilo Bay, HI",
+    "type": "Buoy",
+    "lat": 19.734,
+    "lon": -155.082
+  },
+  {
+    "id": "51046",
+    "name": "Kawaihai, HI",
+    "type": "Buoy",
+    "lat": 20.024,
+    "lon": -155.828
+  },
+  {
+    "id": "51100",
+    "name": "NORTHERN HAWAII TWO - 252NM NE of Honolulu, HI",
+    "type": "3-meter discus buoy",
+    "lat": 23.558,
+    "lon": -153.9
+  },
+  {
+    "id": "51101",
+    "name": "NORTHWESTERN HAWAII TWO - 186 NM NW of Kauai Is., HI",
+    "type": "3-meter foam buoy",
+    "lat": 24.359,
+    "lon": -162.081
+  },
+  {
+    "id": "511x1",
+    "name": "NORTHWESTERN HAWAII TWO - 190NM NW of Kauai Is, HI",
+    "type": "3-meter discus buoy",
+    "lat": 23.445,
+    "lon": -162.279
+  },
+  {
+    "id": "51200",
+    "name": "Barbers Point, HI  (164)",
+    "type": "Waverider Buoy",
+    "lat": 21.096,
+    "lon": -158.303
+  },
+  {
+    "id": "51201",
+    "name": "Waimea Bay, HI (106)",
+    "type": "Waverider Buoy",
+    "lat": 21.671,
+    "lon": -158.118
+  },
+  {
+    "id": "51202",
+    "name": "Mokapu Point, HI (098)",
+    "type": "Waverider Buoy",
+    "lat": 21.414,
+    "lon": -157.681
+  },
+  {
+    "id": "51203",
+    "name": "Kaumalapau, HI (146)",
+    "type": "Waverider Buoy",
+    "lat": 20.788,
+    "lon": -157.01
+  },
+  {
+    "id": "51204",
+    "name": "Barbers Point, HI #2 (165)",
+    "type": "Waverider Buoy",
+    "lat": 21.281,
+    "lon": -158.124
+  },
+  {
+    "id": "51205",
+    "name": "Pauwela, Maui, HI (187)",
+    "type": "Waverider Buoy",
+    "lat": 21.018,
+    "lon": -156.421
+  },
+  {
+    "id": "51206",
+    "name": "Hilo, Hawaii, HI (188)",
+    "type": "Waverider Buoy",
+    "lat": 19.779,
+    "lon": -154.97
+  },
+  {
+    "id": "51207",
+    "name": "Kaneohe Bay, HI (198)",
+    "type": "Waverider Buoy",
+    "lat": 21.477,
+    "lon": -157.752
+  },
+  {
+    "id": "51208",
+    "name": "Hanalei, Kauai, HI (202)",
+    "type": "Waverider Buoy",
+    "lat": 22.285,
+    "lon": -159.574
+  },
+  {
+    "id": "51209",
+    "name": "Aunuu, American Samoa (189)",
+    "type": "Waverider Buoy",
+    "lat": -14.273,
+    "lon": -170.501
+  },
+  {
+    "id": "51210",
+    "name": "Kaneohe Bay, WETS, HI (225)",
+    "type": "Waverider Buoy",
+    "lat": 21.477,
+    "lon": -157.757
+  },
+  {
+    "id": "51211",
+    "name": "Pearl Harbor Entrance, HI (233)",
+    "type": "Waverider Buoy",
+    "lat": 21.297,
+    "lon": -157.959
+  },
+  {
+    "id": "51212",
+    "name": "Barbers Point, Kalaeloa, HI (238)",
+    "type": "Waverider Buoy",
+    "lat": 21.323,
+    "lon": -158.149
+  },
+  {
+    "id": "51213",
+    "name": "Kaumalapau Southwest, Lanai, HI (239)",
+    "type": "Waverider Buoy",
+    "lat": 20.75,
+    "lon": -157.002
+  },
+  {
+    "id": "51214",
+    "name": "King-Poloa, American Samoa (273)",
+    "type": "Waverider Buoy",
+    "lat": -14.296,
+    "lon": -170.875
+  },
+  {
+    "id": "51406",
+    "name": "CENTRAL SOUTH PACIFIC  - 1040NM NNE of Pitcarin Is",
+    "type": "2.6-meter discus buoy",
+    "lat": -8.48,
+    "lon": -125.027
+  },
+  {
+    "id": "51407",
+    "name": "HAWAII - 34NM West of Kailua-Kona, HI",
+    "type": "2.6-meter discus buoy",
+    "lat": 19.53,
+    "lon": -156.601
+  },
+  {
+    "id": "51425",
+    "name": "NORTHWEST APIA - 370 NM NW of Apia, Samoa",
+    "type": "2.6-meter discus buoy",
+    "lat": -9.511,
+    "lon": -176.258
+  },
+  {
+    "id": "51426",
+    "name": "SOUTHEAST TONGA - 400NM SE of Tonga",
+    "type": "2.6-meter discus buoy",
+    "lat": -23.11,
+    "lon": -168.385
+  },
+  {
+    "id": "51542",
+    "name": "TAO Buoy Adrift",
+    "type": "Drifting Buoy",
+    "lat": 0.018,
+    "lon": -179.903
+  },
+  {
+    "id": "51d07",
+    "name": "Adrift buoy from 51407",
+    "type": "2.6 meter DART buoy",
+    "lat": 19.614,
+    "lon": -156.562
+  },
+  {
+    "id": "51d26",
+    "name": "SOUTHEAST TONGA - 400NM SE of Tonga",
+    "type": "2.6-meter discus buoy",
+    "lat": -22.993,
+    "lon": -168.133
+  },
+  {
+    "id": "51wh0",
+    "name": "WHOTS - Woods Hole Ocean Time-series",
+    "type": "Moored Buoy",
+    "lat": 22.0,
+    "lon": -157.0
+  },
+  {
+    "id": "52009",
+    "name": "52009",
+    "type": "3-meter discus buoy",
+    "lat": 13.729,
+    "lon": -144.668
+  },
+  {
+    "id": "52200",
+    "name": "Ipan, Guam (121)",
+    "type": "Waverider Buoy",
+    "lat": 13.354,
+    "lon": 144.788
+  },
+  {
+    "id": "52201",
+    "name": "Kalo, Majuro, Marshall Islands (163)",
+    "type": "Waverider Buoy",
+    "lat": 7.078,
+    "lon": 171.384
+  },
+  {
+    "id": "52202",
+    "name": "Ritidian Point, Guam (196)",
+    "type": "Waverider Buoy",
+    "lat": 13.683,
+    "lon": 144.816
+  },
+  {
+    "id": "52211",
+    "name": "Tanapag, Saipan, NMI (197)",
+    "type": "Waverider Buoy",
+    "lat": 15.268,
+    "lon": 145.662
+  },
+  {
+    "id": "52212",
+    "name": "Ngaraard, Babeldaob, Palau (219)",
+    "type": "Waverider Buoy",
+    "lat": 7.63,
+    "lon": 134.671
+  },
+  {
+    "id": "52213",
+    "name": "North Point, Pohnpei, Micronesia (178)",
+    "type": "Waverider Buoy",
+    "lat": 7.081,
+    "lon": 158.244
+  },
+  {
+    "id": "52214",
+    "name": "Rumung, Yap, Micronesia (272)",
+    "type": "Waverider Buoy",
+    "lat": 9.677,
+    "lon": 138.178
+  },
+  {
+    "id": "52215",
+    "name": "UTWE, KOSRAE, MICRONESIA (276)",
+    "type": "Waverider Buoy",
+    "lat": 5.241,
+    "lon": 163.001
+  },
+  {
+    "id": "52401",
+    "name": "NORTHEAST SAIPAN - 610 NM ENE of Saipan",
+    "type": "2.6-meter discus buoy",
+    "lat": 19.285,
+    "lon": 155.739
+  },
+  {
+    "id": "52402",
+    "name": "SOUTHEAST SAIPAN - 540NM ESE of Saipan",
+    "type": "2.6-meter discus buoy",
+    "lat": 11.928,
+    "lon": 153.876
+  },
+  {
+    "id": "52403",
+    "name": "NORTH MANUS - 345NM North of Manus Is , New Guinea",
+    "type": "2.6-meter discus buoy",
+    "lat": 4.018,
+    "lon": 145.628
+  },
+  {
+    "id": "52404",
+    "name": "NORTH PHILIPPINE SEA - 750 NM NE of Manila, Philippines",
+    "type": "2.6-meter discus buoy",
+    "lat": 20.685,
+    "lon": 132.25
+  },
+  {
+    "id": "52405",
+    "name": "SOUTH PHILIPPINE SEA -725 NM West of Agana, Guam",
+    "type": "2.6-meter discus buoy",
+    "lat": 12.992,
+    "lon": 132.232
+  },
+  {
+    "id": "52406",
+    "name": "NORTHEAST SOLOMON - 370NM NE of Guadalcanal",
+    "type": "2.6 meter DART buoy",
+    "lat": -5.374,
+    "lon": 164.99
+  },
+  {
+    "id": "52834",
+    "name": "52834",
+    "type": "Drifting Buoy",
+    "lat": 14.0,
+    "lon": 154.953
+  },
+  {
+    "id": "52837",
+    "name": "52837",
+    "type": "Drifting Buoy",
+    "lat": 9.777,
+    "lon": 137.0
+  },
+  {
+    "id": "52838",
+    "name": "52838",
+    "type": "Drifting Buoy",
+    "lat": 7.774,
+    "lon": 140.0
+  },
+  {
+    "id": "52839",
+    "name": "52839",
+    "type": "Drifting Buoy",
+    "lat": 5.758,
+    "lon": 143.0
+  },
+  {
+    "id": "52840",
+    "name": "52840",
+    "type": "Drifting Buoy",
+    "lat": 8.731,
+    "lon": 151.0
+  },
+  {
+    "id": "52841",
+    "name": "52841",
+    "type": "Drifting Buoy",
+    "lat": 5.943,
+    "lon": 149.0
+  },
+  {
+    "id": "52842",
+    "name": "52842",
+    "type": "Drifting Buoy",
+    "lat": 6.759,
+    "lon": 150.0
+  },
+  {
+    "id": "52843",
+    "name": "52843",
+    "type": "Drifting Buoy",
+    "lat": 11.761,
+    "lon": 134.0
+  },
+  {
+    "id": "52849",
+    "name": "52849",
+    "type": "Drifting Buoy",
+    "lat": 16.0,
+    "lon": 155.256
+  },
+  {
+    "id": "52858",
+    "name": "52858",
+    "type": "Drifting Buoy",
+    "lat": 14.0,
+    "lon": 154.953
+  },
+  {
+    "id": "52862",
+    "name": "52862",
+    "type": "Drifting Buoy",
+    "lat": 16.0,
+    "lon": 155.256
+  },
+  {
+    "id": "52901",
+    "name": "52901",
+    "type": "Drifting Buoy",
+    "lat": 15.0,
+    "lon": 155.104
+  },
+  {
+    "id": "53005",
+    "name": "53005",
+    "type": "Atlas Buoy",
+    "lat": -8.0,
+    "lon": 81.0
+  },
+  {
+    "id": "53006",
+    "name": "53006",
+    "type": "Atlas Buoy",
+    "lat": -12.0,
+    "lon": 81.0
+  },
+  {
+    "id": "53009",
+    "name": "53009",
+    "type": "Atlas Buoy",
+    "lat": -12.0,
+    "lon": 93.0
+  },
+  {
+    "id": "53040",
+    "name": "53040",
+    "type": "Atlas Buoy",
+    "lat": -8.0,
+    "lon": 95.0
+  },
+  {
+    "id": "53056",
+    "name": "53056",
+    "type": "Atlas Buoy",
+    "lat": -5.0,
+    "lon": 95.0
+  },
+  {
+    "id": "53057",
+    "name": "53057",
+    "type": "Atlas Buoy",
+    "lat": -2.0,
+    "lon": 90.0
+  },
+  {
+    "id": "53401",
+    "name": "Indonesia",
+    "type": "2.6-meter discus buoy",
+    "lat": 0.05,
+    "lon": 91.899
+  },
+  {
+    "id": "5401000",
+    "name": "NZC - Offshore Gisborne Hikurangi",
+    "type": "2.6 meter DART buoy",
+    "lat": -38.2,
+    "lon": -179.797
+  },
+  {
+    "id": "5401001",
+    "name": "NZE - Offshore East Cape Kermadec",
+    "type": "2.6 meter DART buoy",
+    "lat": -36.049,
+    "lon": -177.708
+  },
+  {
+    "id": "5401002",
+    "name": "NZF - Offshore Raoul Island Kermadec",
+    "type": "2.6 meter DART buoy",
+    "lat": -29.683,
+    "lon": -175.012
+  },
+  {
+    "id": "5401003",
+    "name": "NZG - Offshore Tongatapu Tonga",
+    "type": "2.6 meter DART buoy",
+    "lat": -23.352,
+    "lon": -173.402
+  },
+  {
+    "id": "5401004",
+    "name": "NZH - Offshore Niue Tonga",
+    "type": "2.6 meter DART buoy",
+    "lat": -20.088,
+    "lon": -171.863
+  },
+  {
+    "id": "5401005",
+    "name": "NZI - Offshore Samoa Tonga",
+    "type": "2.6 meter DART buoy",
+    "lat": -16.889,
+    "lon": -171.191
+  },
+  {
+    "id": "54401",
+    "name": "NORTHEAST NEW ZEALAND - 640NM NE of Auckland, NZ",
+    "type": "2.6-meter discus buoy",
+    "lat": -33.109,
+    "lon": -173.155
+  },
+  {
+    "id": "54d01",
+    "name": "NORTHEAST NEW ZEALAND - 640NM NE of Auckland, NZ",
+    "type": "2.6-meter discus buoy",
+    "lat": -33.005,
+    "lon": -172.985
+  },
+  {
+    "id": "5501002",
+    "name": "NZA - Offshore Wellington Hikurangi",
+    "type": "2.6 meter DART buoy",
+    "lat": -42.371,
+    "lon": 176.911
+  },
+  {
+    "id": "5501003",
+    "name": "NZB - Offshore Hawke's Bay Hikurangi",
+    "type": "2.6 meter DART buoy",
+    "lat": -40.599,
+    "lon": 179.096
+  },
+  {
+    "id": "5501004",
+    "name": "NZD - Offshore Bay of Plenty Kermadec",
+    "type": "2.6 meter DART buoy",
+    "lat": -36.1,
+    "lon": 178.604
+  },
+  {
+    "id": "5501005",
+    "name": "NZJ - Offshore Norfolk Island New Hebrides",
+    "type": "2.6 meter DART buoy",
+    "lat": -26.667,
+    "lon": 163.955
+  },
+  {
+    "id": "5501006",
+    "name": "NZK - Offshore New Caledonia New Hebrides",
+    "type": "2.6 meter DART buoy",
+    "lat": -24.309,
+    "lon": 169.499
+  },
+  {
+    "id": "5501007",
+    "name": "NZL - Offshore Vanuatu New Hebrides",
+    "type": "2.6 meter DART buoy",
+    "lat": -19.31,
+    "lon": 166.782
+  },
+  {
+    "id": "55013",
+    "name": "TASMAN SEA 3     -     1160km ESE of Hobart",
+    "type": "2.6-meter discus buoy",
+    "lat": -46.665,
+    "lon": 161.001
+  },
+  {
+    "id": "55015",
+    "name": "TASMAN SEA 1     -     1110km ESE of Hobart",
+    "type": "STB - SAIC Tsunami Buoy",
+    "lat": -46.956,
+    "lon": 160.343
+  },
+  {
+    "id": "55039",
+    "name": "55039",
+    "type": "Waverider Buoy",
+    "lat": -38.36,
+    "lon": 148.11
+  },
+  {
+    "id": "55042",
+    "name": "Tasman Sea 2     -     1175km ESE of Hobart",
+    "type": "STB - SAIC Tsunami Buoy",
+    "lat": -44.79,
+    "lon": 161.7
+  },
+  {
+    "id": "55401",
+    "name": "600 NM Southeast of Hobart, Tasmania",
+    "type": "2.6-meter discus buoy",
+    "lat": -46.922,
+    "lon": 160.562
+  },
+  {
+    "id": "56001",
+    "name": "Indian Ocean 1     -      1025km NW of Dampier",
+    "type": "STB - SAIC Tsunami Buoy",
+    "lat": -14.046,
+    "lon": 110.028
+  },
+  {
+    "id": "56003",
+    "name": "Indian Ocean 2     -     630km NNE of Dampier",
+    "type": "STB - SAIC Tsunami Buoy",
+    "lat": -15.019,
+    "lon": 118.073
+  },
+  {
+    "id": "56053",
+    "name": "56053",
+    "type": "Atlas Buoy",
+    "lat": -16.0,
+    "lon": 81.0
+  },
+  {
+    "id": "56055",
+    "name": "56055",
+    "type": "Atlas Buoy",
+    "lat": -25.0,
+    "lon": 100.0
+  },
+  {
+    "id": "61001",
+    "name": "Nice Buoy",
+    "type": "Buoy",
+    "lat": 43.4,
+    "lon": 7.8
+  },
+  {
+    "id": "61002",
+    "name": "Lion Buoy",
+    "type": "Buoy",
+    "lat": 42.102,
+    "lon": 4.703
+  },
+  {
+    "id": "62001",
+    "name": "Gascogne Buoy",
+    "type": "Buoy",
+    "lat": 45.23,
+    "lon": -5.0
+  },
+  {
+    "id": "62027",
+    "name": "Jersey Buoy, English Channel - 5 nm south of Jersey, UK",
+    "type": "Buoy",
+    "lat": 49.082,
+    "lon": -2.218
+  },
+  {
+    "id": "62028",
+    "name": "Weymouth Bay, UK",
+    "type": "Buoy",
+    "lat": 50.59,
+    "lon": -2.3
+  },
+  {
+    "id": "62029",
+    "name": "K1 Buoy",
+    "type": "Buoy",
+    "lat": 48.72,
+    "lon": -12.43
+  },
+  {
+    "id": "62030",
+    "name": "L4 Buoy",
+    "type": "Buoy",
+    "lat": 50.25,
+    "lon": -4.217
+  },
+  {
+    "id": "62050",
+    "name": "E1",
+    "type": "Buoy",
+    "lat": 50.0,
+    "lon": -4.4
+  },
+  {
+    "id": "62052",
+    "name": "62052",
+    "type": "Buoy",
+    "lat": 48.5,
+    "lon": -5.6
+  },
+  {
+    "id": "62081",
+    "name": "K2 Buoy",
+    "type": "Buoy",
+    "lat": 51.0,
+    "lon": -13.55
+  },
+  {
+    "id": "62090",
+    "name": "M1 - 50 NM West of Aran Islands",
+    "type": "2.5-meter ODAS buoy",
+    "lat": 53.127,
+    "lon": -11.2
+  },
+  {
+    "id": "62091",
+    "name": "M2 - 20 NM East of Lambay",
+    "type": "2.5-meter ODAS buoy",
+    "lat": 53.469,
+    "lon": -5.418
+  },
+  {
+    "id": "62092",
+    "name": "M3 - 30 NM Southwest of Mizen Head",
+    "type": "2.5-meter ODAS buoy",
+    "lat": 51.13,
+    "lon": -10.33
+  },
+  {
+    "id": "62093",
+    "name": "M4 - Donegal Bay",
+    "type": "2.5-meter ODAS buoy",
+    "lat": 55.0,
+    "lon": -10.0
+  },
+  {
+    "id": "62094",
+    "name": "M5 - South East",
+    "type": "2.5-meter ODAS buoy",
+    "lat": 51.41,
+    "lon": -6.42
+  },
+  {
+    "id": "62095",
+    "name": "M6 - West Coast",
+    "type": "2.5-meter ODAS buoy",
+    "lat": 53.04,
+    "lon": -15.53
+  },
+  {
+    "id": "62105",
+    "name": "K4 Buoy",
+    "type": "Buoy",
+    "lat": 55.41,
+    "lon": -11.81
+  },
+  {
+    "id": "62108",
+    "name": "K3 Buoy",
+    "type": "Buoy",
+    "lat": 53.5,
+    "lon": -19.5
+  },
+  {
+    "id": "62163",
+    "name": "Brittany Buoy",
+    "type": "Buoy",
+    "lat": 47.55,
+    "lon": -8.47
+  },
+  {
+    "id": "62298",
+    "name": "Celtic Sea Buoy",
+    "type": "Buoy",
+    "lat": 49.4,
+    "lon": -8.6
+  },
+  {
+    "id": "62301",
+    "name": "Aberporth Buoy",
+    "type": "Buoy",
+    "lat": 52.22,
+    "lon": -4.42
+  },
+  {
+    "id": "62303",
+    "name": "Pembroke Buoy",
+    "type": "Buoy",
+    "lat": 51.602,
+    "lon": -5.1
+  },
+  {
+    "id": "62442",
+    "name": "Pap",
+    "type": "Buoy",
+    "lat": 49.0,
+    "lon": -16.5
+  },
+  {
+    "id": "64045",
+    "name": "K5 Buoy",
+    "type": "Buoy",
+    "lat": 59.15,
+    "lon": -11.79
+  },
+  {
+    "id": "64046",
+    "name": "K7 Buoy",
+    "type": "Buoy",
+    "lat": 60.483,
+    "lon": -4.167
+  },
+  {
+    "id": "97001",
+    "name": "97001",
+    "type": "Drifting Buoy",
+    "lat": 30.0,
+    "lon": -90.0
+  },
+  {
+    "id": "amps2",
+    "name": "Payload Test (BUOY Set-Up)",
+    "type": "2.4-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.613
+  },
+  {
+    "id": "cbcm2",
+    "name": "Curtis Bay Ch. Entrance (8574837)",
+    "type": "Moored Buoy",
+    "lat": 39.223,
+    "lon": -76.54
+  },
+  {
+    "id": "darth",
+    "name": "Test",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.612
+  },
+  {
+    "id": "darti",
+    "name": "Test",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.613
+  },
+  {
+    "id": "dartj",
+    "name": "Test",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.613
+  },
+  {
+    "id": "dartk",
+    "name": "Test",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.613
+  },
+  {
+    "id": "dartl",
+    "name": "Test",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.613
+  },
+  {
+    "id": "dartm",
+    "name": "Test",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.613
+  },
+  {
+    "id": "dartn",
+    "name": "Test",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.613
+  },
+  {
+    "id": "darto",
+    "name": "Test",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.613
+  },
+  {
+    "id": "dartp",
+    "name": "Test",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.613
+  },
+  {
+    "id": "dartq",
+    "name": "Test",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.613
+  },
+  {
+    "id": "dartr",
+    "name": "TEST",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.612
+  },
+  {
+    "id": "darts",
+    "name": "TEST",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.612
+  },
+  {
+    "id": "dartt",
+    "name": "TEST",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.612
+  },
+  {
+    "id": "dartu",
+    "name": "TEST",
+    "type": "2.6-meter discus buoy",
+    "lat": 30.357,
+    "lon": -89.612
+  },
+  {
+    "id": "eb01",
+    "name": "eb01",
+    "type": "12-meter discus buoy",
+    "lat": 36.5,
+    "lon": -73.5
+  },
+  {
+    "id": "eb10",
+    "name": "eb10",
+    "type": "12-meter discus buoy",
+    "lat": 27.5,
+    "lon": -88.0
+  },
+  {
+    "id": "eb31",
+    "name": "eb31",
+    "type": "12-meter discus buoy",
+    "lat": 27.0,
+    "lon": -86.0
+  },
+  {
+    "id": "eb32",
+    "name": "eb32",
+    "type": "12-meter discus buoy",
+    "lat": 27.0,
+    "lon": -84.3
+  },
+  {
+    "id": "eb33",
+    "name": "eb33",
+    "type": "6-meter NOMAD buoy",
+    "lat": 58.5,
+    "lon": -141.0
+  },
+  {
+    "id": "eb35",
+    "name": "eb35",
+    "type": "6-meter NOMAD buoy",
+    "lat": 55.3,
+    "lon": -157.0
+  },
+  {
+    "id": "eb36",
+    "name": "eb36",
+    "type": "USCG Large Navigational Buoy",
+    "lat": 26.0,
+    "lon": -84.8
+  },
+  {
+    "id": "eb43",
+    "name": "eb43",
+    "type": "6-meter NOMAD buoy",
+    "lat": 59.8,
+    "lon": -142.0
+  },
+  {
+    "id": "eb52",
+    "name": "eb52",
+    "type": "USCG Large Navigational Buoy",
+    "lat": 38.4,
+    "lon": -74.3
+  },
+  {
+    "id": "eb53",
+    "name": "eb53",
+    "type": "USCG Large Navigational Buoy",
+    "lat": 28.9,
+    "lon": -88.3
+  },
+  {
+    "id": "eb62",
+    "name": "eb62",
+    "type": "USCG Large Navigational Buoy",
+    "lat": 29.0,
+    "lon": -85.6
+  },
+  {
+    "id": "eb70",
+    "name": "eb70",
+    "type": "12-meter discus buoy",
+    "lat": 59.5,
+    "lon": -142.3
+  },
+  {
+    "id": "eb90",
+    "name": "BERING SEA",
+    "type": "12-meter discus buoy",
+    "lat": 47.0,
+    "lon": -130.9
+  },
+  {
+    "id": "eb91",
+    "name": "eb91",
+    "type": "USCG Large Navigational Buoy",
+    "lat": 38.4,
+    "lon": -74.3
+  },
+  {
+    "id": "eb92",
+    "name": "eb92",
+    "type": "USCG Large Navigational Buoy",
+    "lat": 28.5,
+    "lon": -90.0
+  },
+  {
+    "id": "frfn7",
+    "name": "USACE-CHL Field Research Facility, Duck, NC",
+    "type": "Waverider Buoy",
+    "lat": 36.19,
+    "lon": -75.739
+  },
+  {
+    "id": "nbba3",
+    "name": "Lake Mead - North Boulder Basin",
+    "type": "Buoy",
+    "lat": 36.087,
+    "lon": -114.728
+  },
+  {
+    "id": "nlma3",
+    "name": "Lake Mohave - North",
+    "type": "Buoy",
+    "lat": 35.458,
+    "lon": -114.666
+  },
+  {
+    "id": "sbbn2",
+    "name": "Lake Mead - South Boulder Basin",
+    "type": "Buoy",
+    "lat": 36.05,
+    "lon": -114.748
+  },
+  {
+    "id": "slmn2",
+    "name": "Lake Mohave - South",
+    "type": "Buoy",
+    "lat": 35.389,
+    "lon": -114.621
+  },
+  {
+    "id": "sm058",
+    "name": "Woods Hole Test Camera",
+    "type": "Moored Buoy",
+    "lat": 59.923,
+    "lon": -39.528
+  },
+  {
+    "id": "ssbn7",
+    "name": "Sunset Beach Nearshore Waves (SUN2WAVE)",
+    "type": "Moored Buoy",
+    "lat": 33.838,
+    "lon": -78.484
+  },
+  {
+    "id": "tfblk",
+    "name": "10.0 nm WNW on Blakknes, Iceland",
+    "type": "Buoy",
+    "lat": 65.698,
+    "lon": -24.778
+  },
+  {
+    "id": "vbba3",
+    "name": "Lake Mead - Virgin Basin",
+    "type": "Buoy",
+    "lat": 36.132,
+    "lon": -114.412
+  },
+  {
+    "id": "whoi2",
+    "name": "Woods Hole Wave Test Station #2",
+    "type": "2.4-meter discus buoy",
+    "lat": 41.339,
+    "lon": -70.555
+  }
+]
