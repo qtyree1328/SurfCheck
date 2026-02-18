@@ -490,20 +490,33 @@ function parseStdmet(text) {
 function parseSpectral(specText, swdirText) {
   const specLines = specText.trim().split('\n');
   const swdirLines = swdirText.trim().split('\n');
-  if (specLines.length < 3 || swdirLines.length < 3) return [];
-  const freqs = [];
-  const unitLine = specLines[1];
-  const freqMatches = unitLine.match(/\(([^)]+)\)/g);
-  if (freqMatches) {
-    freqMatches.forEach(m => {
-      const f = parseFloat(m.replace(/[()]/g, ''));
-      if (!isNaN(f) && f > 0 && f < 1) freqs.push(f);
-    });
+  if (specLines.length < 2 || swdirLines.length < 2) return [];
+
+  // Most recent observation (line 1, after header)
+  const specLine = specLines[1];
+  const swdirLine = swdirLines[1];
+
+  // Extract freq/energy pairs: "energy (freq) energy (freq) ..."
+  // After the first 5 fields (YY MM DD hh mm) and sep_freq
+  const freqs = [], densities = [];
+  const pairRegex = /([\d.]+)\s+\(([\d.]+)\)/g;
+  let m;
+  while ((m = pairRegex.exec(specLine)) !== null) {
+    const energy = safeFloat(m[1]);
+    const freq = parseFloat(m[2]);
+    if (!isNaN(freq) && freq > 0 && freq < 1) {
+      freqs.push(freq);
+      densities.push(energy);
+    }
   }
-  const specRow = specLines[2].split(/\s+/);
-  const swdirRow = swdirLines[2].split(/\s+/);
-  const densities = specRow.slice(5).map(v => safeFloat(v));
-  const directions = swdirRow.slice(5).map(v => safeFloat(v));
+
+  // swdir has same format: "direction (freq) direction (freq) ..."
+  const directions = [];
+  const dirRegex = /([\d.]+)\s+\(([\d.]+)\)/g;
+  while ((m = dirRegex.exec(swdirLine)) !== null) {
+    directions.push(safeFloat(m[1]));
+  }
+
   const entries = [];
   const len = Math.min(freqs.length, densities.length, directions.length);
   for (let i = 0; i < len; i++) {
