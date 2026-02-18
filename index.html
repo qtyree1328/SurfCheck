@@ -13,6 +13,7 @@
 :root{
   --bg:#f4f1ec;--card:#fff;--text:#1a1a1a;--muted:#777;--accent:#2563eb;
   --good:#16a34a;--ok:#ca8a04;--bad:#dc2626;--border:#e5e1db;
+  --night:rgba(30,40,70,0.07);
 }
 html{font-size:16px}
 body{font-family:'Libre Baskerville',Georgia,serif;background:var(--bg);color:var(--text);
@@ -32,6 +33,7 @@ h2{font-size:0.85rem;font-weight:400;color:var(--muted);margin:14px 0 8px;
 .unit{font-size:0.85rem;font-weight:400;color:var(--muted)}
 .sub{font-size:0.8rem;color:var(--muted);margin-top:4px;font-family:'DM Mono',monospace}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px}
 .source{font-size:0.65rem;color:var(--muted);font-family:'DM Mono',monospace;margin-top:6px;opacity:0.7}
 canvas{width:100%;border-radius:8px;background:#fff}
 .forecast-table{width:100%;border-collapse:collapse;font-family:'DM Mono',monospace;font-size:0.7rem}
@@ -55,11 +57,27 @@ iframe{width:100%;border:none;border-radius:8px}
   border-bottom:1px solid var(--border)}
 #search-results div:hover{background:rgba(37,99,235,0.06)}
 .error-msg{color:var(--bad);font-size:0.8rem;font-family:'DM Mono',monospace;padding:8px 0}
-.card.inactive{border-color:#e5c07b;background:#fffdf5}
-.card.inactive .big-val{color:var(--ok);font-size:1rem;font-weight:400}
-.card.inactive .sub{color:var(--ok)}
 #buoy-warning{display:none;background:#fffdf5;border:1px solid #e5c07b;border-radius:10px;
   padding:12px 14px;margin-bottom:14px;font-family:'DM Mono',monospace;font-size:0.8rem;color:#92700c}
+
+/* Hero summary */
+.hero-summary{background:var(--card);border-radius:14px;padding:20px;margin-bottom:14px;
+  border:1px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,0.04);text-align:center}
+.hero-height{font-size:3.2rem;font-weight:700;line-height:1;letter-spacing:-1px;color:var(--text)}
+.hero-detail{font-size:1rem;color:var(--muted);margin-top:4px;font-family:'DM Mono',monospace}
+.hero-components{margin-top:10px;font-size:0.75rem;color:var(--muted);font-family:'DM Mono',monospace}
+
+/* Stat pills */
+.stat-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px}
+.stat-pill{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 8px;text-align:center}
+.stat-pill .stat-icon{font-size:1.1rem}
+.stat-pill .stat-label{font-size:0.55rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);font-family:'DM Mono',monospace;margin:2px 0}
+.stat-pill .stat-value{font-size:0.95rem;font-weight:700;line-height:1.1}
+.stat-pill .stat-sub{font-size:0.6rem;color:var(--muted);font-family:'DM Mono',monospace;margin-top:1px}
+
+/* Scrollable chart containers */
+.chart-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -4px;padding:0 4px}
+.chart-scroll canvas{min-width:700px;display:block}
 </style>
 </head>
 <body>
@@ -82,60 +100,82 @@ iframe{width:100%;border:none;border-radius:8px}
   <p id="status" class="sub loading"></p>
   <div id="buoy-warning">⚠️ Station inactive — no recent buoy data available. Forecast &amp; wind still shown from model data.</div>
 
-  <div class="grid2">
-    <div class="card">
-      <h3>🌊 Current Swell</h3>
-      <div id="swell-val" class="big-val">—</div>
-      <div id="swell-detail" class="sub"></div>
-      <div class="source">NDBC <span class="buoy-id-ref"></span></div>
-    </div>
-    <div class="card">
-      <h3>🌡️ Water Temp</h3>
-      <div id="temp-val" class="big-val">—</div>
-      <div id="temp-detail" class="sub"></div>
-      <div class="source">NDBC <span class="buoy-id-ref"></span></div>
-    </div>
+  <!-- Hero Summary -->
+  <div class="hero-summary" id="hero-summary" style="display:none">
+    <div class="hero-height" id="hero-height">—</div>
+    <div class="hero-detail" id="hero-detail"></div>
+    <div class="hero-components" id="hero-components"></div>
   </div>
-  <div class="grid2">
-    <div class="card">
-      <h3>💨 Wind</h3>
-      <div id="wind-val" class="big-val">—</div>
-      <div id="wind-detail" class="sub"></div>
-      <div class="source" id="wind-source">NWS API</div>
+
+  <!-- Stat Strip -->
+  <div class="stat-strip">
+    <div class="stat-pill">
+      <div class="stat-icon">💨</div>
+      <div class="stat-label">Wind</div>
+      <div class="stat-value" id="stat-wind">—</div>
+      <div class="stat-sub" id="stat-wind-sub"></div>
     </div>
-    <div class="card">
-      <h3>☀️ Daylight</h3>
-      <div id="daylight-val" class="big-val">—</div>
-      <div id="daylight-detail" class="sub"></div>
-      <div class="source">Astronomical</div>
+    <div class="stat-pill">
+      <div class="stat-icon">🌡️</div>
+      <div class="stat-label">Water</div>
+      <div class="stat-value" id="stat-temp">—</div>
+      <div class="stat-sub" id="stat-temp-sub"></div>
+    </div>
+    <div class="stat-pill">
+      <div class="stat-icon">🌊</div>
+      <div class="stat-label">Tide</div>
+      <div class="stat-value" id="stat-tide">—</div>
+      <div class="stat-sub" id="stat-tide-sub"></div>
+    </div>
+    <div class="stat-pill">
+      <div class="stat-icon">☀️</div>
+      <div class="stat-label">Sun</div>
+      <div class="stat-value" id="stat-sun">—</div>
+      <div class="stat-sub" id="stat-sun-sub"></div>
     </div>
   </div>
 
+  <!-- Surf Forecast Timeline (MAIN CHART) -->
   <div class="card">
-    <h3>🌊 Tides — <span id="tide-station-name">Nearest Station</span></h3>
-    <canvas id="tideCanvas" height="180"></canvas>
-    <div class="source" id="tide-source">CO-OPS</div>
-  </div>
-
-  <div class="card">
-    <h3>🧭 Swell Direction — Spectral Compass Rose</h3>
-    <canvas id="compassCanvas" height="300"></canvas>
-    <div class="sub">Swell energy by direction &amp; frequency</div>
-    <div class="source">NDBC <span class="buoy-id-ref"></span> spectral</div>
-  </div>
-
-  <div class="card">
-    <h3>📈 Swell Forecast</h3>
-    <canvas id="forecastCanvas" height="200"></canvas>
+    <h3>📈 Surf Forecast</h3>
+    <div class="chart-scroll">
+      <canvas id="forecastCanvas" height="220"></canvas>
+    </div>
     <div class="source">Open-Meteo Marine API</div>
   </div>
 
+  <!-- Tide Chart -->
+  <div class="card">
+    <h3>🌊 Tides — <span id="tide-station-name">Nearest Station</span></h3>
+    <div class="chart-scroll">
+      <canvas id="tideCanvas" height="200"></canvas>
+    </div>
+    <div class="source" id="tide-source">CO-OPS</div>
+  </div>
+
+  <!-- Swell Energy Spectrum -->
+  <div class="card">
+    <h3>📊 Wave Energy Spectrum</h3>
+    <canvas id="spectrumCanvas" height="220"></canvas>
+    <div class="source">NDBC <span class="buoy-id-ref"></span> spectral</div>
+  </div>
+
+  <!-- Compass Rose -->
+  <div class="card">
+    <h3>🧭 Swell Direction — Spectral Compass Rose</h3>
+    <canvas id="compassCanvas" height="320"></canvas>
+    <div class="sub">Swell energy by direction &amp; period</div>
+    <div class="source">NDBC <span class="buoy-id-ref"></span> spectral</div>
+  </div>
+
+  <!-- Hourly Table -->
   <div class="card">
     <h3>📋 Hourly Forecast Detail</h3>
     <div id="hourly-table"></div>
     <div class="source">Open-Meteo Marine API</div>
   </div>
 
+  <!-- Windy -->
   <div class="card">
     <h3>🗺️ Wind Map</h3>
     <iframe id="windy-iframe" height="400" loading="lazy"></iframe>
@@ -147,7 +187,7 @@ iframe{width:100%;border:none;border-radius:8px}
 
 <script>
 // =========================================================================
-// SurfCheck — Fully Client-Side Multi-Buoy App
+// SurfCheck v2 — HopeWaves-quality buoy dashboard
 // =========================================================================
 
 const CORS_PROXY = 'https://corsproxy.io/?';
@@ -161,7 +201,7 @@ const degToCompass = d => {
 };
 const pad2 = n => String(n).padStart(2, '0');
 
-const MISSING_FLOATS = new Set([99, 99.0, 99.00, 999, 999.0, 9999, 9999.0, 9.9, 9.99]);
+const MISSING_FLOATS = new Set([99, 99.0, 999, 999.0, 9999, 9999.0, 9.9, 9.99]);
 function safeFloat(val) {
   if (val == null || val === '' || val === 'MM') return null;
   const f = parseFloat(val);
@@ -178,7 +218,63 @@ function safeWaveHeight(val) {
 let stations = [];
 let currentBuoy = null;
 let map = null;
-let markers = [];
+let _sunCache = {};
+
+// =========================================================================
+// Buoy type filtering — only show wave-reporting buoys
+// =========================================================================
+function isWaveBuoy(station) {
+  const t = (station.type || '').toLowerCase();
+  // Filter out C-MAN, ships, fixed platforms, DART, TAO
+  if (t.startsWith('c-man')) return false;
+  if (t.includes('ship')) return false;
+  if (t.includes('dart')) return false;
+  if (t.includes('fixed')) return false;
+  if (t.includes('tao') || t.includes('atlas')) return false;
+  // Keep anything with "buoy" in type
+  if (t.includes('buoy')) return true;
+  // Keep 3m/discus/weather buoys
+  if (t.includes('3-meter') || t.includes('discus') || t.includes('weather')) return true;
+  // Keep if type is empty but has a numeric ID (often buoys)
+  if (!t && /^\d{5}$/.test(station.id)) return true;
+  return false;
+}
+
+// =========================================================================
+// Sunrise / sunset (astronomical calculation)
+// =========================================================================
+function calcSunTimes(lat, lon, date) {
+  const key = `${lat.toFixed(2)}_${lon.toFixed(2)}_${date.toDateString()}`;
+  if (_sunCache[key]) return _sunCache[key];
+
+  const rad = Math.PI / 180;
+  const dayOfYear = Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 86400000);
+  const decl = -23.45 * Math.cos(rad * 360 / 365 * (dayOfYear + 10));
+  const cosHA = (Math.sin(-0.833 * rad) - Math.sin(lat * rad) * Math.sin(decl * rad))
+    / (Math.cos(lat * rad) * Math.cos(decl * rad));
+  if (Math.abs(cosHA) > 1) {
+    const r = { riseMin: 360, setMin: 1080, rise: '--:--', set: '--:--', hours: 'Polar' };
+    _sunCache[key] = r; return r;
+  }
+  const ha = Math.acos(cosHA) / rad;
+  const B = rad * 360 / 365 * (dayOfYear - 81);
+  const eot = 9.87 * Math.sin(2 * B) - 7.53 * Math.cos(B) - 1.5 * Math.sin(B);
+  const solarNoon = 720 - 4 * lon - eot;
+  const tzOffset = Math.round(lon / 15) * 60;
+  const riseMin = solarNoon - ha * 4 + tzOffset;
+  const setMin = solarNoon + ha * 4 + tzOffset;
+  const fmt = m => {
+    let h = Math.floor(m / 60); let min = Math.round(m % 60);
+    if (min === 60) { h++; min = 0; }
+    const ap = h >= 12 ? 'PM' : 'AM';
+    h = h % 12 || 12;
+    return `${h}:${pad2(min)} ${ap}`;
+  };
+  const dl = setMin - riseMin;
+  const r = { riseMin, setMin, rise: fmt(riseMin), set: fmt(setMin), hours: `${Math.floor(dl / 60)}h ${Math.round(dl % 60)}m` };
+  _sunCache[key] = r;
+  return r;
+}
 
 // =========================================================================
 // Fetch helpers
@@ -189,17 +285,11 @@ async function fetchText(url, useCors = false) {
   if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
   return await resp.text();
 }
-
 async function fetchNDBC(buoyId, ext) {
   const url = `https://www.ndbc.noaa.gov/data/realtime2/${buoyId}${ext}`;
-  try {
-    return await fetchText(url, false);
-  } catch {
-    // NDBC may block CORS — try proxy
-    return await fetchText(url, true);
-  }
+  try { return await fetchText(url, false); }
+  catch { return await fetchText(url, true); }
 }
-
 async function fetchJSON(url) {
   const resp = await fetch(url);
   if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
@@ -210,7 +300,8 @@ async function fetchJSON(url) {
 // Station loading & map
 // =========================================================================
 async function loadStations() {
-  stations = await fetchJSON('data/stations.json');
+  const all = await fetchJSON('data/stations.json');
+  stations = all.filter(isWaveBuoy);
   return stations;
 }
 
@@ -219,30 +310,15 @@ function initMap() {
     container: 'map',
     style: {
       version: 8,
-      sources: {
-        osm: {
-          type: 'raster',
-          tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
-          tileSize: 256,
-          attribution: '&copy; OpenStreetMap'
-        }
-      },
-      layers: [{
-        id: 'osm',
-        type: 'raster',
-        source: 'osm'
-      }],
+      sources: { osm: { type: 'raster', tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'], tileSize: 256, attribution: '&copy; OpenStreetMap' } },
+      layers: [{ id: 'osm', type: 'raster', source: 'osm' }],
       glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf'
     },
-    center: [-71.1, 41.0],
-    zoom: 4,
-    maxZoom: 14
+    center: [-71.1, 41.0], zoom: 4, maxZoom: 14
   });
-
   map.addControl(new maplibregl.NavigationControl(), 'top-right');
 
   map.on('load', () => {
-    // Add stations as a GeoJSON source
     const geojson = {
       type: 'FeatureCollection',
       features: stations.map(s => ({
@@ -251,56 +327,32 @@ function initMap() {
         properties: { id: s.id, name: s.name, type: s.type }
       }))
     };
-
     map.addSource('buoys', { type: 'geojson', data: geojson });
-
     map.addLayer({
-      id: 'buoy-circles',
-      type: 'circle',
-      source: 'buoys',
+      id: 'buoy-circles', type: 'circle', source: 'buoys',
       paint: {
         'circle-radius': ['interpolate', ['linear'], ['zoom'], 2, 2.5, 6, 4, 10, 7],
-        'circle-color': '#2563eb',
-        'circle-stroke-width': 1.5,
-        'circle-stroke-color': '#fff',
-        'circle-opacity': 0.85
+        'circle-color': '#2563eb', 'circle-stroke-width': 1.5, 'circle-stroke-color': '#fff', 'circle-opacity': 0.85
       }
     });
-
-    // Selected buoy highlight layer
     map.addLayer({
-      id: 'buoy-selected',
-      type: 'circle',
-      source: 'buoys',
+      id: 'buoy-selected', type: 'circle', source: 'buoys',
       filter: ['==', ['get', 'id'], ''],
       paint: {
         'circle-radius': ['interpolate', ['linear'], ['zoom'], 2, 5, 6, 8, 10, 12],
-        'circle-color': '#dc2626',
-        'circle-stroke-width': 2.5,
-        'circle-stroke-color': '#fff'
+        'circle-color': '#dc2626', 'circle-stroke-width': 2.5, 'circle-stroke-color': '#fff'
       }
     });
-
-    // Click handler
-    map.on('click', 'buoy-circles', (e) => {
-      const props = e.features[0].properties;
-      selectBuoy(props.id);
-    });
-
-    map.on('mouseenter', 'buoy-circles', () => { map.getCanvas().style.cursor = 'pointer'; });
-    map.on('mouseleave', 'buoy-circles', () => { map.getCanvas().style.cursor = ''; });
-
-    // Popup on hover
+    map.on('click', 'buoy-circles', e => selectBuoy(e.features[0].properties.id));
+    map.on('mouseenter', 'buoy-circles', () => map.getCanvas().style.cursor = 'pointer');
+    map.on('mouseleave', 'buoy-circles', () => map.getCanvas().style.cursor = '');
     const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 10 });
-    map.on('mouseenter', 'buoy-circles', (e) => {
+    map.on('mouseenter', 'buoy-circles', e => {
       const p = e.features[0].properties;
-      popup.setLngLat(e.lngLat)
-        .setHTML(`<strong>${p.id}</strong><br>${p.name}<br><em>${p.type}</em>`)
-        .addTo(map);
+      popup.setLngLat(e.lngLat).setHTML(`<strong>${p.id}</strong><br>${p.name}<br><em>${p.type}</em>`).addTo(map);
     });
     map.on('mouseleave', 'buoy-circles', () => popup.remove());
 
-    // Load from hash or default
     const hashBuoy = location.hash.replace('#', '');
     selectBuoy(hashBuoy || '44097');
   });
@@ -310,31 +362,21 @@ function initMap() {
 // Search
 // =========================================================================
 function initSearch() {
-  const input = $('buoy-search');
-  const results = $('search-results');
-
+  const input = $('buoy-search'), results = $('search-results');
   input.addEventListener('input', () => {
     const q = input.value.trim().toLowerCase();
     if (q.length < 2) { results.style.display = 'none'; return; }
-    const matches = stations.filter(s =>
-      s.id.toLowerCase().includes(q) || s.name.toLowerCase().includes(q)
-    ).slice(0, 15);
+    const matches = stations.filter(s => s.id.toLowerCase().includes(q) || s.name.toLowerCase().includes(q)).slice(0, 15);
     if (!matches.length) { results.style.display = 'none'; return; }
     results.innerHTML = matches.map(s =>
       `<div data-id="${s.id}"><strong>${s.id}</strong> — ${s.name} <em style="color:#999">${s.type}</em></div>`
     ).join('');
     results.style.display = 'block';
   });
-
-  results.addEventListener('click', (e) => {
+  results.addEventListener('click', e => {
     const div = e.target.closest('[data-id]');
-    if (div) {
-      selectBuoy(div.dataset.id);
-      input.value = '';
-      results.style.display = 'none';
-    }
+    if (div) { selectBuoy(div.dataset.id); input.value = ''; results.style.display = 'none'; }
   });
-
   input.addEventListener('blur', () => setTimeout(() => results.style.display = 'none', 200));
 }
 
@@ -343,31 +385,19 @@ function initSearch() {
 // =========================================================================
 function selectBuoy(buoyId) {
   const station = stations.find(s => s.id === buoyId);
-  if (!station) {
-    $('buoy-name').textContent = `Buoy ${buoyId} not found`;
-    return;
-  }
-
+  if (!station) { $('buoy-name').textContent = `Buoy ${buoyId} not found`; return; }
   currentBuoy = station;
   location.hash = buoyId;
-
-  // Update UI
-  $('buoy-name').textContent = `${station.name}`;
+  $('buoy-name').textContent = station.name;
   $('buoy-meta').textContent = `${station.id} · ${station.type} · ${station.lat.toFixed(3)}°N, ${Math.abs(station.lon).toFixed(3)}°W`;
   document.querySelectorAll('.buoy-id-ref').forEach(el => el.textContent = station.id);
   $('status').textContent = 'Loading data…';
   $('status').classList.add('loading');
-
-  // Highlight on map
   if (map && map.getLayer('buoy-selected')) {
     map.setFilter('buoy-selected', ['==', ['get', 'id'], buoyId]);
     map.flyTo({ center: [station.lon, station.lat], zoom: 8, duration: 1500 });
   }
-
-  // Update Windy iframe
   $('windy-iframe').src = `https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=8&overlay=wind&product=ecmwf&level=surface&lat=${station.lat}&lon=${station.lon}`;
-
-  // Fetch all data
   loadAllData(station);
 }
 
@@ -375,13 +405,14 @@ function selectBuoy(buoyId) {
 // Data Loading
 // =========================================================================
 async function loadAllData(station) {
-  // Clear previous state
-  ['swell-val','temp-val','wind-val'].forEach(id => { $(id).textContent = '—'; });
-  ['swell-detail','temp-detail','wind-detail'].forEach(id => { $(id).textContent = ''; });
-  document.querySelectorAll('.card.inactive').forEach(c => c.classList.remove('inactive'));
+  $('hero-summary').style.display = 'none';
   $('buoy-warning').style.display = 'none';
+  _sunCache = {};
 
-  renderDaylight(station.lat, station.lon);
+  // Daylight stat
+  const sun = calcSunTimes(station.lat, station.lon, new Date());
+  $('stat-sun').textContent = sun.hours;
+  $('stat-sun-sub').textContent = `↑${sun.rise}`;
 
   const results = await Promise.allSettled([
     loadBuoyData(station),
@@ -390,17 +421,10 @@ async function loadAllData(station) {
     loadWind(station),
   ]);
 
-  const statusParts = [];
-  if (results[0].status === 'fulfilled' && results[0].value) statusParts.push('Buoy ✓');
-  else statusParts.push('Buoy ✗');
-  if (results[1].status === 'fulfilled' && results[1].value) statusParts.push('Forecast ✓');
-  else statusParts.push('Forecast ✗');
-  if (results[2].status === 'fulfilled') statusParts.push('Tides ✓');
-  else statusParts.push('Tides ✗');
-  if (results[3].status === 'fulfilled' && results[3].value) statusParts.push('Wind ✓');
-  else statusParts.push('Wind ✗');
-
-  $('status').textContent = statusParts.join(' · ');
+  const labels = ['Buoy','Forecast','Tides','Wind'];
+  $('status').textContent = results.map((r, i) =>
+    `${labels[i]} ${r.status === 'fulfilled' && r.value ? '✓' : '✗'}`
+  ).join(' · ');
   $('status').classList.remove('loading');
   $('footer-ts').textContent = `Last loaded: ${new Date().toLocaleString()}`;
 }
@@ -410,33 +434,20 @@ async function loadAllData(station) {
 // =========================================================================
 async function loadBuoyData(station) {
   let buoyActive = false;
-  const swellCard = $('swell-val').closest('.card');
-  const tempCard = $('temp-val').closest('.card');
-
   try {
     const stdmetText = await fetchNDBC(station.id, '.txt');
     const stdmet = parseStdmet(stdmetText);
-    if (stdmet && (stdmet.waveHeight_m != null || stdmet.waterTemp_C != null)) {
-      buoyActive = true;
-    }
-    renderSwell(stdmet);
-    renderTemp(stdmet);
-  } catch (e) {
-    console.warn('Buoy stdmet error:', e);
-  }
+    if (stdmet && (stdmet.waveHeight_m != null || stdmet.waterTemp_C != null)) buoyActive = true;
+    renderHero(stdmet);
+    renderStatTemp(stdmet);
+  } catch (e) { console.warn('Buoy stdmet error:', e); }
 
   if (!buoyActive) {
-    $('swell-val').textContent = '⚠️ Inactive';
-    $('swell-detail').textContent = 'No recent reports';
-    $('temp-val').textContent = '⚠️ Inactive';
-    $('temp-detail').textContent = '';
-    swellCard.classList.add('inactive');
-    tempCard.classList.add('inactive');
     $('buoy-warning').style.display = 'block';
-  } else {
-    swellCard.classList.remove('inactive');
-    tempCard.classList.remove('inactive');
-    $('buoy-warning').style.display = 'none';
+    $('hero-summary').style.display = 'block';
+    $('hero-height').textContent = '—';
+    $('hero-detail').textContent = 'Station inactive';
+    $('hero-components').textContent = '';
   }
 
   // Spectral data
@@ -447,11 +458,12 @@ async function loadBuoyData(station) {
     ]);
     const spectral = parseSpectral(specText, swdirText);
     drawCompass(spectral);
+    drawSpectrum(spectral);
   } catch (e) {
     console.warn('Spectral error:', e);
     drawCompass([]);
+    drawSpectrum([]);
   }
-
   return buoyActive;
 }
 
@@ -479,12 +491,7 @@ function parseSpectral(specText, swdirText) {
   const specLines = specText.trim().split('\n');
   const swdirLines = swdirText.trim().split('\n');
   if (specLines.length < 3 || swdirLines.length < 3) return [];
-
-  // Parse frequency bins from header row (line 1, the units/freq line)
-  // Format varies; frequencies are in parentheses or are the header values
-  const freqHeader = specLines[0].replace(/#/g, '').trim().split(/\s+/);
   const freqs = [];
-  // Try extracting from parenthesized values in row 1
   const unitLine = specLines[1];
   const freqMatches = unitLine.match(/\(([^)]+)\)/g);
   if (freqMatches) {
@@ -493,13 +500,10 @@ function parseSpectral(specText, swdirText) {
       if (!isNaN(f) && f > 0 && f < 1) freqs.push(f);
     });
   }
-
   const specRow = specLines[2].split(/\s+/);
   const swdirRow = swdirLines[2].split(/\s+/);
-
   const densities = specRow.slice(5).map(v => safeFloat(v));
   const directions = swdirRow.slice(5).map(v => safeFloat(v));
-
   const entries = [];
   const len = Math.min(freqs.length, densities.length, directions.length);
   for (let i = 0; i < len; i++) {
@@ -516,6 +520,47 @@ function parseSpectral(specText, swdirText) {
 }
 
 // =========================================================================
+// Hero Summary
+// =========================================================================
+function renderHero(stdmet) {
+  const el = $('hero-summary');
+  el.style.display = 'block';
+  if (!stdmet || stdmet.waveHeight_m == null) {
+    $('hero-height').textContent = '—';
+    $('hero-detail').textContent = 'No current data';
+    return;
+  }
+  const htFt = mToFt(stdmet.waveHeight_m);
+  $('hero-height').textContent = `${htFt.toFixed(1)} ft`;
+  const parts = [];
+  if (stdmet.dominantPeriod_s) parts.push(`@ ${stdmet.dominantPeriod_s}s`);
+  if (stdmet.meanDirection_deg != null) parts.push(degToCompass(stdmet.meanDirection_deg));
+  $('hero-detail').textContent = parts.join(' ');
+
+  // Height descriptor
+  let desc = '';
+  if (htFt < 1) desc = 'Flat';
+  else if (htFt < 2) desc = 'Ankle–Knee';
+  else if (htFt < 3) desc = 'Knee–Waist';
+  else if (htFt < 4) desc = 'Waist–Chest';
+  else if (htFt < 5) desc = 'Chest–Head';
+  else if (htFt < 7) desc = 'Overhead';
+  else desc = 'Double overhead+';
+  $('hero-components').textContent = desc;
+}
+
+function renderStatTemp(stdmet) {
+  if (!stdmet || stdmet.waterTemp_C == null) {
+    $('stat-temp').textContent = '—';
+    $('stat-temp-sub').textContent = '';
+    return;
+  }
+  const f = cToF(stdmet.waterTemp_C);
+  $('stat-temp').textContent = `${f.toFixed(0)}°F`;
+  $('stat-temp-sub').textContent = `${stdmet.waterTemp_C.toFixed(1)}°C`;
+}
+
+// =========================================================================
 // Open-Meteo Marine Forecast
 // =========================================================================
 async function loadForecast(station) {
@@ -524,7 +569,6 @@ async function loadForecast(station) {
     const data = await fetchJSON(url);
     const hourly = data.hourly;
     if (!hourly || !hourly.time) throw new Error('No hourly data');
-
     const hours = hourly.time.map((t, i) => ({
       time: t,
       waveHeight: hourly.wave_height?.[i],
@@ -537,56 +581,69 @@ async function loadForecast(station) {
       windWaveDir: hourly.wind_wave_direction?.[i],
       windWavePeriod: hourly.wind_wave_period?.[i],
     }));
-
-    drawForecastTimeline(hours);
+    drawForecastTimeline(hours, station);
     renderHourlyTable(hours);
     return true;
   } catch (e) {
     console.warn('Forecast error:', e);
-    drawForecastTimeline([]);
+    drawForecastTimeline([], station);
     $('hourly-table').innerHTML = '<p class="error-msg">Forecast unavailable</p>';
     return false;
   }
 }
 
 // =========================================================================
-// CO-OPS Tides (nearest station)
+// CO-OPS Tides
 // =========================================================================
 async function loadTides(station) {
   const now = new Date();
   const begin = formatDateCOOPS(now);
   const end = formatDateCOOPS(new Date(now.getTime() + 72 * 3600000));
 
-  // Try a few nearby CO-OPS stations — use the API predictions endpoint
-  // We'll search by coordinates using the metadata API
   let tideStation = null;
   try {
-    const metaUrl = `https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations.json?type=tidepredictions&units=english`;
+    const metaUrl = 'https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations.json?type=tidepredictions&units=english';
     const meta = await fetchJSON(metaUrl);
     if (meta.stations) {
-      // Find nearest
       let minDist = Infinity;
       meta.stations.forEach(s => {
         const d = Math.hypot(s.lat - station.lat, s.lng - station.lon);
         if (d < minDist) { minDist = d; tideStation = s; }
       });
     }
-  } catch (e) {
-    console.warn('Tide station lookup error:', e);
-  }
+  } catch (e) { console.warn('Tide station lookup error:', e); }
 
   const stationId = tideStation ? tideStation.id : '8510719';
   const stationName = tideStation ? tideStation.name : 'Unknown';
   $('tide-station-name').textContent = stationName;
   $('tide-source').textContent = `CO-OPS ${stationId}`;
 
-  const url = `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=${begin}&end_date=${end}&station=${stationId}&product=predictions&datum=MLLW&units=english&time_zone=lst_ldt&interval=6&format=json`;
+  // Fetch predictions + hi/lo
+  const predUrl = `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=${begin}&end_date=${end}&station=${stationId}&product=predictions&datum=MLLW&units=english&time_zone=lst_ldt&interval=6&format=json`;
+  const hiloUrl = `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=${begin}&end_date=${end}&station=${stationId}&product=predictions&datum=MLLW&units=english&time_zone=lst_ldt&interval=hilo&format=json`;
+
   try {
-    const data = await fetchJSON(url);
-    drawTides(data.predictions || []);
+    const [predData, hiloData] = await Promise.all([fetchJSON(predUrl), fetchJSON(hiloUrl).catch(() => ({ predictions: [] }))]);
+    const predictions = predData.predictions || [];
+    const hilo = hiloData.predictions || [];
+    drawTides(predictions, hilo, station);
+
+    // Current tide stat
+    if (hilo.length) {
+      const nowMs = Date.now();
+      let next = hilo.find(h => new Date(h.t).getTime() > nowMs);
+      if (next) {
+        const type = next.type === 'H' ? 'High' : 'Low';
+        const t = new Date(next.t);
+        $('stat-tide').textContent = `${parseFloat(next.v).toFixed(1)}ft`;
+        $('stat-tide-sub').textContent = `${type} ${t.toLocaleTimeString('en', { hour: 'numeric', minute: '2-digit' })}`;
+      }
+    }
+    return true;
   } catch (e) {
     console.warn('Tide data error:', e);
-    drawTides([]);
+    drawTides([], [], station);
+    return false;
   }
 }
 
@@ -608,88 +665,188 @@ async function loadWind(station) {
     if (periods && periods.length) {
       const p = periods[0];
       const spd = p.windSpeed ? parseInt(p.windSpeed) : null;
-      $('wind-val').innerHTML = spd != null ? `${spd} <span class="unit">mph</span>` : 'N/A';
-      const gust = p.windGust ? ` · Gust ${p.windGust}` : '';
-      $('wind-detail').textContent = `${p.windDirection || ''}${gust}`;
+      $('stat-wind').textContent = spd != null ? `${spd}mph` : 'N/A';
+      const gust = p.windGust ? `G${parseInt(p.windGust)}` : '';
+      $('stat-wind-sub').textContent = `${p.windDirection || ''} ${gust}`.trim();
       return true;
     }
   } catch (e) {
     console.warn('NWS wind error:', e);
-    // Fallback: show buoy wind if available
-    $('wind-val').textContent = 'N/A';
-    $('wind-detail').textContent = 'NWS unavailable (offshore?)';
+    $('stat-wind').textContent = 'N/A';
+    $('stat-wind-sub').textContent = 'offshore';
     return false;
   }
 }
 
 // =========================================================================
-// Rendering
+// Canvas: Night shading helper
 // =========================================================================
-function renderSwell(stdmet) {
-  if (!stdmet) { $('swell-val').textContent = 'N/A'; return; }
-  const htFt = mToFt(stdmet.waveHeight_m);
-  if (htFt != null) {
-    $('swell-val').innerHTML = `${htFt.toFixed(1)} <span class="unit">ft</span>`;
-  } else {
-    $('swell-val').textContent = 'N/A';
+function drawNightBands(ctx, lat, lon, tMin, tMax, tRange, padL, padR, padT, padB, W, H) {
+  const cW = W - padL - padR;
+  const startDate = new Date(tMin);
+  startDate.setHours(0, 0, 0, 0);
+  ctx.fillStyle = 'rgba(30,40,70,0.06)';
+
+  for (let d = new Date(startDate.getTime() - 86400000); d.getTime() <= tMax + 86400000; d.setDate(d.getDate() + 1)) {
+    const sun = calcSunTimes(lat, lon, d);
+    // Night before sunrise
+    const dayStart = d.getTime();
+    const riseMs = dayStart + sun.riseMin * 60000;
+    const setMs = dayStart + sun.setMin * 60000;
+
+    // Pre-dawn: midnight to sunrise
+    const preDawnX1 = padL + (dayStart - tMin) / tRange * cW;
+    const preDawnX2 = padL + (riseMs - tMin) / tRange * cW;
+    const x1 = Math.max(padL, Math.min(W - padR, preDawnX1));
+    const x2 = Math.max(padL, Math.min(W - padR, preDawnX2));
+    if (x2 > x1) ctx.fillRect(x1, padT, x2 - x1, H - padT - padB);
+
+    // Post-dusk: sunset to midnight
+    const postDuskX1 = padL + (setMs - tMin) / tRange * cW;
+    const postDuskX2 = padL + (dayStart + 86400000 - tMin) / tRange * cW;
+    const x3 = Math.max(padL, Math.min(W - padR, postDuskX1));
+    const x4 = Math.max(padL, Math.min(W - padR, postDuskX2));
+    if (x4 > x3) ctx.fillRect(x3, padT, x4 - x3, H - padT - padB);
   }
-  const parts = [];
-  if (stdmet.dominantPeriod_s) parts.push(`${stdmet.dominantPeriod_s}s`);
-  if (stdmet.meanDirection_deg != null) parts.push(`${degToCompass(stdmet.meanDirection_deg)} (${Math.round(stdmet.meanDirection_deg)}°)`);
-  $('swell-detail').textContent = parts.join(' · ');
-}
-
-function renderTemp(stdmet) {
-  if (!stdmet || stdmet.waterTemp_C == null) { $('temp-val').textContent = 'N/A'; return; }
-  const f = cToF(stdmet.waterTemp_C);
-  $('temp-val').innerHTML = `${f.toFixed(0)}° <span class="unit">F</span>`;
-  $('temp-detail').textContent = `${stdmet.waterTemp_C.toFixed(1)}°C`;
-}
-
-function renderDaylight(lat, lon) {
-  const sun = calcSun(lat, lon, new Date());
-  $('daylight-val').textContent = sun.hours;
-  $('daylight-detail').textContent = `↑ ${sun.rise}  ↓ ${sun.set}`;
-}
-
-function calcSun(lat, lon, date) {
-  const rad = Math.PI / 180;
-  const dayOfYear = Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 86400000);
-  const decl = -23.45 * Math.cos(rad * 360 / 365 * (dayOfYear + 10));
-  const cosHA = (Math.sin(-0.833 * rad) - Math.sin(lat * rad) * Math.sin(decl * rad))
-    / (Math.cos(lat * rad) * Math.cos(decl * rad));
-  if (Math.abs(cosHA) > 1) return { rise: '--:--', set: '--:--', hours: 'Polar' };
-  const ha = Math.acos(cosHA) / rad;
-  const B = rad * 360 / 365 * (dayOfYear - 81);
-  const eot = 9.87 * Math.sin(2 * B) - 7.53 * Math.cos(B) - 1.5 * Math.sin(B);
-  const solarNoon = 720 - 4 * lon - eot;
-  // Guess timezone offset from longitude (rough)
-  const tzOffset = Math.round(lon / 15) * 60;
-  const rise = solarNoon - ha * 4 + tzOffset;
-  const set = solarNoon + ha * 4 + tzOffset;
-  const fmt = m => {
-    let h = Math.floor(m / 60); let min = Math.round(m % 60);
-    if (min === 60) { h++; min = 0; }
-    const ap = h >= 12 ? 'PM' : 'AM';
-    h = h % 12 || 12;
-    return `${h}:${pad2(min)} ${ap}`;
-  };
-  const dl = set - rise;
-  return { rise: fmt(rise), set: fmt(set), hours: `${Math.floor(dl / 60)}h ${Math.round(dl % 60)}m` };
 }
 
 // =========================================================================
-// Canvas: Tide Chart
+// Canvas: Surf Forecast Timeline (MAIN CHART)
 // =========================================================================
-function drawTides(predictions) {
-  const canvas = $('tideCanvas');
+function drawForecastTimeline(hours, station) {
+  const canvas = $('forecastCanvas');
   const dpr = window.devicePixelRatio || 1;
-  const rect = canvas.getBoundingClientRect();
-  canvas.width = rect.width * dpr;
-  canvas.height = 180 * dpr;
+  const W = Math.max(700, canvas.parentElement.getBoundingClientRect().width);
+  const H = 220;
+  canvas.style.width = W + 'px';
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
   const ctx = canvas.getContext('2d');
   ctx.scale(dpr, dpr);
-  const W = rect.width, H = 180;
+
+  if (!hours || !hours.length) {
+    ctx.fillStyle = '#999'; ctx.font = '13px "DM Mono"';
+    ctx.fillText('No forecast data available', 20, H / 2);
+    return;
+  }
+
+  const pts = hours.filter(h => h.waveHeight != null).map(h => ({
+    t: new Date(h.time), ht: h.waveHeight * 3.28084, dir: h.waveDir
+  }));
+  if (!pts.length) return;
+
+  const pad = { t: 20, b: 40, l: 44, r: 14 };
+  const cW = W - pad.l - pad.r, cH = H - pad.t - pad.b;
+  const maxHt = Math.max(...pts.map(p => p.ht), 6);
+  const tMin = pts[0].t.getTime(), tMax = pts[pts.length - 1].t.getTime();
+  const tRange = tMax - tMin || 1;
+
+  const xp = p => pad.l + (p.t.getTime() - tMin) / tRange * cW;
+  const yp = ht => pad.t + cH - (ht / maxHt) * cH;
+
+  // Night shading
+  if (station) drawNightBands(ctx, station.lat, station.lon, tMin, tMax, tRange, pad.l, pad.r, pad.t, pad.b, W, H);
+
+  // Height reference lines
+  const refs = [
+    { ft: 2, label: 'Knee' }, { ft: 3, label: 'Waist' },
+    { ft: 4, label: 'Chest' }, { ft: 5, label: 'Head' }, { ft: 6, label: 'OH' }
+  ];
+  refs.forEach(r => {
+    if (r.ft > maxHt) return;
+    const yy = yp(r.ft);
+    ctx.strokeStyle = 'rgba(37,99,235,0.15)'; ctx.lineWidth = 1; ctx.setLineDash([6, 4]);
+    ctx.beginPath(); ctx.moveTo(pad.l, yy); ctx.lineTo(W - pad.r, yy); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = 'rgba(37,99,235,0.4)'; ctx.font = '9px "DM Mono"'; ctx.textAlign = 'right';
+    ctx.fillText(r.label, pad.l - 4, yy + 3);
+  });
+
+  // Y-axis ft labels
+  ctx.textAlign = 'right'; ctx.fillStyle = '#999'; ctx.font = '10px "DM Mono"';
+  for (let v = 0; v <= maxHt; v += 1) {
+    const yy = yp(v);
+    if (yy > pad.t && yy < H - pad.b) {
+      ctx.fillText(v + 'ft', pad.l - 14, yy + 3);
+    }
+  }
+  ctx.textAlign = 'left';
+
+  // Day grid + labels
+  const startDay = new Date(pts[0].t); startDay.setHours(0, 0, 0, 0);
+  for (let d = new Date(startDay); d.getTime() <= tMax; d.setDate(d.getDate() + 1)) {
+    const dx = pad.l + (d.getTime() - tMin) / tRange * cW;
+    if (dx >= pad.l && dx <= W - pad.r) {
+      ctx.strokeStyle = '#d5d1cb'; ctx.lineWidth = 0.5; ctx.setLineDash([]);
+      ctx.beginPath(); ctx.moveTo(dx, pad.t); ctx.lineTo(dx, H - pad.b); ctx.stroke();
+      ctx.fillStyle = '#666'; ctx.font = '10px "DM Mono"';
+      ctx.fillText(d.toLocaleDateString('en', { weekday: 'short', month: 'short', day: 'numeric' }), dx + 4, H - pad.b + 14);
+    }
+  }
+
+  // Area fill (gradient by height)
+  ctx.beginPath();
+  pts.forEach((p, i) => i === 0 ? ctx.moveTo(xp(p), yp(p.ht)) : ctx.lineTo(xp(p), yp(p.ht)));
+  ctx.lineTo(xp(pts[pts.length - 1]), H - pad.b);
+  ctx.lineTo(xp(pts[0]), H - pad.b);
+  ctx.closePath();
+  const grad = ctx.createLinearGradient(0, pad.t, 0, H - pad.b);
+  grad.addColorStop(0, 'rgba(37,99,235,0.25)');
+  grad.addColorStop(1, 'rgba(37,99,235,0.02)');
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // Line
+  ctx.beginPath();
+  pts.forEach((p, i) => i === 0 ? ctx.moveTo(xp(p), yp(p.ht)) : ctx.lineTo(xp(p), yp(p.ht)));
+  ctx.strokeStyle = '#2563eb'; ctx.lineWidth = 2.5; ctx.stroke();
+
+  // Swell component overlay
+  const swellPts = hours.filter(h => h.swellHeight != null).map(h => ({
+    t: new Date(h.time), ht: h.swellHeight * 3.28084
+  }));
+  if (swellPts.length) {
+    ctx.beginPath();
+    swellPts.forEach((p, i) => i === 0 ? ctx.moveTo(xp(p), yp(p.ht)) : ctx.lineTo(xp(p), yp(p.ht)));
+    ctx.strokeStyle = '#16a34a'; ctx.lineWidth = 1.5; ctx.setLineDash([5, 3]); ctx.stroke();
+    ctx.setLineDash([]);
+  }
+
+  // Now line
+  const now = Date.now();
+  const nowX = pad.l + (now - tMin) / tRange * cW;
+  if (nowX >= pad.l && nowX <= W - pad.r) {
+    ctx.strokeStyle = '#dc2626'; ctx.lineWidth = 1.5; ctx.setLineDash([3, 3]);
+    ctx.beginPath(); ctx.moveTo(nowX, pad.t); ctx.lineTo(nowX, H - pad.b); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = '#dc2626'; ctx.font = 'bold 9px "DM Mono"';
+    ctx.fillText('NOW', nowX + 3, pad.t + 10);
+  }
+
+  // Legend
+  ctx.font = '9px "DM Mono"'; ctx.setLineDash([]);
+  ctx.fillStyle = '#2563eb'; ctx.fillRect(W - 130, pad.t + 4, 12, 2); ctx.fillText('Total', W - 114, pad.t + 8);
+  if (swellPts.length) {
+    ctx.fillStyle = '#16a34a'; ctx.setLineDash([3, 2]);
+    ctx.beginPath(); ctx.moveTo(W - 130, pad.t + 17); ctx.lineTo(W - 118, pad.t + 17); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillText('Swell', W - 114, pad.t + 20);
+  }
+}
+
+// =========================================================================
+// Canvas: Tide Chart (smooth spline + hi/lo markers + night shading)
+// =========================================================================
+function drawTides(predictions, hilo, station) {
+  const canvas = $('tideCanvas');
+  const dpr = window.devicePixelRatio || 1;
+  const W = Math.max(700, canvas.parentElement.getBoundingClientRect().width);
+  const H = 200;
+  canvas.style.width = W + 'px';
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
 
   if (!predictions || !predictions.length) {
     ctx.fillStyle = '#999'; ctx.font = '13px "DM Mono"';
@@ -704,23 +861,25 @@ function drawTides(predictions) {
   const tMin = vals[0].t.getTime(), tMax = vals[vals.length - 1].t.getTime();
   const tRange = tMax - tMin || 1;
 
-  const pad = { t: 25, b: 30, l: 38, r: 10 };
+  const pad = { t: 20, b: 35, l: 44, r: 14 };
   const cW = W - pad.l - pad.r, cH = H - pad.t - pad.b;
   const xp = v => pad.l + (v.t.getTime() - tMin) / tRange * cW;
   const yp = v => pad.t + cH - (v.v - minV) / range * cH;
 
+  // Night shading
+  if (station) drawNightBands(ctx, station.lat, station.lon, tMin, tMax, tRange, pad.l, pad.r, pad.t, pad.b, W, H);
+
   // Day grid
-  ctx.strokeStyle = '#e5e1db'; ctx.lineWidth = 1; ctx.setLineDash([4, 4]);
+  ctx.strokeStyle = '#e5e1db'; ctx.lineWidth = 0.5;
   const startDay = new Date(vals[0].t); startDay.setHours(0, 0, 0, 0);
   for (let d = new Date(startDay); d.getTime() <= tMax; d.setDate(d.getDate() + 1)) {
     const dx = pad.l + (d.getTime() - tMin) / tRange * cW;
     if (dx > pad.l && dx < W - pad.r) {
       ctx.beginPath(); ctx.moveTo(dx, pad.t); ctx.lineTo(dx, H - pad.b); ctx.stroke();
-      ctx.fillStyle = '#999'; ctx.font = '10px "DM Mono"';
-      ctx.fillText(d.toLocaleDateString('en', { weekday: 'short' }), dx + 3, H - pad.b + 14);
+      ctx.fillStyle = '#666'; ctx.font = '10px "DM Mono"';
+      ctx.fillText(d.toLocaleDateString('en', { weekday: 'short', month: 'short', day: 'numeric' }), dx + 3, H - pad.b + 14);
     }
   }
-  ctx.setLineDash([]);
 
   // Y labels
   ctx.fillStyle = '#999'; ctx.font = '10px "DM Mono"'; ctx.textAlign = 'right';
@@ -730,16 +889,48 @@ function drawTides(predictions) {
   }
   ctx.textAlign = 'left';
 
-  // Line
-  ctx.beginPath(); ctx.strokeStyle = '#2563eb'; ctx.lineWidth = 2;
-  vals.forEach((v, i) => i === 0 ? ctx.moveTo(xp(v), yp(v)) : ctx.lineTo(xp(v), yp(v)));
-  ctx.stroke();
+  // Smooth bezier spline
+  ctx.beginPath();
+  ctx.moveTo(xp(vals[0]), yp(vals[0]));
+  for (let i = 1; i < vals.length; i++) {
+    const prev = vals[i - 1];
+    const curr = vals[i];
+    const cpx = (xp(prev) + xp(curr)) / 2;
+    ctx.bezierCurveTo(cpx, yp(prev), cpx, yp(curr), xp(curr), yp(curr));
+  }
+  ctx.strokeStyle = '#2563eb'; ctx.lineWidth = 2.5; ctx.stroke();
 
-  // Fill
+  // Fill under
   ctx.lineTo(xp(vals[vals.length - 1]), H - pad.b);
   ctx.lineTo(xp(vals[0]), H - pad.b);
   ctx.closePath();
-  ctx.fillStyle = 'rgba(37,99,235,0.06)'; ctx.fill();
+  const grad = ctx.createLinearGradient(0, pad.t, 0, H - pad.b);
+  grad.addColorStop(0, 'rgba(37,99,235,0.12)');
+  grad.addColorStop(1, 'rgba(37,99,235,0.01)');
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // Hi/Lo markers
+  if (hilo && hilo.length) {
+    hilo.forEach(h => {
+      const pt = { t: new Date(h.t), v: parseFloat(h.v) };
+      const x = xp(pt), y = yp(pt);
+      if (x < pad.l || x > W - pad.r) return;
+      const isHigh = h.type === 'H';
+      ctx.beginPath(); ctx.arc(x, y, 5, 0, Math.PI * 2);
+      ctx.fillStyle = isHigh ? '#2563eb' : '#ca8a04'; ctx.fill();
+      ctx.strokeStyle = '#fff'; ctx.lineWidth = 2; ctx.stroke();
+
+      // Label
+      ctx.fillStyle = isHigh ? '#2563eb' : '#92700c';
+      ctx.font = 'bold 9px "DM Mono"'; ctx.textAlign = 'center';
+      const tStr = pt.t.toLocaleTimeString('en', { hour: 'numeric', minute: '2-digit', hour12: true });
+      ctx.fillText(`${pt.v.toFixed(1)}ft`, x, isHigh ? y - 10 : y + 16);
+      ctx.fillStyle = '#999'; ctx.font = '8px "DM Mono"';
+      ctx.fillText(tStr, x, isHigh ? y - 20 : y + 25);
+      ctx.textAlign = 'left';
+    });
+  }
 
   // Now line
   const now = Date.now();
@@ -748,9 +939,101 @@ function drawTides(predictions) {
     ctx.strokeStyle = '#dc2626'; ctx.lineWidth = 1.5; ctx.setLineDash([3, 3]);
     ctx.beginPath(); ctx.moveTo(nowX, pad.t); ctx.lineTo(nowX, H - pad.b); ctx.stroke();
     ctx.setLineDash([]);
-    ctx.fillStyle = '#dc2626'; ctx.font = '9px "DM Mono"';
-    ctx.fillText('now', nowX + 3, pad.t + 10);
+    ctx.fillStyle = '#dc2626'; ctx.font = 'bold 9px "DM Mono"';
+    ctx.fillText('NOW', nowX + 3, pad.t + 10);
   }
+}
+
+// =========================================================================
+// Canvas: Swell Energy Spectrum
+// =========================================================================
+function drawSpectrum(spectral) {
+  const canvas = $('spectrumCanvas');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = 220 * dpr;
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  const W = rect.width, H = 220;
+
+  if (!spectral || !spectral.length) {
+    ctx.fillStyle = '#999'; ctx.font = '13px "DM Mono"';
+    ctx.fillText('No spectral data available', 20, H / 2);
+    return;
+  }
+
+  // Sort by period descending (so x axis goes high period → low period, i.e. left=long, right=short)
+  const sorted = [...spectral].sort((a, b) => b.period_s - a.period_s);
+  const maxE = Math.max(...sorted.map(s => s.energy));
+  const minP = Math.min(...sorted.map(s => s.period_s));
+  const maxP = Math.max(...sorted.map(s => s.period_s));
+
+  const pad = { t: 30, b: 40, l: 50, r: 14 };
+  const cW = W - pad.l - pad.r, cH = H - pad.t - pad.b;
+
+  // Title
+  ctx.fillStyle = '#999'; ctx.font = '10px "DM Mono"'; ctx.textAlign = 'center';
+  ctx.fillText('Wave Energy (m²/Hz) vs Period (s)', W / 2, 16);
+  ctx.textAlign = 'left';
+
+  // Grid
+  ctx.strokeStyle = '#e5e1db'; ctx.lineWidth = 0.5;
+  // Y grid
+  const eStep = maxE > 2 ? Math.ceil(maxE / 5) : maxE / 5;
+  for (let e = 0; e <= maxE * 1.1; e += eStep || 0.1) {
+    const yy = pad.t + cH - (e / (maxE * 1.1)) * cH;
+    ctx.beginPath(); ctx.moveTo(pad.l, yy); ctx.lineTo(W - pad.r, yy); ctx.stroke();
+    ctx.fillStyle = '#999'; ctx.font = '9px "DM Mono"'; ctx.textAlign = 'right';
+    ctx.fillText(e.toFixed(1), pad.l - 5, yy + 3);
+  }
+  // X grid
+  const pStep = maxP > 15 ? 4 : 2;
+  for (let p = Math.ceil(minP); p <= maxP; p += pStep) {
+    const xx = pad.l + ((p - minP) / (maxP - minP)) * cW;
+    ctx.beginPath(); ctx.moveTo(xx, pad.t); ctx.lineTo(xx, H - pad.b); ctx.stroke();
+    ctx.fillStyle = '#999'; ctx.font = '9px "DM Mono"'; ctx.textAlign = 'center';
+    ctx.fillText(p + 's', xx, H - pad.b + 14);
+  }
+  ctx.textAlign = 'left';
+
+  // Axis labels
+  ctx.fillStyle = '#777'; ctx.font = '9px "DM Mono"'; ctx.textAlign = 'center';
+  ctx.fillText('Period (s)', W / 2, H - 4);
+  ctx.save(); ctx.translate(12, H / 2); ctx.rotate(-Math.PI / 2);
+  ctx.fillText('Energy (m²/Hz)', 0, 0);
+  ctx.restore(); ctx.textAlign = 'left';
+
+  // Plot sorted by period ascending for the line
+  const byPeriod = [...spectral].sort((a, b) => a.period_s - b.period_s);
+  const xOf = s => pad.l + ((s.period_s - minP) / (maxP - minP)) * cW;
+  const yOf = s => pad.t + cH - (s.energy / (maxE * 1.1)) * cH;
+
+  // Area fill
+  ctx.beginPath();
+  byPeriod.forEach((s, i) => i === 0 ? ctx.moveTo(xOf(s), yOf(s)) : ctx.lineTo(xOf(s), yOf(s)));
+  ctx.lineTo(xOf(byPeriod[byPeriod.length - 1]), H - pad.b);
+  ctx.lineTo(xOf(byPeriod[0]), H - pad.b);
+  ctx.closePath();
+  const grad = ctx.createLinearGradient(0, pad.t, 0, H - pad.b);
+  grad.addColorStop(0, 'rgba(37,99,235,0.2)');
+  grad.addColorStop(1, 'rgba(37,99,235,0.02)');
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // Line
+  ctx.beginPath();
+  byPeriod.forEach((s, i) => i === 0 ? ctx.moveTo(xOf(s), yOf(s)) : ctx.lineTo(xOf(s), yOf(s)));
+  ctx.strokeStyle = '#2563eb'; ctx.lineWidth = 2; ctx.stroke();
+
+  // Peak dot
+  const peak = byPeriod.reduce((a, b) => a.energy > b.energy ? a : b);
+  ctx.beginPath(); ctx.arc(xOf(peak), yOf(peak), 5, 0, Math.PI * 2);
+  ctx.fillStyle = '#dc2626'; ctx.fill();
+  ctx.strokeStyle = '#fff'; ctx.lineWidth = 2; ctx.stroke();
+  ctx.fillStyle = '#dc2626'; ctx.font = 'bold 9px "DM Mono"'; ctx.textAlign = 'center';
+  ctx.fillText(`${peak.period_s}s`, xOf(peak), yOf(peak) - 10);
+  ctx.textAlign = 'left';
 }
 
 // =========================================================================
@@ -761,27 +1044,32 @@ function drawCompass(spectral) {
   const dpr = window.devicePixelRatio || 1;
   const rect = canvas.getBoundingClientRect();
   canvas.width = rect.width * dpr;
-  canvas.height = 300 * dpr;
+  canvas.height = 320 * dpr;
   const ctx = canvas.getContext('2d');
   ctx.scale(dpr, dpr);
-  const W = rect.width, H = 300;
-  const cx = W / 2, cy = H / 2, R = Math.min(W, H) / 2 - 30;
+  const W = rect.width, H = 320;
+  const cx = W / 2, cy = H / 2, R = Math.min(W, H) / 2 - 35;
 
-  // Concentric rings
+  // Concentric rings with labels
   for (let i = 1; i <= 4; i++) {
     ctx.beginPath(); ctx.arc(cx, cy, R * i / 4, 0, Math.PI * 2);
     ctx.strokeStyle = '#e5e1db'; ctx.lineWidth = 0.5; ctx.stroke();
   }
 
-  // Cardinals
-  ctx.fillStyle = '#999'; ctx.font = '11px "DM Mono"'; ctx.textAlign = 'center';
-  [{ l: 'N', a: -90 }, { l: 'E', a: 0 }, { l: 'S', a: 90 }, { l: 'W', a: 180 }].forEach(d => {
+  // All 8 directions
+  const cardinals = [
+    { l: 'N', a: -90 }, { l: 'NE', a: -45 }, { l: 'E', a: 0 }, { l: 'SE', a: 45 },
+    { l: 'S', a: 90 }, { l: 'SW', a: 135 }, { l: 'W', a: 180 }, { l: 'NW', a: -135 }
+  ];
+  ctx.fillStyle = '#777'; ctx.font = '11px "DM Mono"'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  cardinals.forEach(d => {
     const a = d.a * Math.PI / 180;
-    ctx.fillText(d.l, cx + (R + 20) * Math.cos(a), cy + (R + 20) * Math.sin(a) + 4);
+    ctx.fillText(d.l, cx + (R + 22) * Math.cos(a), cy + (R + 22) * Math.sin(a));
     ctx.beginPath(); ctx.moveTo(cx, cy);
     ctx.lineTo(cx + R * Math.cos(a), cy + R * Math.sin(a));
-    ctx.strokeStyle = '#ddd'; ctx.lineWidth = 0.5; ctx.stroke();
+    ctx.strokeStyle = '#e5e1db'; ctx.lineWidth = 0.5; ctx.stroke();
   });
+  ctx.textBaseline = 'alphabetic';
 
   if (!spectral || !spectral.length) {
     ctx.fillStyle = '#999'; ctx.font = '12px "DM Mono"';
@@ -791,120 +1079,39 @@ function drawCompass(spectral) {
 
   const maxE = Math.max(...spectral.map(s => s.energy));
 
+  // Energy magnitude labels on rings
+  ctx.fillStyle = '#bbb'; ctx.font = '8px "DM Mono"'; ctx.textAlign = 'left';
+  for (let i = 1; i <= 4; i++) {
+    ctx.fillText((maxE * i / 4).toFixed(1), cx + 4, cy - R * i / 4 + 10);
+  }
+
+  // Draw filled wedges with spread
   spectral.forEach(s => {
     const angle = (s.direction_deg - 90) * Math.PI / 180;
     const r = (s.energy / maxE) * R * 0.9;
-    const halfW = 3 * Math.PI / 180;
+    const halfW = 4 * Math.PI / 180;
 
     ctx.beginPath(); ctx.moveTo(cx, cy);
     ctx.arc(cx, cy, r, angle - halfW, angle + halfW);
     ctx.closePath();
 
-    // Color by period (longer = bluer)
+    // Color by period: short (warm) → long (cool)
     const periodNorm = Math.min((s.period_s || 5) / 18, 1);
-    const alpha = 0.3 + periodNorm * 0.5;
-    ctx.fillStyle = `rgba(37,99,235,${alpha})`;
+    const hue = 200 + periodNorm * 40; // 200-240 blue range
+    const alpha = 0.35 + periodNorm * 0.45;
+    ctx.fillStyle = `hsla(${hue}, 80%, 50%, ${alpha})`;
     ctx.fill();
 
     if (s.energy > maxE * 0.3 && s.period_s) {
-      ctx.fillStyle = '#333'; ctx.font = '9px "DM Mono"';
+      ctx.fillStyle = '#333'; ctx.font = '9px "DM Mono"'; ctx.textAlign = 'center';
       ctx.fillText(`${s.period_s}s`, cx + (r + 14) * Math.cos(angle), cy + (r + 14) * Math.sin(angle) + 3);
     }
   });
-}
-
-// =========================================================================
-// Canvas: Forecast Timeline
-// =========================================================================
-function drawForecastTimeline(hours) {
-  const canvas = $('forecastCanvas');
-  const dpr = window.devicePixelRatio || 1;
-  const rect = canvas.getBoundingClientRect();
-  canvas.width = rect.width * dpr;
-  canvas.height = 200 * dpr;
-  const ctx = canvas.getContext('2d');
-  ctx.scale(dpr, dpr);
-  const W = rect.width, H = 200;
-
-  if (!hours || !hours.length) {
-    ctx.fillStyle = '#999'; ctx.font = '13px "DM Mono"';
-    ctx.fillText('No forecast data available', 20, H / 2);
-    return;
-  }
-
-  const pts = hours.filter(h => h.waveHeight != null).map(h => ({
-    t: new Date(h.time), ht: h.waveHeight * 3.28084
-  }));
-  if (!pts.length) return;
-
-  const pad = { t: 20, b: 35, l: 38, r: 10 };
-  const cW = W - pad.l - pad.r, cH = H - pad.t - pad.b;
-  const maxHt = Math.max(...pts.map(p => p.ht), 3);
-  const tMin = pts[0].t.getTime(), tMax = pts[pts.length - 1].t.getTime();
-  const tRange = tMax - tMin || 1;
-
-  const xp = p => pad.l + (p.t.getTime() - tMin) / tRange * cW;
-  const yp = p => pad.t + cH - (p.ht / maxHt) * cH;
-
-  // Grid
-  ctx.strokeStyle = '#e5e1db'; ctx.lineWidth = 0.5; ctx.setLineDash([4, 4]);
-  for (let v = 1; v <= maxHt; v++) {
-    const yy = pad.t + cH - (v / maxHt) * cH;
-    ctx.beginPath(); ctx.moveTo(pad.l, yy); ctx.lineTo(W - pad.r, yy); ctx.stroke();
-    ctx.fillStyle = '#999'; ctx.font = '10px "DM Mono"'; ctx.textAlign = 'right';
-    ctx.fillText(v + 'ft', pad.l - 5, yy + 3);
-  }
-  ctx.setLineDash([]);
-  ctx.textAlign = 'left';
-
-  // Day labels
-  const startDay = new Date(pts[0].t); startDay.setHours(0, 0, 0, 0);
-  for (let d = new Date(startDay); d.getTime() <= tMax; d.setDate(d.getDate() + 1)) {
-    const dx = pad.l + (d.getTime() - tMin) / tRange * cW;
-    if (dx >= pad.l && dx <= W - pad.r) {
-      ctx.strokeStyle = '#e5e1db'; ctx.setLineDash([4, 4]);
-      ctx.beginPath(); ctx.moveTo(dx, pad.t); ctx.lineTo(dx, H - pad.b); ctx.stroke();
-      ctx.setLineDash([]);
-      ctx.fillStyle = '#999'; ctx.font = '9px "DM Mono"';
-      ctx.fillText(d.toLocaleDateString('en', { month: 'short', day: 'numeric' }), dx + 2, H - pad.b + 12);
-    }
-  }
-
-  // Area + line
-  ctx.beginPath();
-  pts.forEach((p, i) => i === 0 ? ctx.moveTo(xp(p), yp(p)) : ctx.lineTo(xp(p), yp(p)));
-  ctx.strokeStyle = '#2563eb'; ctx.lineWidth = 2; ctx.stroke();
-  ctx.lineTo(xp(pts[pts.length - 1]), H - pad.b);
-  ctx.lineTo(xp(pts[0]), H - pad.b);
-  ctx.closePath();
-  ctx.fillStyle = 'rgba(37,99,235,0.08)'; ctx.fill();
-
-  // Swell overlay (if available)
-  const swellPts = hours.filter(h => h.swellHeight != null).map(h => ({
-    t: new Date(h.time), ht: h.swellHeight * 3.28084
-  }));
-  if (swellPts.length) {
-    ctx.beginPath();
-    swellPts.forEach((p, i) => i === 0 ? ctx.moveTo(xp(p), yp(p)) : ctx.lineTo(xp(p), yp(p)));
-    ctx.strokeStyle = '#16a34a'; ctx.lineWidth = 1.5; ctx.setLineDash([5, 3]); ctx.stroke();
-    ctx.setLineDash([]);
-  }
-
-  // Now line
-  const now = Date.now();
-  const nowX = pad.l + (now - tMin) / tRange * cW;
-  if (nowX >= pad.l && nowX <= W - pad.r) {
-    ctx.strokeStyle = '#dc2626'; ctx.lineWidth = 1.5; ctx.setLineDash([3, 3]);
-    ctx.beginPath(); ctx.moveTo(nowX, pad.t); ctx.lineTo(nowX, H - pad.b); ctx.stroke();
-    ctx.setLineDash([]);
-  }
 
   // Legend
-  ctx.font = '9px "DM Mono"'; ctx.setLineDash([]);
-  ctx.fillStyle = '#2563eb'; ctx.fillText('— Total', W - 120, pad.t + 10);
-  if (swellPts.length) {
-    ctx.fillStyle = '#16a34a'; ctx.fillText('--- Swell', W - 120, pad.t + 22);
-  }
+  ctx.textAlign = 'left';
+  ctx.font = '8px "DM Mono"'; ctx.fillStyle = '#999';
+  ctx.fillText('Color: short period (light) → long period (dark)', 8, H - 6);
 }
 
 // =========================================================================
@@ -915,13 +1122,10 @@ function renderHourlyTable(hours) {
     $('hourly-table').innerHTML = '<p class="error-msg">No forecast data</p>';
     return;
   }
-
   const now = Date.now();
   const upcoming = hours.filter(h => new Date(h.time).getTime() >= now - 3600000).slice(0, 48);
-
   let html = `<table class="forecast-table">
     <thead><tr><th>Time</th><th>Ht</th><th>Per</th><th>Dir</th><th>Swell</th></tr></thead><tbody>`;
-
   upcoming.forEach(h => {
     const t = new Date(h.time);
     const tStr = t.toLocaleString('en', { weekday: 'short', hour: 'numeric', hour12: true });
@@ -931,7 +1135,6 @@ function renderHourlyTable(hours) {
     const sw = h.swellHeight != null ? (h.swellHeight * 3.28084).toFixed(1) + 'ft' : '—';
     html += `<tr><td>${tStr}</td><td>${ht}</td><td>${per}</td><td>${dir}</td><td>${sw}</td></tr>`;
   });
-
   html += '</tbody></table>';
   $('hourly-table').innerHTML = html;
 }
@@ -944,7 +1147,6 @@ async function init() {
   initMap();
   initSearch();
 }
-
 init();
 </script>
 </body>
