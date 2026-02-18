@@ -55,6 +55,11 @@ iframe{width:100%;border:none;border-radius:8px}
   border-bottom:1px solid var(--border)}
 #search-results div:hover{background:rgba(37,99,235,0.06)}
 .error-msg{color:var(--bad);font-size:0.8rem;font-family:'DM Mono',monospace;padding:8px 0}
+.card.inactive{border-color:#e5c07b;background:#fffdf5}
+.card.inactive .big-val{color:var(--ok);font-size:1rem;font-weight:400}
+.card.inactive .sub{color:var(--ok)}
+#buoy-warning{display:none;background:#fffdf5;border:1px solid #e5c07b;border-radius:10px;
+  padding:12px 14px;margin-bottom:14px;font-family:'DM Mono',monospace;font-size:0.8rem;color:#92700c}
 </style>
 </head>
 <body>
@@ -75,6 +80,7 @@ iframe{width:100%;border:none;border-radius:8px}
   <div id="buoy-name">Select a buoy</div>
   <div id="buoy-meta"></div>
   <p id="status" class="sub loading"></p>
+  <div id="buoy-warning">⚠️ Station inactive — no recent buoy data available. Forecast &amp; wind still shown from model data.</div>
 
   <div class="grid2">
     <div class="card">
@@ -369,9 +375,11 @@ function selectBuoy(buoyId) {
 // Data Loading
 // =========================================================================
 async function loadAllData(station) {
-  // Clear previous
+  // Clear previous state
   ['swell-val','temp-val','wind-val'].forEach(id => { $(id).textContent = '—'; });
   ['swell-detail','temp-detail','wind-detail'].forEach(id => { $(id).textContent = ''; });
+  document.querySelectorAll('.card.inactive').forEach(c => c.classList.remove('inactive'));
+  $('buoy-warning').style.display = 'none';
 
   renderDaylight(station.lat, station.lon);
 
@@ -401,15 +409,34 @@ async function loadAllData(station) {
 // NDBC Buoy Data
 // =========================================================================
 async function loadBuoyData(station) {
+  let buoyActive = false;
+  const swellCard = $('swell-val').closest('.card');
+  const tempCard = $('temp-val').closest('.card');
+
   try {
     const stdmetText = await fetchNDBC(station.id, '.txt');
     const stdmet = parseStdmet(stdmetText);
+    if (stdmet && (stdmet.waveHeight_m != null || stdmet.waterTemp_C != null)) {
+      buoyActive = true;
+    }
     renderSwell(stdmet);
     renderTemp(stdmet);
   } catch (e) {
     console.warn('Buoy stdmet error:', e);
-    $('swell-val').textContent = 'N/A';
-    $('temp-val').textContent = 'N/A';
+  }
+
+  if (!buoyActive) {
+    $('swell-val').textContent = '⚠️ Inactive';
+    $('swell-detail').textContent = 'No recent reports';
+    $('temp-val').textContent = '⚠️ Inactive';
+    $('temp-detail').textContent = '';
+    swellCard.classList.add('inactive');
+    tempCard.classList.add('inactive');
+    $('buoy-warning').style.display = 'block';
+  } else {
+    swellCard.classList.remove('inactive');
+    tempCard.classList.remove('inactive');
+    $('buoy-warning').style.display = 'none';
   }
 
   // Spectral data
@@ -420,12 +447,12 @@ async function loadBuoyData(station) {
     ]);
     const spectral = parseSpectral(specText, swdirText);
     drawCompass(spectral);
-    return true;
   } catch (e) {
     console.warn('Spectral error:', e);
     drawCompass([]);
-    return true;
   }
+
+  return buoyActive;
 }
 
 function parseStdmet(text) {
