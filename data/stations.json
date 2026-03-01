@@ -1207,7 +1207,7 @@
     "id": "41108",
     "name": "Wilmington Harbor, NC - (200)",
     "type": "Waverider Buoy",
-    "lat": 33.721,
+    "lat": 33.719,
     "lon": -78.016
   },
   {
@@ -1851,8 +1851,8 @@
     "id": "42092",
     "name": "Aransas Pass Channel Entrance S, TX (252)",
     "type": "Waverider Buoy",
-    "lat": 27.64,
-    "lon": -97.011
+    "lat": 27.639,
+    "lon": -97.012
   },
   {
     "id": "42093",
@@ -2502,8 +2502,8 @@
     "id": "44087",
     "name": "Thimble Shoal, VA (240)",
     "type": "Waverider Buoy",
-    "lat": 37.044,
-    "lon": -76.13
+    "lat": 37.045,
+    "lon": -76.127
   },
   {
     "id": "44088",
