@@ -1221,7 +1221,7 @@
     "id": "41110",
     "name": "Masonboro Inlet, ILM2, NC (150)",
     "type": "Waverider Buoy",
-    "lat": 34.142,
+    "lat": 34.144,
     "lon": -77.715
   },
   {
@@ -1291,7 +1291,7 @@
     "id": "41121",
     "name": "Arecibo, Puerto Rico (249)",
     "type": "Waverider Buoy",
-    "lat": 18.49,
+    "lat": 18.491,
     "lon": -66.701
   },
   {
@@ -1466,8 +1466,8 @@
     "id": "42001",
     "name": "MID GULF - 180 nm South of Southwest Pass, LA",
     "type": "3-meter foam buoy",
-    "lat": 25.926,
-    "lon": -89.662
+    "lat": 25.925,
+    "lon": -89.628
   },
   {
     "id": "42002",
@@ -1675,9 +1675,9 @@
   {
     "id": "42039",
     "name": "PENSACOLA - 115NM SSE of Pensacola, FL",
-    "type": "3-meter foam buoy",
-    "lat": 28.787,
-    "lon": -86.007
+    "type": "2.1-meter ionomer foam buoy",
+    "lat": 28.768,
+    "lon": -86.024
   },
   {
     "id": "42040",
@@ -1935,8 +1935,8 @@
     "id": "42409",
     "name": "GULF OF AMERICA - 247 NM South of New Orleans, LA",
     "type": "2.6-meter discus buoy",
-    "lat": 25.799,
-    "lon": -89.291
+    "lat": 25.797,
+    "lon": -89.288
   },
   {
     "id": "42534",
@@ -5498,8 +5498,8 @@
     "id": "52211",
     "name": "Tanapag, Saipan, NMI (197)",
     "type": "Waverider Buoy",
-    "lat": 15.268,
-    "lon": 145.662
+    "lat": 15.269,
+    "lon": 145.664
   },
   {
     "id": "52212",
