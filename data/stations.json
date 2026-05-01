@@ -675,8 +675,8 @@
     "id": "32401",
     "name": "180 NM West of Iquique, Chile",
     "type": "2.6-meter discus buoy",
-    "lat": -20.603,
-    "lon": -73.39
+    "lat": -20.611,
+    "lon": -73.394
   },
   {
     "id": "32402",
@@ -975,9 +975,9 @@
   {
     "id": "41040",
     "name": "NORTH EQUATORIAL ONE- 470 NM East of Martinique",
-    "type": "3-meter discus buoy",
-    "lat": 14.536,
-    "lon": -53.136
+    "type": "3-meter foam buoy",
+    "lat": 14.563,
+    "lon": -53.01
   },
   {
     "id": "41041",
@@ -1456,6 +1456,13 @@
     "lon": -72.497
   },
   {
+    "id": "41x40",
+    "name": "Adrift buoy from 41040",
+    "type": "3-meter discus buoy",
+    "lat": 14.536,
+    "lon": -53.136
+  },
+  {
     "id": "41x46",
     "name": "Adrift buoy from 41046",
     "type": "3-meter discus buoy",
@@ -1739,15 +1746,15 @@
     "id": "42058",
     "name": "Central Caribbean - 210 NM SSE of Kingston, Jamaica",
     "type": "3-meter foam buoy",
-    "lat": 14.512,
-    "lon": -75.153
+    "lat": 14.114,
+    "lon": -75.949
   },
   {
     "id": "42059",
     "name": "Eastern Caribbean Sea - 180 NM SSW of Ponce, PR",
     "type": "3-meter foam buoy",
-    "lat": 15.285,
-    "lon": -67.567
+    "lat": 15.255,
+    "lon": -67.621
   },
   {
     "id": "42060",
@@ -3398,15 +3405,15 @@
     "id": "45207",
     "name": "Fairport Harbor Buoy",
     "type": "Moored Buoy",
-    "lat": 41.725,
-    "lon": -81.37
+    "lat": 41.731,
+    "lon": -81.367
   },
   {
     "id": "45208",
     "name": "Ashtabula Buoy",
     "type": "Moored Buoy",
-    "lat": 41.908,
-    "lon": -80.813
+    "lat": 41.913,
+    "lon": -80.807
   },
   {
     "id": "45209",
@@ -3484,6 +3491,20 @@
     "type": "Moored Buoy",
     "lat": 44.756,
     "lon": -73.355
+  },
+  {
+    "id": "45222",
+    "name": "Beach 2 Buoy",
+    "type": "Moored Buoy",
+    "lat": 42.126,
+    "lon": -80.148
+  },
+  {
+    "id": "45223",
+    "name": "Beach 6 Buoy",
+    "type": "Moored Buoy",
+    "lat": 42.144,
+    "lon": -80.139
   },
   {
     "id": "45t01",
@@ -3615,8 +3636,8 @@
     "id": "46025",
     "name": "Santa Monica Basin - 33NM WSW of Santa Monica, CA",
     "type": "3-meter discus buoy w/ seal cage",
-    "lat": 33.755,
-    "lon": -119.045
+    "lat": 33.765,
+    "lon": -119.077
   },
   {
     "id": "46026",
@@ -3636,8 +3657,8 @@
     "id": "46028",
     "name": "CAPE SAN MARTIN - 55NM West NW of Morro Bay, CA",
     "type": "3-meter foam buoy w/ seal cage",
-    "lat": 35.77,
-    "lon": -121.903
+    "lat": 35.763,
+    "lon": -121.893
   },
   {
     "id": "46029",
@@ -3692,8 +3713,8 @@
     "id": "46042",
     "name": "MONTEREY - 27NM WNW of Monterey, CA",
     "type": "3-meter foam buoy w/ seal cage",
-    "lat": 36.785,
-    "lon": -122.396
+    "lat": 36.787,
+    "lon": -122.408
   },
   {
     "id": "46044",
@@ -3740,9 +3761,9 @@
   {
     "id": "46053",
     "name": "EAST SANTA BARBARA  - 12NM Southwest of Santa Barbara, CA",
-    "type": "2.1-meter ionomer foam buoy w/ seal cage",
-    "lat": 34.241,
-    "lon": -119.839
+    "type": "3-meter foam buoy w/ seal cage",
+    "lat": 34.248,
+    "lon": -119.836
   },
   {
     "id": "46054",
@@ -3796,9 +3817,9 @@
   {
     "id": "46069",
     "name": "SOUTH SANTA ROSA - 14 NM SW of Santa Rosa Island, CA",
-    "type": "3-meter discus buoy w/ seal cage",
-    "lat": 33.677,
-    "lon": -120.213
+    "type": "3-meter foam buoy w/ seal cage",
+    "lat": 33.657,
+    "lon": -120.227
   },
   {
     "id": "46070",
@@ -4589,7 +4610,7 @@
     "name": "San Pedro South, CA (213)",
     "type": "Waverider Buoy",
     "lat": 33.576,
-    "lon": -118.181
+    "lon": -118.182
   },
   {
     "id": "46254",
@@ -4686,8 +4707,8 @@
     "id": "46267",
     "name": "Angeles Point, WA (248)",
     "type": "Waverider Buoy",
-    "lat": 48.173,
-    "lon": -123.607
+    "lat": 48.171,
+    "lon": -123.6
   },
   {
     "id": "46268",
@@ -4749,7 +4770,7 @@
     "id": "46278",
     "name": "Tillamook Bay South Jetty, OR (270)",
     "type": "Waverider Buoy",
-    "lat": 45.561,
+    "lat": 45.559,
     "lon": -123.991
   },
   {
@@ -6060,6 +6081,13 @@
     "type": "Moored Buoy",
     "lat": 39.223,
     "lon": -76.54
+  },
+  {
+    "id": "d3585",
+    "name": "Walnut Creek Buoy",
+    "type": "Moored Buoy",
+    "lat": 42.132,
+    "lon": -80.27
   },
   {
     "id": "darth",
