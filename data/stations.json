@@ -821,9 +821,9 @@
   {
     "id": "41010",
     "name": "CANAVERAL EAST - 120NM East of Cape Canaveral",
-    "type": "3-meter discus buoy",
-    "lat": 28.878,
-    "lon": -78.467
+    "type": "2.1-meter ionomer foam buoy",
+    "lat": 28.86,
+    "lon": -78.478
   },
   {
     "id": "41011",
@@ -982,9 +982,9 @@
   {
     "id": "41041",
     "name": "NORTH EQUATORIAL TWO - 890 NM East of Martinique",
-    "type": "3-meter discus buoy",
-    "lat": 14.453,
-    "lon": -46.327
+    "type": "2.1-meter ionomer foam buoy",
+    "lat": 14.259,
+    "lon": -46.041
   },
   {
     "id": "41043",
@@ -1016,10 +1016,10 @@
   },
   {
     "id": "41048",
-    "name": "WEST BERMUDA - 240 NM West of Bermuda - Jen's Station",
+    "name": "WEST BERMUDA - 240 NM West of Bermuda",
     "type": "3-meter foam buoy",
-    "lat": 31.831,
-    "lon": -69.573
+    "lat": 31.89,
+    "lon": -69.708
   },
   {
     "id": "41049",
@@ -1354,8 +1354,8 @@
     "id": "41421",
     "name": "NORTH ST THOMAS - 300 NM North of St Thomas, Virgin Is",
     "type": "2.6-meter discus buoy",
-    "lat": 23.407,
-    "lon": -63.888
+    "lat": 23.445,
+    "lon": -63.851
   },
   {
     "id": "41424",
@@ -1470,11 +1470,18 @@
     "lon": -68.384
   },
   {
+    "id": "41y10",
+    "name": "Adrift hull from 41010",
+    "type": "3-meter discus buoy",
+    "lat": 28.88,
+    "lon": -78.48
+  },
+  {
     "id": "42001",
     "name": "MID GULF - 180 nm South of Southwest Pass, LA",
     "type": "3-meter foam buoy",
-    "lat": 25.925,
-    "lon": -89.628
+    "lat": 25.922,
+    "lon": -89.638
   },
   {
     "id": "42002",
@@ -1760,8 +1767,8 @@
     "id": "42060",
     "name": "Caribbean Valley - 63 NM WSW of Montserrat",
     "type": "3-meter foam buoy",
-    "lat": 16.434,
-    "lon": -63.329
+    "lat": 16.428,
+    "lon": -63.21
   },
   {
     "id": "42065",
@@ -2509,8 +2516,8 @@
     "id": "44087",
     "name": "Thimble Shoal, VA (240)",
     "type": "Waverider Buoy",
-    "lat": 37.045,
-    "lon": -76.127
+    "lat": 37.043,
+    "lon": -76.129
   },
   {
     "id": "44088",
@@ -2600,7 +2607,7 @@
     "id": "44100",
     "name": "Duck FRF 26m, NC (430)",
     "type": "Waverider Buoy",
-    "lat": 36.258,
+    "lat": 36.257,
     "lon": -75.593
   },
   {
@@ -2948,7 +2955,7 @@
   },
   {
     "id": "45027",
-    "name": "McQuade Harbor Nearshore, MN",
+    "name": "Fairport Harbor Buoy",
     "type": "Buoy",
     "lat": 46.86,
     "lon": -91.93
@@ -3133,7 +3140,7 @@
     "name": "Muskegon Buoy, MI",
     "type": "Buoy",
     "lat": 43.185,
-    "lon": -86.352
+    "lon": -86.354
   },
   {
     "id": "45162",
@@ -3160,8 +3167,8 @@
     "id": "45165",
     "name": "Toledo Water Intake Buoy, Oregon, OH",
     "type": "Buoy",
-    "lat": 41.702,
-    "lon": -83.261
+    "lat": 41.704,
+    "lon": -83.264
   },
   {
     "id": "45166",
@@ -3472,6 +3479,13 @@
     "lon": -89.354
   },
   {
+    "id": "45217",
+    "name": "Wisconsin Point",
+    "type": "Buoy",
+    "lat": 46.706,
+    "lon": -91.985
+  },
+  {
     "id": "45218",
     "name": "Wisconsin Shipwreck Coast NMS / Sheboygan, WI",
     "type": "Buoy",
@@ -3544,9 +3558,9 @@
   {
     "id": "46005",
     "name": "WEST WASHINGTON - 300NM West of Aberdeen, WA",
-    "type": "3-meter discus buoy w/ seal cage",
-    "lat": 46.143,
-    "lon": -131.09
+    "type": "3-meter foam buoy",
+    "lat": 46.147,
+    "lon": -131.077
   },
   {
     "id": "46006",
@@ -3853,8 +3867,8 @@
     "id": "46075",
     "name": "SHUMAGIN ISLANDS - 85NM South of Sand Point, AK",
     "type": "3-meter discus buoy w/ seal cage",
-    "lat": 53.969,
-    "lon": -160.794
+    "lat": 53.938,
+    "lon": -160.735
   },
   {
     "id": "46076",
@@ -4861,8 +4875,8 @@
     "id": "46403",
     "name": "SOUTHEAST SHUMAGIN ISLAND - 186 NM SE of Shumagin Is, AK",
     "type": "2.6-meter discus buoy",
-    "lat": 52.654,
-    "lon": -156.813
+    "lat": 52.7,
+    "lon": -156.983
   },
   {
     "id": "46404",
@@ -4910,8 +4924,8 @@
     "id": "46410",
     "name": "SOUTH CORDOVA - 188 NM SSE of Cordova, AK",
     "type": "2.6-meter discus buoy",
-    "lat": 57.649,
-    "lon": -143.769
+    "lat": 57.641,
+    "lon": -143.771
   },
   {
     "id": "46411",
@@ -4945,8 +4959,8 @@
     "id": "46415",
     "name": "SOUTHWEST JUNEAU - 370 NM SW of Juneau, AK",
     "type": "2.6-meter discus buoy",
-    "lat": 53.035,
-    "lon": -139.884
+    "lat": 53.029,
+    "lon": -139.889
   },
   {
     "id": "46416",
@@ -4959,8 +4973,8 @@
     "id": "46419",
     "name": "NORTHWEST SEATTLE - 300 NM WNW of Seattle, WA",
     "type": "2.6 meter DART buoy",
-    "lat": 48.815,
-    "lon": -129.623
+    "lat": 48.816,
+    "lon": -129.614
   },
   {
     "id": "46451",
@@ -5094,6 +5108,13 @@
     "type": "2.6 meter DART buoy",
     "lat": 42.87,
     "lon": -128.752
+  },
+  {
+    "id": "46d15",
+    "name": "Adrift buoy from 46415",
+    "type": "2.6 meter DART buoy",
+    "lat": 53.035,
+    "lon": -139.884
   },
   {
     "id": "46d16",
