@@ -143,8 +143,8 @@
     "id": "21414",
     "name": "AMCHITKA - 170 NM South of Amchitka, AK",
     "type": "2.6-meter discus buoy",
-    "lat": 48.97,
-    "lon": 178.165
+    "lat": 48.977,
+    "lon": 178.199
   },
   {
     "id": "21415",
@@ -2446,8 +2446,8 @@
     "id": "44074",
     "name": "Great Bay Buoy",
     "type": "Moored Buoy",
-    "lat": 43.07,
-    "lon": -70.86
+    "lat": 43.071,
+    "lon": -70.868
   },
   {
     "id": "44075",
@@ -2796,8 +2796,8 @@
     "id": "45004",
     "name": "EAST SUPERIOR -70 NM NE Marquette, MI",
     "type": "2.3-meter foam discus buoy",
-    "lat": 47.585,
-    "lon": -86.585
+    "lat": 47.583,
+    "lon": -86.586
   },
   {
     "id": "45005",
@@ -2859,7 +2859,7 @@
     "id": "45013",
     "name": "ATW20 - Atwater Park, WI",
     "type": "Buoy",
-    "lat": 43.1,
+    "lat": 43.098,
     "lon": -87.85
   },
   {
@@ -2936,7 +2936,7 @@
     "id": "45024",
     "name": "Ludington Buoy, MI",
     "type": "Moored Buoy",
-    "lat": 43.977,
+    "lat": 43.98,
     "lon": -86.56
   },
   {
@@ -3154,7 +3154,7 @@
     "name": "Saginaw Bay Buoy, MI",
     "type": "Buoy",
     "lat": 43.983,
-    "lon": -83.599
+    "lon": -83.6
   },
   {
     "id": "45164",
@@ -3318,10 +3318,24 @@
     "lon": -73.423
   },
   {
+    "id": "45190",
+    "name": "Sodus Point, NY",
+    "type": "Buoy",
+    "lat": 43.282,
+    "lon": -76.961
+  },
+  {
+    "id": "45191",
+    "name": "Oak Orchard, NY",
+    "type": "Buoy",
+    "lat": 43.388,
+    "lon": -78.192
+  },
+  {
     "id": "45194",
     "name": "McGulpin Point North, MI (253)",
     "type": "Waverider Buoy",
-    "lat": 45.804,
+    "lat": 45.803,
     "lon": -84.792
   },
   {
@@ -3454,8 +3468,8 @@
     "id": "45213",
     "name": "East Superior Spotter",
     "type": "Spotter Buoy",
-    "lat": 47.585,
-    "lon": -86.585
+    "lat": 47.588,
+    "lon": -86.588
   },
   {
     "id": "45214",
@@ -3482,8 +3496,8 @@
     "id": "45217",
     "name": "Wisconsin Point",
     "type": "Buoy",
-    "lat": 46.706,
-    "lon": -91.985
+    "lat": 46.708,
+    "lon": -92.0
   },
   {
     "id": "45218",
@@ -3672,7 +3686,7 @@
     "name": "CAPE SAN MARTIN - 55NM West NW of Morro Bay, CA",
     "type": "3-meter foam buoy w/ seal cage",
     "lat": 35.763,
-    "lon": -121.893
+    "lon": -121.9
   },
   {
     "id": "46029",
@@ -3776,8 +3790,8 @@
     "id": "46053",
     "name": "EAST SANTA BARBARA  - 12NM Southwest of Santa Barbara, CA",
     "type": "3-meter foam buoy w/ seal cage",
-    "lat": 34.248,
-    "lon": -119.836
+    "lat": 34.246,
+    "lon": -119.842
   },
   {
     "id": "46054",
@@ -3846,8 +3860,8 @@
     "id": "46071",
     "name": "WESTERN ALEUTIANS - 14NM SOUTH OF AMCHITKA IS, AK",
     "type": "3-meter discus buoy w/ seal cage",
-    "lat": 51.04,
-    "lon": 179.764
+    "lat": 51.035,
+    "lon": 179.808
   },
   {
     "id": "46072",
@@ -3860,8 +3874,8 @@
     "id": "46073",
     "name": "SOUTHEAST BERING SEA - 205 NM WNW of Dutch Harbor, AK",
     "type": "3-meter discus buoy",
-    "lat": 55.008,
-    "lon": -172.012
+    "lat": 54.985,
+    "lon": -171.874
   },
   {
     "id": "46075",
@@ -4343,7 +4357,7 @@
     "id": "46213",
     "name": "Cape Mendocino, CA (094)",
     "type": "Waverider Buoy",
-    "lat": 40.292,
+    "lat": 40.291,
     "lon": -124.748
   },
   {
@@ -4945,8 +4959,8 @@
     "id": "46413",
     "name": "SOUTH-SOUTHEAST ADAK - 243 NM SSE of Adak Island, AK",
     "type": "2.6-meter discus buoy",
-    "lat": 48.045,
-    "lon": -173.897
+    "lat": 48.031,
+    "lon": -173.766
   },
   {
     "id": "46414",
@@ -5533,8 +5547,8 @@
     "id": "52202",
     "name": "Ritidian Point, Guam (196)",
     "type": "Waverider Buoy",
-    "lat": 13.683,
-    "lon": 144.816
+    "lat": 13.682,
+    "lon": 144.811
   },
   {
     "id": "52211",
@@ -5561,8 +5575,8 @@
     "id": "52214",
     "name": "Rumung, Yap, Micronesia (272)",
     "type": "Waverider Buoy",
-    "lat": 9.677,
-    "lon": 138.178
+    "lat": 9.678,
+    "lon": 138.176
   },
   {
     "id": "52215",
@@ -5570,6 +5584,13 @@
     "type": "Waverider Buoy",
     "lat": 5.241,
     "lon": 163.001
+  },
+  {
+    "id": "52216",
+    "name": "Pikareej, Arno, Marshall Islands (282)",
+    "type": "Waverider Buoy",
+    "lat": 7.323,
+    "lon": 171.641
   },
   {
     "id": "52401",
@@ -6102,13 +6123,6 @@
     "type": "Moored Buoy",
     "lat": 39.223,
     "lon": -76.54
-  },
-  {
-    "id": "d3585",
-    "name": "Walnut Creek Buoy",
-    "type": "Moored Buoy",
-    "lat": 42.132,
-    "lon": -80.27
   },
   {
     "id": "darth",
