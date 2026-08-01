@@ -171,8 +171,8 @@
     "id": "21418",
     "name": "NORTHEAST TOKYO - 450 NM NE of Tokyo, JP",
     "type": "2.6-meter discus buoy",
-    "lat": 38.73,
-    "lon": 148.8
+    "lat": 38.84,
+    "lon": 148.753
   },
   {
     "id": "21419",
@@ -843,7 +843,7 @@
     "id": "41013",
     "name": "Frying Pan Shoals, NC",
     "type": "3-meter discus buoy",
-    "lat": 33.441,
+    "lat": 33.436,
     "lon": -77.764
   },
   {
@@ -976,15 +976,15 @@
     "id": "41040",
     "name": "NORTH EQUATORIAL ONE- 470 NM East of Martinique",
     "type": "3-meter foam buoy",
-    "lat": 14.563,
-    "lon": -53.01
+    "lat": 14.568,
+    "lon": -53.037
   },
   {
     "id": "41041",
     "name": "NORTH EQUATORIAL TWO - 890 NM East of Martinique",
     "type": "2.1-meter ionomer foam buoy",
     "lat": 14.259,
-    "lon": -46.041
+    "lon": -46.052
   },
   {
     "id": "41043",
@@ -1018,8 +1018,8 @@
     "id": "41048",
     "name": "WEST BERMUDA - 240 NM West of Bermuda",
     "type": "3-meter foam buoy",
-    "lat": 31.89,
-    "lon": -69.708
+    "lat": 31.878,
+    "lon": -69.722
   },
   {
     "id": "41049",
@@ -1354,8 +1354,8 @@
     "id": "41421",
     "name": "NORTH ST THOMAS - 300 NM North of St Thomas, Virgin Is",
     "type": "2.6-meter discus buoy",
-    "lat": 23.445,
-    "lon": -63.851
+    "lat": 23.44,
+    "lon": -63.834
   },
   {
     "id": "41424",
@@ -1536,8 +1536,8 @@
     "id": "42012",
     "name": "ORANGE BEACH - 44 NM SE of Mobile, AL",
     "type": "3-meter discus buoy",
-    "lat": 30.06,
-    "lon": -87.548
+    "lat": 30.061,
+    "lon": -87.547
   },
   {
     "id": "42013",
@@ -2224,6 +2224,13 @@
     "type": "2-meter discus buoy",
     "lat": 44.89,
     "lon": -67.02
+  },
+  {
+    "id": "4403585",
+    "name": "Walnut Creek Buoy",
+    "type": "Moored Buoy",
+    "lat": 42.132,
+    "lon": -80.27
   },
   {
     "id": "44036",
@@ -2955,7 +2962,7 @@
   },
   {
     "id": "45027",
-    "name": "Fairport Harbor Buoy",
+    "name": "McQuade Harbor Nearshore, MN",
     "type": "Buoy",
     "lat": 46.86,
     "lon": -91.93
@@ -3424,7 +3431,7 @@
   },
   {
     "id": "45207",
-    "name": "Fairport Harbor Buoy",
+    "name": "Mentor Harbor Buoy",
     "type": "Moored Buoy",
     "lat": 41.731,
     "lon": -81.367
@@ -3734,8 +3741,8 @@
     "id": "46041",
     "name": "CAPE ELIZABETH - 45NM NW of Aberdeen, WA",
     "type": "3-meter discus buoy w/ seal cage",
-    "lat": 47.352,
-    "lon": -124.739
+    "lat": 47.351,
+    "lon": -124.741
   },
   {
     "id": "46042",
@@ -3881,8 +3888,8 @@
     "id": "46075",
     "name": "SHUMAGIN ISLANDS - 85NM South of Sand Point, AK",
     "type": "3-meter discus buoy w/ seal cage",
-    "lat": 53.938,
-    "lon": -160.735
+    "lat": 53.93,
+    "lon": -160.763
   },
   {
     "id": "46076",
@@ -5595,9 +5602,9 @@
   {
     "id": "52401",
     "name": "NORTHEAST SAIPAN - 610 NM ENE of Saipan",
-    "type": "2.6-meter discus buoy",
-    "lat": 19.285,
-    "lon": 155.739
+    "type": "2.6 meter DART buoy",
+    "lat": 19.282,
+    "lon": 155.759
   },
   {
     "id": "52402",
@@ -5617,8 +5624,8 @@
     "id": "52404",
     "name": "NORTH PHILIPPINE SEA - 750 NM NE of Manila, Philippines",
     "type": "2.6-meter discus buoy",
-    "lat": 20.685,
-    "lon": 132.25
+    "lat": 20.625,
+    "lon": 132.228
   },
   {
     "id": "52405",
