@@ -1242,8 +1242,8 @@
     "id": "41114",
     "name": "Fort Pierce, FL (134)",
     "type": "Waverider Buoy",
-    "lat": 27.552,
-    "lon": -80.216
+    "lat": 27.564,
+    "lon": -80.215
   },
   {
     "id": "41115",
@@ -1915,7 +1915,7 @@
     "name": "Chandeleur Island SE, LA (279)",
     "type": "Waverider Buoy",
     "lat": 29.579,
-    "lon": -88.643
+    "lon": -88.645
   },
   {
     "id": "42357",
@@ -2231,6 +2231,13 @@
     "type": "Moored Buoy",
     "lat": 42.132,
     "lon": -80.27
+  },
+  {
+    "id": "4403587",
+    "name": "Whitefish Bay",
+    "type": "Buoy",
+    "lat": 46.545,
+    "lon": -84.769
   },
   {
     "id": "44036",
@@ -2593,8 +2600,8 @@
     "id": "44097",
     "name": "Block Island, RI  (154)",
     "type": "Waverider Buoy",
-    "lat": 40.967,
-    "lon": -71.124
+    "lat": 40.966,
+    "lon": -71.123
   },
   {
     "id": "44098",
@@ -2857,7 +2864,7 @@
   },
   {
     "id": "45012",
-    "name": "EAST Lake Ontario  - 20NM North Northeast of Rochester, NY",
+    "name": "EAST Lake America  - 20NM North Northeast of Rochester, NY",
     "type": "2.3-meter foam discus buoy",
     "lat": 43.621,
     "lon": -77.401
@@ -4858,6 +4865,13 @@
     "lon": -117.68
   },
   {
+    "id": "46286",
+    "name": "Avila Beach Nearshore, CA (285)",
+    "type": "Waverider Buoy",
+    "lat": 35.164,
+    "lon": -120.737
+  },
+  {
     "id": "46290",
     "name": "NOOSS Optimization Buoy",
     "type": "2.3-meter NOOSS buoy",
@@ -4994,8 +5008,8 @@
     "id": "46419",
     "name": "NORTHWEST SEATTLE - 300 NM WNW of Seattle, WA",
     "type": "2.6 meter DART buoy",
-    "lat": 48.816,
-    "lon": -129.614
+    "lat": 48.812,
+    "lon": -129.621
   },
   {
     "id": "46451",
@@ -5287,16 +5301,16 @@
   {
     "id": "51002",
     "name": "SOUTHWEST HAWAII - 215NM SSW of Hilo, HI",
-    "type": "3-meter foam buoy",
+    "type": "3-meter discus buoy",
     "lat": 17.07,
     "lon": -157.755
   },
   {
     "id": "51003",
     "name": "WESTERN  HAWAII - 205 NM SW of Honolulu, HI",
-    "type": "3-meter foam buoy",
-    "lat": 19.143,
-    "lon": -160.645
+    "type": "3-meter discus buoy",
+    "lat": 19.151,
+    "lon": -160.617
   },
   {
     "id": "51004",
@@ -5358,8 +5372,8 @@
     "id": "51101",
     "name": "NORTHWESTERN HAWAII TWO - 186 NM NW of Kauai Is., HI",
     "type": "3-meter foam buoy",
-    "lat": 24.359,
-    "lon": -162.081
+    "lat": 24.34,
+    "lon": -162.073
   },
   {
     "id": "511x1",
@@ -5528,6 +5542,13 @@
     "type": "Moored Buoy",
     "lat": 22.0,
     "lon": -157.0
+  },
+  {
+    "id": "51x01",
+    "name": "170 NM West Northwest of Kauai Island",
+    "type": "3-meter foam buoy",
+    "lat": 24.359,
+    "lon": -162.081
   },
   {
     "id": "52009",
